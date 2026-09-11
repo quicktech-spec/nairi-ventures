@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 52" fill="none" width="240" height="52">
+  <defs>
+    <linearGradient id="nairiGoldD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7C86A" />
+      <stop offset="50%" stop-color="#E4A63A" />
+      <stop offset="100%" stop-color="#C2821E" />
+    </linearGradient>
+    <linearGradient id="nairiDarkD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E222D" />
+      <stop offset="100%" stop-color="#0E1017" />
+    </linearGradient>
+    <filter id="goldGlowD" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#E4A63A" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Monogram Mark -->
+  <g transform="translate(6, 6)" filter="url(#goldGlowD)">
+    <rect x="0" y="0" width="40" height="40" rx="9" fill="url(#nairiDarkD)" stroke="url(#nairiGoldD)" stroke-width="1.75"/>
+    <path d="M12 29V11L21 24V11" stroke="#FFFDF9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M21 29V16L29 29V11" stroke="url(#nairiGoldD)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="21" cy="13.5" r="1.75" fill="#F7C86A"/>
+  </g>
+
+  <!-- Wordmark Light -->
+  <g transform="translate(54, 32)">
+    <text font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700" letter-spacing="0.04em" fill="#FFFFFF">
+      NAIRI
+    </text>
+    <text x="70" y="0" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="0.14em" fill="#E4A63A">
+      VENTURES
+    </text>
+    <text x="1" y="11" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="7.5" font-weight="600" letter-spacing="0.18em" fill="#E5E7EB">
+      AI VIDEO &amp; PERFORMANCE
+    </text>
+  </g>
+</svg>

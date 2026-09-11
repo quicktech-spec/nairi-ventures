@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="aiCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1E8A7A" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#24316B" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#12110E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="amberTrace" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E4A63A"/>
+      <stop offset="100%" stop-color="#1E8A7A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="#12110E"/>
+
+  <!-- Precision Engineering Grid -->
+  <g stroke="#F7F5EF" stroke-width="0.5" stroke-opacity="0.1">
+    <line x1="80" y1="0" x2="80" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="720" y1="0" x2="720" y2="600"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+    <circle cx="400" cy="300" r="220" fill="none" stroke-dasharray="4,6"/>
+    <circle cx="400" cy="300" r="140" fill="none"/>
+  </g>
+
+  <!-- Ambient Neural Glow -->
+  <circle cx="400" cy="300" r="200" fill="url(#aiCore)"/>
+
+  <!-- Left: Industrial Robotics / Precision Hardware (Atoms) -->
+  <g transform="translate(180, 220)">
+    <!-- Robotic Joint Schematic -->
+    <rect x="-40" y="-40" width="80" height="80" rx="6" fill="#1B1E28" stroke="#E4A63A" stroke-width="1.8"/>
+    <circle cx="0" cy="0" r="22" fill="#E4A63A" fill-opacity="0.2" stroke="#E4A63A" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="8" fill="#E4A63A"/>
+    <line x1="0" y1="40" x2="0" y2="140" stroke="#E4A63A" stroke-width="3"/>
+    <rect x="-25" y="140" width="50" height="30" rx="3" fill="#1B1E28" stroke="#E4A63A" stroke-width="1.5"/>
+    <text x="-70" y="-55" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#E4A63A">ATOMS: INDUSTRIAL HARDWARE</text>
+    <text x="-70" y="-72" font-family="'Fraunces', Georgia, serif" font-size="16" font-style="italic" fill="#F7F5EF">Advanced Manufacturing</text>
+  </g>
+
+  <!-- Right: Cognitive Multi-Agent Neural Mesh (Bits) -->
+  <g transform="translate(620, 220)">
+    <!-- Neural Node Cluster -->
+    <circle cx="0" cy="0" r="32" fill="#17343B" stroke="#1E8A7A" stroke-width="2"/>
+    <circle cx="0" cy="0" r="10" fill="#1E8A7A"/>
+    <circle cx="-50" cy="90" r="18" fill="#1B1E28" stroke="#1E8A7A" stroke-width="1.2"/>
+    <circle cx="40" cy="110" r="16" fill="#1B1E28" stroke="#1E8A7A" stroke-width="1.2"/>
+    <line x1="0" y1="0" x2="-50" y2="90" stroke="#1E8A7A" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <line x1="0" y1="0" x2="40" y2="110" stroke="#1E8A7A" stroke-width="1.5"/>
+    <text x="-90" y="-55" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#1E8A7A">BITS: FRONTIER INTELLIGENCE</text>
+    <text x="-90" y="-72" font-family="'Fraunces', Georgia, serif" font-size="16" font-style="italic" fill="#F7F5EF">Autonomous Systems</text>
+  </g>
+
+  <!-- Central Synthesis Hub: The Nairi Convergence Core -->
+  <g transform="translate(400, 300)">
+    <circle cx="0" cy="0" r="64" fill="#12110E" stroke="url(#amberTrace)" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="48" fill="#1B1E28" stroke="#F7F5EF" stroke-width="1" stroke-opacity="0.3"/>
+    <text x="0" y="-6" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="18" font-style="italic" fill="#F7F5EF">Nairi</text>
+    <text x="0" y="14" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#E4A63A">CONVERGENCE</text>
+    
+    <!-- Flow Bridge Lines -->
+    <line x1="-220" y1="-80" x2="-64" y2="0" stroke="url(#amberTrace)" stroke-width="2"/>
+    <line x1="220" y1="-80" x2="64" y2="0" stroke="#1E8A7A" stroke-width="2"/>
+  </g>
+
+  <!-- Bottom Telemetry Label -->
+  <g transform="translate(400, 540)">
+    <text x="0" y="0" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="rgba(247, 245, 239, 0.7)">
+      Sovereign Industrial Engineering × Autonomous Cognitive Architecture
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hubLine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24316B"/>
+      <stop offset="50%" stop-color="#1E8A7A"/>
+      <stop offset="100%" stop-color="#E4A63A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="#F7F5EF"/>
+
+  <!-- Minimalist World Coordinate Grid -->
+  <g stroke="#171512" stroke-width="0.8" stroke-opacity="0.1">
+    <circle cx="400" cy="300" r="240" fill="none"/>
+    <ellipse cx="400" cy="300" rx="240" ry="120" fill="none"/>
+    <ellipse cx="400" cy="300" rx="240" ry="60" fill="none"/>
+    <line x1="160" y1="300" x2="640" y2="300"/>
+    <line x1="400" y1="60" x2="400" y2="540"/>
+  </g>
+
+  <!-- Tri-Jurisdiction Triangle Flight Corridors -->
+  <polygon points="340,210 580,360 220,380" fill="none" stroke="url(#hubLine)" stroke-width="2.5" stroke-dasharray="6,4"/>
+
+  <!-- Hub 1: London, United Kingdom -->
+  <g transform="translate(340, 210)">
+    <circle cx="0" cy="0" r="18" fill="#24316B"/>
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#24316B" stroke-width="1.5" stroke-opacity="0.3"/>
+    <circle cx="0" cy="0" r="6" fill="#F7F5EF"/>
+    <text x="0" y="-42" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#24316B">HUB 01 · LONDON</text>
+    <text x="0" y="-24" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="15" font-style="italic" fill="#171512">Europe &amp; Institutional Capital</text>
+  </g>
+
+  <!-- Hub 2: Singapore -->
+  <g transform="translate(580, 360)">
+    <circle cx="0" cy="0" r="18" fill="#1E8A7A"/>
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#1E8A7A" stroke-width="1.5" stroke-opacity="0.3"/>
+    <circle cx="0" cy="0" r="6" fill="#F7F5EF"/>
+    <text x="0" y="46" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#1E8A7A">HUB 02 · SINGAPORE</text>
+    <text x="0" y="64" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="15" font-style="italic" fill="#171512">APAC &amp; Industrial Supply Lines</text>
+  </g>
+
+  <!-- Hub 3: United States / Delaware -->
+  <g transform="translate(220, 380)">
+    <circle cx="0" cy="0" r="18" fill="#E4A63A"/>
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#E4A63A" stroke-width="1.5" stroke-opacity="0.3"/>
+    <circle cx="0" cy="0" r="6" fill="#171512"/>
+    <text x="0" y="46" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#E4A63A">HUB 03 · UNITED STATES</text>
+    <text x="0" y="64" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="15" font-style="italic" fill="#171512">Delaware Corp &amp; Deep Tech IP</text>
+  </g>
+
+  <!-- Central Studio Sovereign Gateway -->
+  <g transform="translate(400, 320)">
+    <rect x="-85" y="-20" width="170" height="40" rx="20" fill="#171512"/>
+    <text x="0" y="5" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="13" font-style="italic" fill="#F7F5EF">Sovereign Rail</text>
+  </g>
+
+  <text x="400" y="540" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#797368">
+    Frictionless IP Protection · Multi-Currency Treasury · Global Manufacturing Expansion
+  </text>
+</svg>

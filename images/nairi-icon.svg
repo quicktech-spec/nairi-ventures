@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" width="48" height="48">
+  <defs>
+    <linearGradient id="iconGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7C86A" />
+      <stop offset="50%" stop-color="#E4A63A" />
+      <stop offset="100%" stop-color="#C2821E" />
+    </linearGradient>
+    <linearGradient id="iconDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E222D" />
+      <stop offset="100%" stop-color="#0E1017" />
+    </linearGradient>
+    <filter id="iconGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#E4A63A" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#iconGlow)">
+    <rect x="2" y="2" width="44" height="44" rx="10" fill="url(#iconDark)" stroke="url(#iconGold)" stroke-width="1.8"/>
+    <path d="M14 33V13L24 27.5V13" stroke="#FFFDF9" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24 33V18.5L34 33V13" stroke="url(#iconGold)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="24" cy="15.8" r="1.8" fill="#F7C86A"/>
+  </g>
+</svg>

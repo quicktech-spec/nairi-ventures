@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="engineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#24316B"/>
+      <stop offset="35%" stop-color="#1E8A7A"/>
+      <stop offset="70%" stop-color="#E4A63A"/>
+      <stop offset="100%" stop-color="#171512"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="#171512"/>
+
+  <!-- Horizontal Process Pipeline -->
+  <line x1="80" y1="300" x2="720" y2="300" stroke="url(#engineGrad)" stroke-width="3"/>
+
+  <!-- Step 1: Stress-Test & De-Risking -->
+  <g transform="translate(130, 300)">
+    <circle cx="0" cy="0" r="36" fill="#1B1E28" stroke="#24316B" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="20" fill="#F7F5EF">I</text>
+    <text x="0" y="-60" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#24316B">STAGE 01</text>
+    <text x="0" y="-42" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="15" font-style="italic" fill="#F7F5EF">De-Risking</text>
+    <text x="0" y="60" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="rgba(247, 245, 239, 0.7)">Techno-economic validation</text>
+  </g>
+
+  <!-- Step 2: Foundry Co-Creation -->
+  <g transform="translate(310, 300)">
+    <circle cx="0" cy="0" r="36" fill="#17343B" stroke="#1E8A7A" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="20" fill="#F7F5EF">II</text>
+    <text x="0" y="-60" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#1E8A7A">STAGE 02</text>
+    <text x="0" y="-42" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="15" font-style="italic" fill="#F7F5EF">Foundry Build</text>
+    <text x="0" y="60" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="rgba(247, 245, 239, 0.7)">Embedded engineering &amp; tooling</text>
+  </g>
+
+  <!-- Step 3: Tri-Country Architecture -->
+  <g transform="translate(490, 300)">
+    <circle cx="0" cy="0" r="36" fill="#362915" stroke="#E4A63A" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="20" fill="#F7F5EF">III</text>
+    <text x="0" y="-60" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#E4A63A">STAGE 03</text>
+    <text x="0" y="-42" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="15" font-style="italic" fill="#F7F5EF">Global Rails</text>
+    <text x="0" y="60" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="rgba(247, 245, 239, 0.7)">Tri-country corporate fortress</text>
+  </g>
+
+  <!-- Step 4: Commercial Scale & Exit -->
+  <g transform="translate(670, 300)">
+    <circle cx="0" cy="0" r="36" fill="#24221D" stroke="#F7F5EF" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="20" fill="#F7F5EF">IV</text>
+    <text x="0" y="-60" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#F7F5EF">STAGE 04</text>
+    <text x="0" y="-42" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="15" font-style="italic" fill="#F7F5EF">Scale &amp; Velocity</text>
+    <text x="0" y="60" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="rgba(247, 245, 239, 0.7)">Institutional syndication &amp; ARR</text>
+  </g>
+
+  <!-- Header & Label -->
+  <text x="400" y="140" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="24" font-style="italic" fill="#F7F5EF">
+    The Nairi Studio Engine
+  </text>
+  <text x="400" y="170" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="rgba(247, 245, 239, 0.6)">
+    Zero-to-One Venture Engineering with Skin in the Game
+  </text>
+</svg>
