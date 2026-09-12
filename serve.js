@@ -256,10 +256,10 @@ async function sendLeadAlertEmails(lead) {
     return { status: 'NO_RECIPIENTS', message: 'No recipient emails specified' };
   }
 
-  const clientName = lead.name || 'Anonymous Visitor';
+  const clientName = lead.name || lead.fullName || 'Anonymous Visitor';
   const clientEmail = lead.email || 'Not provided';
-  const clientVenture = lead.venture_interest || 'General Inquiry';
-  const clientMessage = lead.message || '(No detailed message supplied)';
+  const clientVenture = lead.venture_interest || lead.tier || 'General Inquiry';
+  const clientMessage = lead.message || lead.bottleneck || '(No detailed message supplied)';
   const clientTime = new Date(lead.created_at || Date.now()).toLocaleString('en-US', {
     weekday: 'short',
     year: 'numeric',
@@ -577,7 +577,7 @@ const server = http.createServer((req, res) => {
   }
 
   // --- API: Save Lead & Automatically Forward to 2 Gmails ---
-  if (req.method === 'POST' && pathname === '/api/save-lead') {
+  if (req.method === 'POST' && (pathname === '/api/save-lead' || pathname === '/api/leads')) {
     let body = '';
     req.on('data', chunk => body += chunk);
     req.on('end', async () => {
@@ -586,6 +586,8 @@ const server = http.createServer((req, res) => {
         if (!lead.id) lead.id = 'l-' + Date.now();
         if (!lead.created_at) lead.created_at = new Date().toISOString();
         if (!lead.status) lead.status = 'New';
+        lead.name = lead.name || lead.fullName || 'Anonymous Visitor';
+        lead.venture_interest = lead.venture_interest || lead.tier || 'General Inquiry';
 
         const data = readCMSData();
         if (!data.leads) data.leads = [];

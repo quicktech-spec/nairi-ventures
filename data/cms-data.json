@@ -2241,6 +2241,20 @@
   ],
   "leads": [
     {
+      "fullName": "Aarav Test Kapoor",
+      "company": "Kapoor Growth Labs",
+      "email": "test@example.com",
+      "phone": "+91 9876543210",
+      "tier": "Tier 3: Management as a Service",
+      "stage": "₹50L - ₹2Cr / year",
+      "bottleneck": "Testing cloned landing page lead intake pipeline",
+      "id": "l-1789190975273",
+      "created_at": "2026-09-12T05:29:35.273Z",
+      "status": "New",
+      "name": "Aarav Test Kapoor",
+      "venture_interest": "Tier 3: Management as a Service"
+    },
+    {
       "id": "bidirectional-test-1789097373621",
       "name": "Julian Sterling (Sterling Capital & Media)",
       "email": "julian@sterlingmedia.vc",
@@ -2323,6 +2337,21 @@
     "last_updated": "2026-09-11T03:21:03.685Z"
   },
   "email_alert_logs": [
+    {
+      "id": "email-log-1789190975299",
+      "timestamp": "2026-09-12T05:29:35.299Z",
+      "lead_id": "l-1789190975273",
+      "lead_name": "Aarav Test Kapoor",
+      "lead_email": "test@example.com",
+      "recipients": [
+        "ventures.nairi@gmail.com",
+        "leads.nairee@gmail.com"
+      ],
+      "subject": "⚡ New Lead Inflow: Aarav Test Kapoor [Tier 3: Management as a Service] — Nairi Ventures",
+      "status": "DISPATCHED_TO_OUTBOX",
+      "preview": "Testing cloned landing page lead intake pipeline",
+      "html": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <style>\n    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #0E1017; margin: 0; padding: 24px; color: #F8FAFC; }\n    .card { max-width: 620px; margin: 0 auto; background: #161922; border-radius: 12px; overflow: hidden; border: 1px solid #272B38; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }\n    .header { background: #0B0D13; padding: 28px 32px; border-bottom: 3px solid #D97706; text-align: left; }\n    .header h1 { margin: 0 0 8px 0; font-size: 20px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.01em; }\n    .header p { margin: 0; font-size: 13px; color: #94A3B8; }\n    .badge { display: inline-block; padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; background: rgba(217,119,6,0.15); color: #F59E0B; border: 1px solid rgba(217,119,6,0.3); margin-top: 12px; }\n    .content { padding: 32px; background: #161922; }\n    .field-row { margin-bottom: 20px; }\n    .field-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #94A3B8; font-weight: 700; margin-bottom: 6px; }\n    .field-val { font-size: 15px; color: #FFFFFF; font-weight: 600; background: #1E222D; padding: 12px 16px; border-radius: 8px; border: 1px solid #2E3342; word-break: break-word; }\n    .field-val a { color: #F59E0B; text-decoration: none; font-weight: 700; }\n    .message-box { font-size: 15px; line-height: 1.6; color: #FFFFFF; background: #1D2433; border: 1px solid #334155; padding: 16px; border-radius: 8px; white-space: pre-wrap; font-weight: 400; }\n    .footer { padding: 20px 32px; background: #0B0D13; border-top: 1px solid #272B38; font-size: 12px; color: #64748B; text-align: center; }\n    .cta-btn { display: inline-block; background: #D97706; color: #FFFFFF !important; text-decoration: none; font-weight: 700; font-size: 14px; padding: 12px 24px; border-radius: 6px; margin-top: 12px; box-shadow: 0 4px 14px rgba(217,119,6,0.4); }\n  </style>\n</head>\n<body>\n  <div class=\"card\">\n    <div class=\"header\">\n      <h1>🚀 Nairi Ventures — New Inquiry Alert</h1>\n      <p>A new potential venture client just submitted details on the Nairi Ventures portal.</p>\n      <div class=\"badge\">Dispatched to 2 Designated Inboxes: ventures.nairi@gmail.com & leads.nairee@gmail.com</div>\n    </div>\n    <div class=\"content\">\n      <div class=\"field-row\">\n        <div class=\"field-label\">Client / Inquirer Name</div>\n        <div class=\"field-val\"><strong>Aarav Test Kapoor</strong></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Email Address</div>\n        <div class=\"field-val\"><a href=\"mailto:test@example.com\">test@example.com</a></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Budget / Venture Interest</div>\n        <div class=\"field-val\">Tier 3: Management as a Service</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Inquiry Message / Details</div>\n        <div class=\"message-box\">Testing cloned landing page lead intake pipeline</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Submission Timestamp</div>\n        <div class=\"field-val\">Sat, Sep 12, 2026, 10:59 AM GMT+5:30</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Lead Reference ID</div>\n        <div class=\"field-val\"><code style=\"color: #F59E0B; font-family: monospace;\">l-1789190975273</code></div>\n      </div>\n      <div style=\"text-align: center; margin-top: 28px; padding-top: 16px; border-top: 1px solid #272B38;\">\n        <a href=\"https://metals-remember-location-yea.trycloudflare.com/admin/index.html#section-leads\" class=\"cta-btn\" target=\"_blank\">Open Inquiries in Admin Panel &rarr;</a>\n      </div>\n    </div>\n    <div class=\"footer\">\n      🔒 Confidential Lead Alert &middot; Nairi Ventures Management Dashboard<br>\n      This notification is sent strictly to designated administrative inboxes.\n    </div>\n  </div>\n</body>\n</html>"
+    },
     {
       "id": "email-log-1789097373632",
       "timestamp": "2026-09-11T03:29:33.632Z",
