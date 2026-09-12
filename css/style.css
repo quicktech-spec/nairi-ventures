@@ -36,9 +36,9 @@
   --color-border-subtle: rgba(186, 230, 253, 0.45);
   --color-border-hover: #0284C7;
 
-  --font-serif: 'Fraunces', 'Playfair Display', Georgia, serif;
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, monospace;
+  --font-serif: 'Outfit', sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
   --max-width: 1200px;
   --spacing-section: clamp(80px, 10vw, 140px);
