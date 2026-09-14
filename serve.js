@@ -54,6 +54,60 @@ function resolveTargetPages(pageFile, sectionKey) {
   return ['index.html', 'clone-preview.html'];
 }
 
+// Accurately replaces content inside an element tagged with data-cms-key, properly handling nested tags
+function replaceTagContentByKey(srcHtml, sectionKey, newContent, isDeleted) {
+  const keyAttr = `data-cms-key="${sectionKey}"`;
+  const keyAttrAlt = `data-cms-key='${sectionKey}'`;
+  let attrIdx = srcHtml.indexOf(keyAttr);
+  if (attrIdx === -1) attrIdx = srcHtml.indexOf(keyAttrAlt);
+  if (attrIdx === -1) return srcHtml;
+
+  const openTagStart = srcHtml.lastIndexOf('<', attrIdx);
+  if (openTagStart === -1) return srcHtml;
+
+  const openTagEnd = srcHtml.indexOf('>', attrIdx);
+  if (openTagEnd === -1) return srcHtml;
+
+  const tagMatch = srcHtml.slice(openTagStart + 1, openTagEnd).match(/^([a-zA-Z0-9]+)/);
+  if (!tagMatch) return srcHtml;
+  const tagName = tagMatch[1].toLowerCase();
+
+  let searchIdx = openTagEnd + 1;
+  let depth = 1;
+
+  while (depth > 0 && searchIdx < srcHtml.length) {
+    const nextOpenRegex = new RegExp(`<${tagName}\\b[^>]*>`, 'gi');
+    const nextCloseRegex = new RegExp(`</${tagName}\\b[^>]*>`, 'gi');
+    nextOpenRegex.lastIndex = searchIdx;
+    nextCloseRegex.lastIndex = searchIdx;
+
+    const mOpen = nextOpenRegex.exec(srcHtml);
+    const mClose = nextCloseRegex.exec(srcHtml);
+
+    const nextOpen = mOpen ? mOpen.index : -1;
+    const nextClose = mClose ? mClose.index : -1;
+
+    if (nextClose === -1) break;
+
+    if (nextOpen !== -1 && nextOpen < nextClose) {
+      depth++;
+      searchIdx = nextOpen + mOpen[0].length;
+    } else {
+      depth--;
+      if (depth === 0) {
+        const closeTagStart = nextClose;
+        const prefix = srcHtml.slice(0, openTagEnd + 1);
+        const suffix = srcHtml.slice(closeTagStart);
+        const replacement = isDeleted ? '' : newContent;
+        return prefix + replacement + suffix;
+      }
+      searchIdx = nextClose + mClose[0].length;
+    }
+  }
+
+  return srcHtml;
+}
+
 // Physically update HTML file on disk so changes become permanent
 function updateHtmlFileContent(pageFile, sectionKey, newContent, isDeleted) {
   try {
@@ -63,22 +117,18 @@ function updateHtmlFileContent(pageFile, sectionKey, newContent, isDeleted) {
       if (!fs.existsSync(htmlPath)) return;
       let html = fs.readFileSync(htmlPath, 'utf8');
 
-      // Regex to match element with data-cms-key="sectionKey"
-      const regex = new RegExp(`(<[^>]+data-cms-key=["']${sectionKey}["'][^>]*>)([\\s\\S]*?)(<\\/[a-zA-Z0-9]+>)`, 'i');
-      if (regex.test(html)) {
-        if (isDeleted) {
-          html = html.replace(regex, `$1$3`);
-        } else {
-          html = html.replace(regex, `$1${newContent}$3`);
-        }
-        fs.writeFileSync(htmlPath, html, 'utf8');
+      const updatedHtml = replaceTagContentByKey(html, sectionKey, newContent, isDeleted);
+      if (updatedHtml !== html) {
+        fs.writeFileSync(htmlPath, updatedHtml, 'utf8');
         console.log(`[FILE SYNC] Updated ${sectionKey} directly in ${p}`);
       }
 
       if (sectionKey === 'home.top_video.url') {
-        html = html.replace(/(id=["']top-video-player-box["'][^>]*data-video-url=["'])[^"']*(")/i, `$1${newContent}$2`);
-        fs.writeFileSync(htmlPath, html, 'utf8');
-        console.log(`[VIDEO SYNC] Updated top video URL attribute directly in ${p}`);
+        const topVidHtml = html.replace(/(id=["']top-video-player-box["'][^>]*data-video-url=["'])[^"']*(")/i, `$1${newContent}$2`);
+        if (topVidHtml !== html) {
+          fs.writeFileSync(htmlPath, topVidHtml, 'utf8');
+          console.log(`[VIDEO SYNC] Updated top video URL attribute directly in ${p}`);
+        }
       }
     });
   } catch (err) {

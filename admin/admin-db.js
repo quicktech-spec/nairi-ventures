@@ -916,15 +916,10 @@ SEED_DATA.videos = SEED_DATA.videos || [
   }
 ];
 
-const DB_SCHEMA_VERSION = 'v6_landing_page_20260913';
+const DB_SCHEMA_VERSION = 'v8_universal_sync_20260914';
 try {
   if (typeof localStorage !== 'undefined') {
-    if (localStorage.getItem('nairi_admin_db_version') !== DB_SCHEMA_VERSION) {
-      localStorage.removeItem('nairi_db_page_content');
-      localStorage.removeItem('nairi_db_images');
-      localStorage.removeItem('nairi_db_branding');
-      localStorage.setItem('nairi_admin_db_version', DB_SCHEMA_VERSION);
-    }
+    localStorage.setItem('nairi_admin_db_version', DB_SCHEMA_VERSION);
   }
 } catch (e) {}
 
@@ -1086,8 +1081,18 @@ window.NairiDB = {
           loadedFromLocal = true;
         }
       }
-    } catch (e) {
-      // Offline fallback
+    } catch (e) {}
+    if (!loadedFromLocal) {
+      try {
+        const staticResp = await fetch('../data/cms-data.json');
+        if (staticResp.ok) {
+          const sData = await staticResp.json();
+          if (sData && sData.page_content && sData.page_content.length) {
+            setStore('page_content', sData.page_content);
+            loadedFromLocal = true;
+          }
+        }
+      } catch (e) {}
     }
     if (!loadedFromLocal) {
       const remote = await fetchFromSupabase('page_content');
@@ -1160,6 +1165,18 @@ window.NairiDB = {
         }
       }
     } catch (e) {}
+    if (!loadedFromLocal) {
+      try {
+        const staticResp = await fetch('../data/cms-data.json');
+        if (staticResp.ok) {
+          const sData = await staticResp.json();
+          if (sData && sData.images && sData.images.length) {
+            setStore('images', sData.images);
+            loadedFromLocal = true;
+          }
+        }
+      } catch (e) {}
+    }
     if (!loadedFromLocal) {
       const remote = await fetchFromSupabase('images');
       if (remote && remote.length) {
@@ -1248,6 +1265,18 @@ window.NairiDB = {
         }
       }
     } catch (e) {}
+    if (!loadedFromLocal) {
+      try {
+        const staticResp = await fetch('../data/cms-data.json');
+        if (staticResp.ok) {
+          const sData = await staticResp.json();
+          if (sData && sData.branding && typeof sData.branding === 'object') {
+            setStore('branding', sData.branding);
+            loadedFromLocal = true;
+          }
+        }
+      } catch (e) {}
+    }
     if (!loadedFromLocal) {
       const remote = await fetchFromSupabase('branding');
       if (remote && remote.length) {
