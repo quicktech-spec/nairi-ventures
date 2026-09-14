@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="teamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F5EF"/>
+      <stop offset="100%" stop-color="#ECE7D9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="#F7F5EF"/>
+  <rect width="800" height="600" fill="url(#teamGrad)"/>
+
+  <!-- Studio Wall Architectural Line Art -->
+  <g stroke="#171512" stroke-width="0.8" stroke-opacity="0.12">
+    <line x1="40" y1="80" x2="760" y2="80"/>
+    <line x1="40" y1="200" x2="760" y2="200"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+  </g>
+
+  <!-- Central Studio Collaborative Table -->
+  <polygon points="140,420 660,420 740,540 60,540" fill="#E2DDD0" stroke="#171512" stroke-width="1.5"/>
+
+  <!-- Venture Building Archetypes (Silhouette & Editorial Figures) -->
+  <!-- Figure 1: Technical Systems Architect -->
+  <g transform="translate(240, 240)">
+    <circle cx="40" cy="40" r="28" fill="#24316B"/>
+    <path d="M 0 120 C 0 80, 20 70, 40 70 C 60 70, 80 80, 80 120 Z" fill="#24316B"/>
+  </g>
+
+  <!-- Figure 2: Studio Lead / Venture Partner -->
+  <g transform="translate(360, 220)">
+    <circle cx="40" cy="40" r="32" fill="#171512"/>
+    <path d="M -5 140 C -5 90, 15 80, 40 80 C 65 80, 85 90, 85 140 Z" fill="#171512"/>
+    <circle cx="40" cy="40" r="32" fill="none" stroke="#E4A63A" stroke-width="2"/>
+  </g>
+
+  <!-- Figure 3: Manufacturing & Operations Specialist -->
+  <g transform="translate(480, 240)">
+    <circle cx="40" cy="40" r="28" fill="#1E8A7A"/>
+    <path d="M 0 120 C 0 80, 20 70, 40 70 C 60 70, 80 80, 80 120 Z" fill="#1E8A7A"/>
+  </g>
+
+  <!-- Documents & Models on the Table -->
+  <!-- Hardware Blueprint -->
+  <g transform="translate(180, 440)">
+    <polygon points="0,20 120,0 160,50 40,70" fill="#FFFFFF" stroke="#171512" stroke-width="1"/>
+    <line x1="20" y1="25" x2="130" y2="10" stroke="#1E8A7A" stroke-width="1.5"/>
+    <circle cx="70" cy="35" r="12" fill="none" stroke="#E4A63A" stroke-width="1.5"/>
+  </g>
+
+  <!-- Computational Tablet -->
+  <g transform="translate(460, 450)">
+    <polygon points="0,30 110,0 150,40 40,70" fill="#171512" stroke="#171512" stroke-width="1"/>
+    <polygon points="10,32 100,8 135,38 45,62" fill="#24316B"/>
+    <line x1="25" y1="36" x2="90" y2="18" stroke="#F7F5EF" stroke-width="1.2"/>
+  </g>
+
+  <!-- Studio Wordmark on Slate -->
+  <text x="400" y="140" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="22" font-style="italic" fill="#171512">Nairi Ventures — Studio Operators &amp; Founders</text>
+  <text x="400" y="580" text-anchor="middle" font-family="'General Sans', sans-serif" font-size="12" fill="#797368">Multi-Disciplinary Team Spanning Advanced Manufacturing &amp; Artificial Intelligence</text>
+</svg>

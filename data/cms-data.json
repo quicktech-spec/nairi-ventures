@@ -1,0 +1,1086 @@
+{
+  "page_content": [
+    {
+      "id": "pc-hero_slogan",
+      "page": "Home",
+      "part_name": "Hero Slogan Headline",
+      "section_key": "hero.slogan",
+      "section_group": "Hero Section",
+      "content": "<span class=\"block overflow-hidden pb-1\"><span class=\"block\" style=\"transform: none;\">You Direct the <span class=\"text-sky-600\">Vision.</span></span></span><span class=\"block overflow-hidden pb-1\"><span class=\"block\" style=\"transform: none;\">We Execute the <span class=\"text-sky-600\">Engine.</span></span></span>",
+      "is_deleted": false,
+      "updated_at": "2026-09-14T04:08:32.968Z"
+    },
+    {
+      "id": "pc-hero_subtext",
+      "page": "Home",
+      "part_name": "Hero Subtext Description",
+      "section_key": "hero.subtext",
+      "section_group": "Hero Section",
+      "content": "From AI personalized video campaigns mapped to your customer segments, to full stack finance, capital advisory and end to end operations, one integrated execution engine for India's most ambitious founders.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-hero_cta_primary",
+      "page": "Home",
+      "part_name": "Hero Primary Button Text",
+      "section_key": "hero.cta_primary",
+      "section_group": "Hero Section",
+      "content": "Request Growth Diagnostic<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right ml-1.5 h-3.5 w-3.5\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg>",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-hero_cta_secondary",
+      "page": "Home",
+      "part_name": "Hero Secondary Button Text",
+      "section_key": "hero.cta_secondary",
+      "section_group": "Hero Section",
+      "content": "Explore the 3 Tiers",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-hero_tier_switcher_desc",
+      "page": "Home",
+      "part_name": "Hero Modular Tier Switcher Subtext",
+      "section_key": "hero.tier_switcher_desc",
+      "section_group": "Hero Section",
+      "content": "AI generated video ads and creatives mapped to your customer clusters: websites, social profiles and ad ops included.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-hero_pill_roas_val",
+      "page": "Home",
+      "part_name": "Hero Floating Pill 1 (Value)",
+      "section_key": "hero.pill_roas_val",
+      "section_group": "Hero Section",
+      "content": "4.2x ROAS",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-hero_pill_roas_label",
+      "page": "Home",
+      "part_name": "Hero Floating Pill 1 (Label)",
+      "section_key": "hero.pill_roas_label",
+      "section_group": "Hero Section",
+      "content": "Segment mapped AI creatives",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-hero_pill_pod_val",
+      "page": "Home",
+      "part_name": "Hero Floating Pill 2 (Value)",
+      "section_key": "hero.pill_pod_val",
+      "section_group": "Hero Section",
+      "content": "14 Day Pod",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-hero_pill_pod_label",
+      "page": "Home",
+      "part_name": "Hero Floating Pill 2 (Label)",
+      "section_key": "hero.pill_pod_label",
+      "section_group": "Hero Section",
+      "content": "Full execution team deployed",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-hero_metric_0_val",
+      "page": "Home",
+      "part_name": "Hero Metric 1 Value",
+      "section_key": "hero.metric_0_val",
+      "section_group": "Hero Section",
+      "content": "₹120Cr+",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-hero_metric_0_label",
+      "page": "Home",
+      "part_name": "Hero Metric 1 Label",
+      "section_key": "hero.metric_0_label",
+      "section_group": "Hero Section",
+      "content": "Partner revenue managed",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-hero_metric_1_val",
+      "page": "Home",
+      "part_name": "Hero Metric 2 Value",
+      "section_key": "hero.metric_1_val",
+      "section_group": "Hero Section",
+      "content": "4.2x",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-hero_metric_1_label",
+      "page": "Home",
+      "part_name": "Hero Metric 2 Label",
+      "section_key": "hero.metric_1_label",
+      "section_group": "Hero Section",
+      "content": "Average campaign ROAS",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-hero_metric_2_val",
+      "page": "Home",
+      "part_name": "Hero Metric 3 Value",
+      "section_key": "hero.metric_2_val",
+      "section_group": "Hero Section",
+      "content": "14 days",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-hero_metric_2_label",
+      "page": "Home",
+      "part_name": "Hero Metric 3 Label",
+      "section_key": "hero.metric_2_label",
+      "section_group": "Hero Section",
+      "content": "Pod deployment time",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-bottlenecks_heading",
+      "page": "Home",
+      "part_name": "Bottlenecks Main Heading",
+      "section_key": "bottlenecks.heading",
+      "section_group": "Founder Bottlenecks",
+      "content": "Three bottlenecks quietly tax every Indian founder's ambition.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-bottlenecks_subheading",
+      "page": "Home",
+      "part_name": "Bottlenecks Subheading",
+      "section_key": "bottlenecks.subheading",
+      "section_group": "Founder Bottlenecks",
+      "content": "We have sat across the table from hundreds of founders. The story is almost always the same, and it is fixable.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-bottlenecks_01_title",
+      "page": "Home",
+      "part_name": "Bottleneck 01 Title",
+      "section_key": "bottlenecks.01.title",
+      "section_group": "Founder Bottlenecks",
+      "content": "Marketing Scatter & Generic Creative Burnout",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-bottlenecks_01_bottleneck",
+      "page": "Home",
+      "part_name": "Bottleneck 01 Challenge",
+      "section_key": "bottlenecks.01.bottleneck",
+      "section_group": "Founder Bottlenecks",
+      "content": "Founders burn ad budgets on blanket creatives that fail to speak directly to differentiated customer segments and buyer personas.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-bottlenecks_01_answer",
+      "page": "Home",
+      "part_name": "Bottleneck 01 Nairee Answer",
+      "section_key": "bottlenecks.01.answer",
+      "section_group": "Founder Bottlenecks",
+      "content": "Nairee builds AI generated personalized video ads and tailor made copy mapped dynamically to discrete customer clusters.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-bottlenecks_02_title",
+      "page": "Home",
+      "part_name": "Bottleneck 02 Title",
+      "section_key": "bottlenecks.02.title",
+      "section_group": "Founder Bottlenecks",
+      "content": "Financial Blindspots & Fragmented Cash Flows",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-bottlenecks_02_bottleneck",
+      "page": "Home",
+      "part_name": "Bottleneck 02 Challenge",
+      "section_key": "bottlenecks.02.bottleneck",
+      "section_group": "Founder Bottlenecks",
+      "content": "High revenue hides poor cash flow timing, messy tax compliance and unprepared books when it is time to raise venture debt or equity.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-bottlenecks_02_answer",
+      "page": "Home",
+      "part_name": "Bottleneck 02 Nairee Answer",
+      "section_key": "bottlenecks.02.answer",
+      "section_group": "Founder Bottlenecks",
+      "content": "Dedicated financial analytics, automated runway modeling, capital raising advisory and complete company registration & tax management.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-bottlenecks_03_title",
+      "page": "Home",
+      "part_name": "Bottleneck 03 Title",
+      "section_key": "bottlenecks.03.title",
+      "section_group": "Founder Bottlenecks",
+      "content": "The Execution Trap: Founder Playing 10 Roles",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-bottlenecks_03_bottleneck",
+      "page": "Home",
+      "part_name": "Bottleneck 03 Challenge",
+      "section_key": "bottlenecks.03.bottleneck",
+      "section_group": "Founder Bottlenecks",
+      "content": "The founder is buried in marketing ops, bookkeeping, vendor calls and hiring firefights instead of steering strategic growth.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-bottlenecks_03_answer",
+      "page": "Home",
+      "part_name": "Bottleneck 03 Nairee Answer",
+      "section_key": "bottlenecks.03.answer",
+      "section_group": "Founder Bottlenecks",
+      "content": "Management as a Service: Nairee acts as your dedicated operating arm across marketing, finance, sales and execution.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-tiers_heading",
+      "page": "Home",
+      "part_name": "Tiers Main Heading",
+      "section_key": "tiers.heading",
+      "section_group": "3 Tier Solutions",
+      "content": "Three tiers. One engine. Engage them together, or decouple what you need.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-tiers_decoupling_text",
+      "page": "Home",
+      "part_name": "Tiers Modular Banner Text",
+      "section_key": "tiers.decoupling_text",
+      "section_group": "3 Tier Solutions",
+      "content": "<span class=\"font-semibold text-ink\">Every tier is modular.</span> Engage us for standalone AI marketing, add finance & capital analytics as you scale, or activate the full Management as a Service engine.",
+      "is_deleted": true,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-tier_01_title",
+      "page": "Home",
+      "part_name": "Tier 1 Title",
+      "section_key": "tier.01.title",
+      "section_group": "3 Tier Solutions",
+      "content": "Marketing Strategy & Dynamic Creative Execution",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-tier_01_highlight",
+      "page": "Home",
+      "part_name": "Tier 1 Highlight Banner",
+      "section_key": "tier.01.highlight",
+      "section_group": "3 Tier Solutions",
+      "content": "Creative variants tested 6x faster with automated audience mapping.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-tier_01_cta",
+      "page": "Home",
+      "part_name": "Tier 1 Button CTA",
+      "section_key": "tier.01.cta",
+      "section_group": "3 Tier Solutions",
+      "content": "Start With TIER 01",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-tier_02_title",
+      "page": "Home",
+      "part_name": "Tier 2 Title",
+      "section_key": "tier.02.title",
+      "section_group": "3 Tier Solutions",
+      "content": "Finance, Accounting & Capital Advisory",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-tier_02_highlight",
+      "page": "Home",
+      "part_name": "Tier 2 Highlight Banner",
+      "section_key": "tier.02.highlight",
+      "section_group": "3 Tier Solutions",
+      "content": "Clean books and actionable metrics that institutional investors respect.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-tier_02_cta",
+      "page": "Home",
+      "part_name": "Tier 2 Button CTA",
+      "section_key": "tier.02.cta",
+      "section_group": "3 Tier Solutions",
+      "content": "Start With TIER 02",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-tier_03_title",
+      "page": "Home",
+      "part_name": "Tier 3 Title",
+      "section_key": "tier.03.title",
+      "section_group": "3 Tier Solutions",
+      "content": "Management as a Service (MaaS)",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-tier_03_highlight",
+      "page": "Home",
+      "part_name": "Tier 3 Highlight Banner",
+      "section_key": "tier.03.highlight",
+      "section_group": "3 Tier Solutions",
+      "content": "Zero operational friction: focus 100% on high level strategic direction.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-tier_03_cta",
+      "page": "Home",
+      "part_name": "Tier 3 Button CTA",
+      "section_key": "tier.03.cta",
+      "section_group": "3 Tier Solutions",
+      "content": "Start With TIER 03",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-calc_heading",
+      "page": "Home",
+      "part_name": "Calculator Main Heading",
+      "section_key": "calc.heading",
+      "section_group": "Growth Calculator",
+      "content": "Configure your execution stack.",
+      "is_deleted": true,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-calc_desc",
+      "page": "Home",
+      "part_name": "Calculator Description",
+      "section_key": "calc.desc",
+      "section_group": "Growth Calculator",
+      "content": "Toggle the tiers you need and see how fast a Nairee pod deploys, and what you save against building the same capability in house. Combine all three for a bundle advantage.",
+      "is_deleted": true,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-calc_stat_0_label",
+      "page": "Home",
+      "part_name": "Calculator Metric 1 Label",
+      "section_key": "calc.stat_0_label",
+      "section_group": "Growth Calculator",
+      "content": "Pod deployment window",
+      "is_deleted": true,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-calc_stat_1_label",
+      "page": "Home",
+      "part_name": "Calculator Metric 2 Label",
+      "section_key": "calc.stat_1_label",
+      "section_group": "Growth Calculator",
+      "content": "In house roles replaced",
+      "is_deleted": true,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-calc_stat_2_label",
+      "page": "Home",
+      "part_name": "Calculator Metric 3 Label",
+      "section_key": "calc.stat_2_label",
+      "section_group": "Growth Calculator",
+      "content": "Estimated savings vs in house",
+      "is_deleted": true,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-team_heading",
+      "page": "Home",
+      "part_name": "Team Section Heading",
+      "section_key": "team.heading",
+      "section_group": "Leadership Team",
+      "content": "Operators, strategists and builders, not consultants who vanish after a deck.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-team_subheading",
+      "page": "Home",
+      "part_name": "Team Section Subheading",
+      "section_key": "team.subheading",
+      "section_group": "Leadership Team",
+      "content": "Authentic Indian business operators, financial strategists and AI marketing veterans dedicated to scaling partner enterprises.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-team_0_name",
+      "page": "Home",
+      "part_name": "Team Member 1 Name",
+      "section_key": "team.0.name",
+      "section_group": "Leadership Team",
+      "content": "Ananya Sharma",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-team_0_role",
+      "page": "Home",
+      "part_name": "Team Member 1 Role",
+      "section_key": "team.0.role",
+      "section_group": "Leadership Team",
+      "content": "Head of AI Marketing & Video Intelligence",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-team_0_bio",
+      "page": "Home",
+      "part_name": "Team Member 1 Bio",
+      "section_key": "team.0.bio",
+      "section_group": "Leadership Team",
+      "content": "Ex growth lead. Specializes in AI synthesized video ads and dynamic customer segmentation engines.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-team_1_name",
+      "page": "Home",
+      "part_name": "Team Member 2 Name",
+      "section_key": "team.1.name",
+      "section_group": "Leadership Team",
+      "content": "Vikramaditya Roy",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-team_1_role",
+      "page": "Home",
+      "part_name": "Team Member 2 Role",
+      "section_key": "team.1.role",
+      "section_group": "Leadership Team",
+      "content": "Partner · Financial Analytics & Capital Strategy",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-team_1_bio",
+      "page": "Home",
+      "part_name": "Team Member 2 Bio",
+      "section_key": "team.1.bio",
+      "section_group": "Leadership Team",
+      "content": "Chartered Accountant & VC advisor. Manages cash flow diagnostics, tax advisory and fundraising pipelines.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-team_2_name",
+      "page": "Home",
+      "part_name": "Team Member 3 Name",
+      "section_key": "team.2.name",
+      "section_group": "Leadership Team",
+      "content": "Rohan Deshmukh",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-team_2_role",
+      "page": "Home",
+      "part_name": "Team Member 3 Role",
+      "section_key": "team.2.role",
+      "section_group": "Leadership Team",
+      "content": "VP · Management as a Service (MaaS)",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-team_2_bio",
+      "page": "Home",
+      "part_name": "Team Member 3 Bio",
+      "section_key": "team.2.bio",
+      "section_group": "Leadership Team",
+      "content": "Operations veteran who builds dedicated execution pods, letting founders focus purely on CEO level steering.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-team_3_name",
+      "page": "Home",
+      "part_name": "Team Member 4 Name",
+      "section_key": "team.3.name",
+      "section_group": "Leadership Team",
+      "content": "Karthik Subramanian",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-team_3_role",
+      "page": "Home",
+      "part_name": "Team Member 4 Role",
+      "section_key": "team.3.role",
+      "section_group": "Leadership Team",
+      "content": "Principal Systems & Web Architect",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-team_3_bio",
+      "page": "Home",
+      "part_name": "Team Member 4 Bio",
+      "section_key": "team.3.bio",
+      "section_group": "Leadership Team",
+      "content": "Designs high converting digital storefronts, modern web apps and automated omnichannel ad pipelines.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-lead_heading",
+      "page": "Home",
+      "part_name": "Lead Form Main Heading",
+      "section_key": "lead.heading",
+      "section_group": "Lead Intake Form",
+      "content": "Tell us where it hurts. We will bring the operating plan.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-lead_subheading",
+      "page": "Home",
+      "part_name": "Lead Form Subheading",
+      "section_key": "lead.subheading",
+      "section_group": "Lead Intake Form",
+      "content": "Share a few details about your venture and the bottleneck slowing you down. Our strategy desk reviews every request personally and responds with a growth diagnostic and a tier recommendation, usually within one business day.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-lead_point_0",
+      "page": "Home",
+      "part_name": "Lead Commitment 1",
+      "section_key": "lead.point_0",
+      "section_group": "Lead Intake Form",
+      "content": "No retainers discussed before a real diagnosis.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-lead_point_1",
+      "page": "Home",
+      "part_name": "Lead Commitment 2",
+      "section_key": "lead.point_1",
+      "section_group": "Lead Intake Form",
+      "content": "Decoupled tiers: start with only what you need.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-lead_point_2",
+      "page": "Home",
+      "part_name": "Lead Commitment 3",
+      "section_key": "lead.point_2",
+      "section_group": "Lead Intake Form",
+      "content": "Your details stay between you and our partners.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-footer_statement",
+      "page": "Home",
+      "part_name": "Footer Brand Statement",
+      "section_key": "footer.statement",
+      "section_group": "Footer & Company Info",
+      "content": "Building India's next <span class=\"text-sky-400\">market leaders.</span>",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-footer_bio",
+      "page": "Home",
+      "part_name": "Footer Studio Bio",
+      "section_key": "footer.bio",
+      "section_group": "Footer & Company Info",
+      "content": "Marketing, finance and full stack management execution for visionary Indian enterprises.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-footer_email",
+      "page": "Home",
+      "part_name": "Footer Contact Email",
+      "section_key": "footer.email",
+      "section_group": "Footer & Company Info",
+      "content": "hello@naireeventures.in",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-footer_location",
+      "page": "Home",
+      "part_name": "Footer Studio Location",
+      "section_key": "footer.location",
+      "section_group": "Footer & Company Info",
+      "content": "Bengaluru · Mumbai, India",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "pc-footer_copyright",
+      "page": "Home",
+      "part_name": "Footer Copyright",
+      "section_key": "footer.copyright",
+      "section_group": "Footer & Company Info",
+      "content": "© 2026 Nairee Ventures. All rights reserved.",
+      "is_deleted": false,
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    }
+  ],
+  "ventures": [],
+  "testimonials": [
+    {
+      "id": "test-swipetouch",
+      "page": "index.html",
+      "part_name": "SwipeTouch Growth Quote",
+      "quote": "Nairee eliminated our creative fatigue entirely. Within 72 hours, we had 16 hook variations in flight on TikTok and Meta, resulting in our lowest blended CPA to date and a 3.4x hook rate jump.",
+      "author_name": "Elena Rostova",
+      "author_role": "Head of Growth, SwipeTouch",
+      "is_approved": true,
+      "is_deleted": false,
+      "created_at": "2026-09-05T04:30:48.336Z"
+    },
+    {
+      "id": "test-swiftpay",
+      "page": "index.html",
+      "part_name": "SwiftPay Fintech Funnel Quote",
+      "quote": "Other agencies wanted $12k and 6 weeks just to plan our fintech onboarding system. Nairee scripted, designed, and deployed our entire conversion pathway in under a week.",
+      "author_name": "Devon Vance",
+      "author_role": "VP Marketing, SwiftPay",
+      "is_approved": true,
+      "is_deleted": false,
+      "created_at": "2026-09-06T04:30:48.336Z"
+    },
+    {
+      "id": "test-nexis",
+      "page": "index.html",
+      "part_name": "Nexis AI Enterprise Campaign Quote",
+      "quote": "Their ability to take complex AI software and distill it into 30-second pattern-interrupting visual ads transformed our inbound sales calendar with 40+ qualified pilot requests in month one.",
+      "author_name": "Karan Mehta",
+      "author_role": "Founding Engineer & Product Lead, Nexis AI",
+      "is_approved": true,
+      "is_deleted": false,
+      "created_at": "2026-09-07T04:30:48.336Z"
+    },
+    {
+      "id": "test-zapit",
+      "page": "index.html",
+      "part_name": "Zapit AI Performance Social Quote",
+      "quote": "Direct founder communication and zero agency fluff. The website rebuild combined with direct-response video ads doubled our weekly booked demo volume and cut CAC by 41%.",
+      "author_name": "Sarah Lindqvist",
+      "author_role": "CMO, Zapit AI",
+      "is_approved": true,
+      "is_deleted": false,
+      "created_at": "2026-09-08T04:30:48.336Z"
+    },
+    {
+      "id": "test-tradepro",
+      "page": "index.html",
+      "part_name": "TradePro High-Velocity Creative Quote",
+      "quote": "When a campaign underperforms, Nairee has new hook angles and revised landing copy live before competitors even schedule their internal sync. That 48h speed is invaluable.",
+      "author_name": "Liam Chen",
+      "author_role": "Managing Director, TradePro Analytics",
+      "is_approved": true,
+      "is_deleted": false,
+      "created_at": "2026-09-09T04:30:48.336Z"
+    }
+  ],
+  "images": [
+    {
+      "id": "img-hero_image",
+      "page": "Home",
+      "element_key": "hero.image",
+      "part_name": "Hero Executive Collaboration Photo",
+      "section_group": "Hero Section",
+      "url": "https://images.unsplash.com/photo-1781246212288-7fa538344718?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBidXNpbmVzcyUyMHRlYW0lMjBtZWV0aW5nJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3ODkxODIxNDN8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Indian strategy collective collaborating in an executive session",
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "img-team_photo_0",
+      "page": "Home",
+      "element_key": "team.photo_0",
+      "part_name": "Team Photo: Ananya Sharma",
+      "section_group": "Leadership Team",
+      "url": "https://images.unsplash.com/photo-1637589267610-6c66fc2a086b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjB3b21hbiUyMHByb2Zlc3Npb25hbCUyMGNvcnBvcmF0ZXxlbnwwfHx8fDE3ODkxODIxNTF8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Ananya Sharma · Head of AI Marketing & Video Intelligence",
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "img-team_photo_1",
+      "page": "Home",
+      "element_key": "team.photo_1",
+      "part_name": "Team Photo: Vikramaditya Roy",
+      "section_group": "Leadership Team",
+      "url": "https://images.unsplash.com/photo-1787724779241-cb5c250ed70b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBidXNpbmVzc21hbiUyMHBvcnRyYWl0JTIwc21pbGluZ3xlbnwwfHx8fDE3ODkxODIxNTF8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Vikramaditya Roy · Partner, Financial Analytics & Capital Strategy",
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "img-team_photo_2",
+      "page": "Home",
+      "element_key": "team.photo_2",
+      "part_name": "Team Photo: Rohan Deshmukh",
+      "section_group": "Leadership Team",
+      "url": "https://images.unsplash.com/photo-1589386417686-0d34b5903d23?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBidXNpbmVzc21hbiUyMHBvcnRyYWl0JTIwc21pbGluZ3xlbnwwfHx8fDE3ODkxODIxNTF8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Rohan Deshmukh · VP, Management as a Service (MaaS)",
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "img-team_photo_3",
+      "page": "Home",
+      "element_key": "team.photo_3",
+      "part_name": "Team Photo: Karthik Subramanian",
+      "section_group": "Leadership Team",
+      "url": "https://images.unsplash.com/photo-1737574821698-862e77f044c1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHw0fHxpbmRpYW4lMjBidXNpbmVzc21hbiUyMHBvcnRyYWl0JTIwc21pbGluZ3xlbnwwfHx8fDE3ODkxODIxNTF8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Karthik Subramanian · Principal Systems & Web Architect",
+      "updated_at": "2026-09-13T04:07:15.913Z"
+    }
+  ],
+  "branding": {
+    "logo_text": "Nairee Ventures",
+    "logo_image": "images/nairee-logo-navy-sky.png",
+    "font_heading": "Fraunces",
+    "font_subheading": "General Sans",
+    "font_body": "General Sans",
+    "font_mono": "JetBrains Mono",
+    "accent_color": "#0284C7"
+  },
+  "videos": [
+    {
+      "id": "vid-1",
+      "title": "SWIPETOUCH Hardware · From CAD to High-Precision Assembly Line",
+      "category": "Hardware & Manufacturing",
+      "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail_url": "images/problem.jpg",
+      "description": "A behind-the-scenes walkthrough of precision tooling and tactile sensor calibration inside our production facility."
+    },
+    {
+      "id": "vid-2",
+      "title": "NEXIS AI Swarm · Autonomous Multi-Agent Systems in Production",
+      "category": "AI Platform",
+      "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail_url": "images/thesis.jpg",
+      "description": "How our autonomous AI swarm framework handles live telemetry, distributed tasks, and enterprise workflows."
+    },
+    {
+      "id": "vid-3",
+      "title": "Cross-Border Operations · Building Across America, India & Dubai",
+      "category": "Studio Thesis",
+      "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail_url": "images/founder.jpg",
+      "description": "Why establishing statutory multi-jurisdiction entities on day zero creates an insurmountable unfair advantage for our ventures."
+    }
+  ],
+  "leads": [
+    {
+      "name": "Rohan Mehta (Test Founder)",
+      "email": "rohan.mehta.test@gmail.com",
+      "company": "Mehta Logistics Tech",
+      "phone": "+91 98201 12345",
+      "tier": "All Three Tiers (MaaS Bundle)",
+      "stage": "₹2Cr to ₹10Cr / year",
+      "message": "[Company: Mehta Logistics Tech] [Phone: +91 98201 12345] [Tier: MaaS] We need full stack execution pod for our next expansion sprint.",
+      "source": "Venture Marketing AI Landing Page",
+      "id": "l-1789272547887",
+      "created_at": "2026-09-13T04:09:07.887Z",
+      "status": "New",
+      "venture_interest": "All Three Tiers (MaaS Bundle)"
+    },
+    {
+      "name": "Clone Verification Agent",
+      "company": "Alpha Growth Labs",
+      "email": "verification@alphagrowth.in",
+      "phone": "+91 99887 76655",
+      "tier": "Tier 3: Management as a Service",
+      "stage": "₹2Cr to ₹10Cr / year",
+      "message": "Testing lead intake dispatch on clone site.",
+      "source": "Automated Test",
+      "id": "l-1789198126562",
+      "created_at": "2026-09-12T07:28:46.562Z",
+      "status": "New",
+      "venture_interest": "Tier 3: Management as a Service"
+    },
+    {
+      "fullName": "Aarav Test Kapoor",
+      "company": "Kapoor Growth Labs",
+      "email": "test@example.com",
+      "phone": "+91 9876543210",
+      "tier": "Tier 3: Management as a Service",
+      "stage": "₹50L to ₹2Cr / year",
+      "bottleneck": "Testing cloned landing page lead intake pipeline",
+      "id": "l-1789190975273",
+      "created_at": "2026-09-12T05:29:35.273Z",
+      "status": "New",
+      "name": "Aarav Test Kapoor",
+      "venture_interest": "Tier 3: Management as a Service"
+    },
+    {
+      "id": "bidirectional-test-1789097373621",
+      "name": "Julian Sterling (Sterling Capital & Media)",
+      "email": "julian@sterlingmedia.vc",
+      "venture_interest": "$10k+ (Turnkey Creative Sprint)",
+      "message": "[Website/URL: https://sterlingmedia.vc]\nVerifying that website contact form submission appears instantly in Admin Panel, saves to Supabase, and dispatches to 2 Gmails.",
+      "created_at": "2026-09-11T03:29:33.621+00:00",
+      "status": "Closed"
+    },
+    {
+      "id": "lead-audit-1789096863699",
+      "name": "Harrison Sterling (Apex Robotics)",
+      "email": "harrison.sterling@apexrobotics.tech",
+      "venture_interest": "$5k-$10k (Growth Sprint)",
+      "message": "[Website/URL: https://apexrobotics.tech]\nRequesting 3-minute video teardown of our product demo page and landing funnel.",
+      "created_at": "2026-09-11T03:21:03.699Z",
+      "status": "New"
+    },
+    {
+      "id": "lead-verify-1789096433223",
+      "name": "Victoria Vance (Vance Logistics AI)",
+      "email": "victoria@vancelogistics.com",
+      "venture_interest": "$10k+ (Complete Conversion Engine)",
+      "message": "[Website/URL: https://vancelogistics.ai]\nOur CPC on Google Search is $18.50 with a landing page bounce rate of 68%. We need a 3-minute video teardown and a high converting landing page overhaul.",
+      "created_at": "2026-09-11T03:13:53.223Z",
+      "status": "New"
+    },
+    {
+      "id": "lead-devin-1789093196360",
+      "name": "Devin Thorne",
+      "email": "devin@tradepro.com",
+      "venture_interest": "$2k-$5k",
+      "message": "[Website/URL: https://tradepro.com]\nRequesting free 3-minute creative teardown audit and 48-hour video iteration framework.",
+      "status": "New",
+      "created_at": "2026-09-11T02:19:56.356Z"
+    },
+    {
+      "id": "lead-sarah-1789093196359",
+      "name": "Sarah Jenkins",
+      "email": "s.jenkins@zapit.ai",
+      "venture_interest": "$5k-$10k",
+      "message": "[Website/URL: https://zapit.ai]\nOur booked demo volume dropped 30%. Need full funnel reconstruction and sub-3-second website rebuild.",
+      "status": "New",
+      "created_at": "2026-09-11T02:19:55.356Z"
+    },
+    {
+      "id": "lead-marcus-1789093196358",
+      "name": "Marcus Vance",
+      "email": "m.vance@nexis.ai",
+      "venture_interest": "$10k+",
+      "message": "[Website/URL: https://nexis.ai/demo]\nWe need 3D product visual ads and direct LinkedIn video pipelines for our B2B SaaS launch.",
+      "status": "New",
+      "created_at": "2026-09-11T02:19:54.356Z"
+    },
+    {
+      "id": "lead-elena-1789093196357",
+      "name": "Elena Rostova",
+      "email": "elena@swipetouch.co",
+      "venture_interest": "$5k-$10k",
+      "message": "[Website/URL: @swipetouch_official]\nLooking to scale TikTok and Meta video ads. Our current hook rate is fatigue-heavy.",
+      "status": "New",
+      "created_at": "2026-09-11T02:19:53.356Z"
+    },
+    {
+      "id": "lead-alexander-1789093196356",
+      "name": "Alexander Wright",
+      "email": "alex.wright@swiftpay.io",
+      "venture_interest": "$10k+",
+      "message": "[Website/URL: https://swiftpay.io]\nNeed a high converting onboarding web funnel and Meta ad variations within 7 days.",
+      "status": "New",
+      "created_at": "2026-09-11T02:19:52.356Z"
+    }
+  ],
+  "lead_email_settings": {
+    "enabled": true,
+    "gmail_1": "ventures.nairi@gmail.com",
+    "gmail_2": "leads.nairee@gmail.com",
+    "sender_name": "Nairi Ventures Leads",
+    "smtp_user": "",
+    "smtp_pass": "",
+    "last_updated": "2026-09-11T03:21:03.685Z"
+  },
+  "email_alert_logs": [
+    {
+      "id": "email-log-1789361841002",
+      "timestamp": "2026-09-14T04:57:21.002Z",
+      "lead_id": "l-1789361840912",
+      "lead_name": "Global Deployment Verification",
+      "lead_email": "live-verify@nairiventures.com",
+      "recipients": [
+        "ventures.nairi@gmail.com",
+        "leads.nairee@gmail.com"
+      ],
+      "subject": "⚡ New Lead Inflow: Global Deployment Verification [Tier 1: High-Performance Web & Brand Pod] - Nairi Ventures",
+      "status": "DISPATCHED_TO_OUTBOX",
+      "preview": "Testing live public deployment connectivity between Main Website and Admin Panel...",
+      "html": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <style>\n    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #0E1017; margin: 0; padding: 24px; color: #F8FAFC; }\n    .card { max-width: 620px; margin: 0 auto; background: #161922; border-radius: 12px; overflow: hidden; border: 1px solid #272B38; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }\n    .header { background: #0B0D13; padding: 28px 32px; border-bottom: 3px solid #D97706; text-align: left; }\n    .header h1 { margin: 0 0 8px 0; font-size: 20px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.01em; }\n    .header p { margin: 0; font-size: 13px; color: #94A3B8; }\n    .badge { display: inline-block; padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; background: rgba(217,119,6,0.15); color: #F59E0B; border: 1px solid rgba(217,119,6,0.3); margin-top: 12px; }\n    .content { padding: 32px; background: #161922; }\n    .field-row { margin-bottom: 20px; }\n    .field-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #94A3B8; font-weight: 700; margin-bottom: 6px; }\n    .field-val { font-size: 15px; color: #FFFFFF; font-weight: 600; background: #1E222D; padding: 12px 16px; border-radius: 8px; border: 1px solid #2E3342; word-break: break-word; }\n    .field-val a { color: #F59E0B; text-decoration: none; font-weight: 700; }\n    .message-box { font-size: 15px; line-height: 1.6; color: #FFFFFF; background: #1D2433; border: 1px solid #334155; padding: 16px; border-radius: 8px; white-space: pre-wrap; font-weight: 400; }\n    .footer { padding: 20px 32px; background: #0B0D13; border-top: 1px solid #272B38; font-size: 12px; color: #64748B; text-align: center; }\n    .cta-btn { display: inline-block; background: #D97706; color: #FFFFFF !important; text-decoration: none; font-weight: 700; font-size: 14px; padding: 12px 24px; border-radius: 6px; margin-top: 12px; box-shadow: 0 4px 14px rgba(217,119,6,0.4); }\n  </style>\n</head>\n<body>\n  <div class=\"card\">\n    <div class=\"header\">\n      <h1>🚀 Nairi Ventures - New Inquiry Alert</h1>\n      <p>A new potential venture client just submitted details on the Nairi Ventures portal.</p>\n      <div class=\"badge\">Dispatched to 2 Designated Inboxes: ventures.nairi@gmail.com & leads.nairee@gmail.com</div>\n    </div>\n    <div class=\"content\">\n      <div class=\"field-row\">\n        <div class=\"field-label\">Client / Inquirer Name</div>\n        <div class=\"field-val\"><strong>Global Deployment Verification</strong></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Email Address</div>\n        <div class=\"field-val\"><a href=\"mailto:live-verify@nairiventures.com\">live-verify@nairiventures.com</a></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Tier / Focus Area</div>\n        <div class=\"field-val\">Tier 1: High-Performance Web & Brand Pod</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Inquiry Message / Details</div>\n        <div class=\"field-box message-box\">Testing live public deployment connectivity between Main Website and Admin Panel.</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Submission Timestamp</div>\n        <div class=\"field-val\">Mon, Sep 14, 2026, 10:27 AM GMT+5:30</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Lead Reference ID</div>\n        <div class=\"field-val\"><code style=\"color: #F59E0B; font-family: monospace;\">l-1789361840912</code></div>\n      </div>\n      <div style=\"text-align: center; margin-top: 28px; padding-top: 16px; border-top: 1px solid #272B38;\">\n        <a href=\"https://married-remaining-publishers-calm.trycloudflare.com/admin/index.html#section-leads\" class=\"cta-btn\" target=\"_blank\">Open Inquiries in Admin Panel &rarr;</a>\n      </div>\n    </div>\n    <div class=\"footer\">\n      🔒 Confidential Lead Alert &middot; Nairi Ventures Management Dashboard<br>\n      This notification is sent strictly to designated administrative inboxes.\n    </div>\n  </div>\n</body>\n</html>"
+    },
+    {
+      "id": "email-log-1789316155873",
+      "timestamp": "2026-09-13T16:15:55.873Z",
+      "lead_id": "bidirectional-test-1789097373621",
+      "lead_name": "Julian Sterling (Sterling Capital & Media)",
+      "lead_email": "julian@sterlingmedia.vc",
+      "recipients": [
+        "ventures.nairi@gmail.com",
+        "leads.nairee@gmail.com"
+      ],
+      "subject": "⚡ New Lead Inflow: Julian Sterling (Sterling Capital & Media) [$10k+ (Turnkey Creative Sprint)] - Nairi Ventures",
+      "status": "DISPATCHED_TO_OUTBOX",
+      "preview": "[Website/URL: https://sterlingmedia.vc]\nVerifying that website contact form subm...",
+      "html": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <style>\n    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #0E1017; margin: 0; padding: 24px; color: #F8FAFC; }\n    .card { max-width: 620px; margin: 0 auto; background: #161922; border-radius: 12px; overflow: hidden; border: 1px solid #272B38; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }\n    .header { background: #0B0D13; padding: 28px 32px; border-bottom: 3px solid #D97706; text-align: left; }\n    .header h1 { margin: 0 0 8px 0; font-size: 20px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.01em; }\n    .header p { margin: 0; font-size: 13px; color: #94A3B8; }\n    .badge { display: inline-block; padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; background: rgba(217,119,6,0.15); color: #F59E0B; border: 1px solid rgba(217,119,6,0.3); margin-top: 12px; }\n    .content { padding: 32px; background: #161922; }\n    .field-row { margin-bottom: 20px; }\n    .field-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #94A3B8; font-weight: 700; margin-bottom: 6px; }\n    .field-val { font-size: 15px; color: #FFFFFF; font-weight: 600; background: #1E222D; padding: 12px 16px; border-radius: 8px; border: 1px solid #2E3342; word-break: break-word; }\n    .field-val a { color: #F59E0B; text-decoration: none; font-weight: 700; }\n    .message-box { font-size: 15px; line-height: 1.6; color: #FFFFFF; background: #1D2433; border: 1px solid #334155; padding: 16px; border-radius: 8px; white-space: pre-wrap; font-weight: 400; }\n    .footer { padding: 20px 32px; background: #0B0D13; border-top: 1px solid #272B38; font-size: 12px; color: #64748B; text-align: center; }\n    .cta-btn { display: inline-block; background: #D97706; color: #FFFFFF !important; text-decoration: none; font-weight: 700; font-size: 14px; padding: 12px 24px; border-radius: 6px; margin-top: 12px; box-shadow: 0 4px 14px rgba(217,119,6,0.4); }\n  </style>\n</head>\n<body>\n  <div class=\"card\">\n    <div class=\"header\">\n      <h1>🚀 Nairi Ventures - New Inquiry Alert</h1>\n      <p>A new potential venture client just submitted details on the Nairi Ventures portal.</p>\n      <div class=\"badge\">Dispatched to 2 Designated Inboxes: ventures.nairi@gmail.com & leads.nairee@gmail.com</div>\n    </div>\n    <div class=\"content\">\n      <div class=\"field-row\">\n        <div class=\"field-label\">Client / Inquirer Name</div>\n        <div class=\"field-val\"><strong>Julian Sterling (Sterling Capital & Media)</strong></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Email Address</div>\n        <div class=\"field-val\"><a href=\"mailto:julian@sterlingmedia.vc\">julian@sterlingmedia.vc</a></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Budget / Venture Interest</div>\n        <div class=\"field-val\">$10k+ (Turnkey Creative Sprint)</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Inquiry Message / Details</div>\n        <div class=\"message-box\">[Website/URL: https://sterlingmedia.vc]\nVerifying that website contact form submission appears instantly in Admin Panel, saves to Supabase, and dispatches to 2 Gmails.</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Submission Timestamp</div>\n        <div class=\"field-val\">Fri, Sep 11, 2026, 08:59 AM GMT+5:30</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Lead Reference ID</div>\n        <div class=\"field-val\"><code style=\"color: #F59E0B; font-family: monospace;\">bidirectional-test-1789097373621</code></div>\n      </div>\n      <div style=\"text-align: center; margin-top: 28px; padding-top: 16px; border-top: 1px solid #272B38;\">\n        <a href=\"https://metals-remember-location-yea.trycloudflare.com/admin/index.html#section-leads\" class=\"cta-btn\" target=\"_blank\">Open Inquiries in Admin Panel &rarr;</a>\n      </div>\n    </div>\n    <div class=\"footer\">\n      🔒 Confidential Lead Alert &middot; Nairi Ventures Management Dashboard<br>\n      This notification is sent strictly to designated administrative inboxes.\n    </div>\n  </div>\n</body>\n</html>"
+    },
+    {
+      "id": "email-log-1789272548003",
+      "timestamp": "2026-09-13T04:09:08.003Z",
+      "lead_id": "l-1789272547887",
+      "lead_name": "Rohan Mehta (Test Founder)",
+      "lead_email": "rohan.mehta.test@gmail.com",
+      "recipients": [
+        "ventures.nairi@gmail.com",
+        "leads.nairee@gmail.com"
+      ],
+      "subject": "⚡ New Lead Inflow: Rohan Mehta (Test Founder) [All Three Tiers (MaaS Bundle)] - Nairi Ventures",
+      "status": "DISPATCHED_TO_OUTBOX",
+      "preview": "[Company: Mehta Logistics Tech] [Phone: +91 98201 12345] [Tier: MaaS] We need fu...",
+      "html": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <style>\n    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #0E1017; margin: 0; padding: 24px; color: #F8FAFC; }\n    .card { max-width: 620px; margin: 0 auto; background: #161922; border-radius: 12px; overflow: hidden; border: 1px solid #272B38; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }\n    .header { background: #0B0D13; padding: 28px 32px; border-bottom: 3px solid #D97706; text-align: left; }\n    .header h1 { margin: 0 0 8px 0; font-size: 20px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.01em; }\n    .header p { margin: 0; font-size: 13px; color: #94A3B8; }\n    .badge { display: inline-block; padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; background: rgba(217,119,6,0.15); color: #F59E0B; border: 1px solid rgba(217,119,6,0.3); margin-top: 12px; }\n    .content { padding: 32px; background: #161922; }\n    .field-row { margin-bottom: 20px; }\n    .field-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #94A3B8; font-weight: 700; margin-bottom: 6px; }\n    .field-val { font-size: 15px; color: #FFFFFF; font-weight: 600; background: #1E222D; padding: 12px 16px; border-radius: 8px; border: 1px solid #2E3342; word-break: break-word; }\n    .field-val a { color: #F59E0B; text-decoration: none; font-weight: 700; }\n    .message-box { font-size: 15px; line-height: 1.6; color: #FFFFFF; background: #1D2433; border: 1px solid #334155; padding: 16px; border-radius: 8px; white-space: pre-wrap; font-weight: 400; }\n    .footer { padding: 20px 32px; background: #0B0D13; border-top: 1px solid #272B38; font-size: 12px; color: #64748B; text-align: center; }\n    .cta-btn { display: inline-block; background: #D97706; color: #FFFFFF !important; text-decoration: none; font-weight: 700; font-size: 14px; padding: 12px 24px; border-radius: 6px; margin-top: 12px; box-shadow: 0 4px 14px rgba(217,119,6,0.4); }\n  </style>\n</head>\n<body>\n  <div class=\"card\">\n    <div class=\"header\">\n      <h1>🚀 Nairi Ventures - New Inquiry Alert</h1>\n      <p>A new potential venture client just submitted details on the Nairi Ventures portal.</p>\n      <div class=\"badge\">Dispatched to 2 Designated Inboxes: ventures.nairi@gmail.com & leads.nairee@gmail.com</div>\n    </div>\n    <div class=\"content\">\n      <div class=\"field-row\">\n        <div class=\"field-label\">Client / Inquirer Name</div>\n        <div class=\"field-val\"><strong>Rohan Mehta (Test Founder)</strong></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Email Address</div>\n        <div class=\"field-val\"><a href=\"mailto:rohan.mehta.test@gmail.com\">rohan.mehta.test@gmail.com</a></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Budget / Venture Interest</div>\n        <div class=\"field-val\">All Three Tiers (MaaS Bundle)</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Inquiry Message / Details</div>\n        <div class=\"message-box\">[Company: Mehta Logistics Tech] [Phone: +91 98201 12345] [Tier: MaaS] We need full stack execution pod for our next expansion sprint.</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Submission Timestamp</div>\n        <div class=\"field-val\">Sun, Sep 13, 2026, 09:39 AM GMT+5:30</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Lead Reference ID</div>\n        <div class=\"field-val\"><code style=\"color: #F59E0B; font-family: monospace;\">l-1789272547887</code></div>\n      </div>\n      <div style=\"text-align: center; margin-top: 28px; padding-top: 16px; border-top: 1px solid #272B38;\">\n        <a href=\"https://metals-remember-location-yea.trycloudflare.com/admin/index.html#section-leads\" class=\"cta-btn\" target=\"_blank\">Open Inquiries in Admin Panel &rarr;</a>\n      </div>\n    </div>\n    <div class=\"footer\">\n      🔒 Confidential Lead Alert &middot; Nairi Ventures Management Dashboard<br>\n      This notification is sent strictly to designated administrative inboxes.\n    </div>\n  </div>\n</body>\n</html>"
+    },
+    {
+      "id": "email-log-1789198126584",
+      "timestamp": "2026-09-12T07:28:46.584Z",
+      "lead_id": "l-1789198126562",
+      "lead_name": "Clone Verification Agent",
+      "lead_email": "verification@alphagrowth.in",
+      "recipients": [
+        "ventures.nairi@gmail.com",
+        "leads.nairee@gmail.com"
+      ],
+      "subject": "⚡ New Lead Inflow: Clone Verification Agent [Tier 3: Management as a Service] · Nairi Ventures",
+      "status": "DISPATCHED_TO_OUTBOX",
+      "preview": "Testing lead intake dispatch on clone site.",
+      "html": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <style>\n    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #0E1017; margin: 0; padding: 24px; color: #F8FAFC; }\n    .card { max-width: 620px; margin: 0 auto; background: #161922; border-radius: 12px; overflow: hidden; border: 1px solid #272B38; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }\n    .header { background: #0B0D13; padding: 28px 32px; border-bottom: 3px solid #D97706; text-align: left; }\n    .header h1 { margin: 0 0 8px 0; font-size: 20px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.01em; }\n    .header p { margin: 0; font-size: 13px; color: #94A3B8; }\n    .badge { display: inline-block; padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; background: rgba(217,119,6,0.15); color: #F59E0B; border: 1px solid rgba(217,119,6,0.3); margin-top: 12px; }\n    .content { padding: 32px; background: #161922; }\n    .field-row { margin-bottom: 20px; }\n    .field-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #94A3B8; font-weight: 700; margin-bottom: 6px; }\n    .field-val { font-size: 15px; color: #FFFFFF; font-weight: 600; background: #1E222D; padding: 12px 16px; border-radius: 8px; border: 1px solid #2E3342; word-break: break-word; }\n    .field-val a { color: #F59E0B; text-decoration: none; font-weight: 700; }\n    .message-box { font-size: 15px; line-height: 1.6; color: #FFFFFF; background: #1D2433; border: 1px solid #334155; padding: 16px; border-radius: 8px; white-space: pre-wrap; font-weight: 400; }\n    .footer { padding: 20px 32px; background: #0B0D13; border-top: 1px solid #272B38; font-size: 12px; color: #64748B; text-align: center; }\n    .cta-btn { display: inline-block; background: #D97706; color: #FFFFFF !important; text-decoration: none; font-weight: 700; font-size: 14px; padding: 12px 24px; border-radius: 6px; margin-top: 12px; box-shadow: 0 4px 14px rgba(217,119,6,0.4); }\n  </style>\n</head>\n<body>\n  <div class=\"card\">\n    <div class=\"header\">\n      <h1>🚀 Nairi Ventures · New Inquiry Alert</h1>\n      <p>A new potential venture client just submitted details on the Nairi Ventures portal.</p>\n      <div class=\"badge\">Dispatched to 2 Designated Inboxes: ventures.nairi@gmail.com & leads.nairee@gmail.com</div>\n    </div>\n    <div class=\"content\">\n      <div class=\"field-row\">\n        <div class=\"field-label\">Client / Inquirer Name</div>\n        <div class=\"field-val\"><strong>Clone Verification Agent</strong></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Email Address</div>\n        <div class=\"field-val\"><a href=\"mailto:verification@alphagrowth.in\">verification@alphagrowth.in</a></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Budget / Venture Interest</div>\n        <div class=\"field-val\">Tier 3: Management as a Service</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Inquiry Message / Details</div>\n        <div class=\"message-box\">Testing lead intake dispatch on clone site.</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Submission Timestamp</div>\n        <div class=\"field-val\">Sat, Sep 12, 2026, 12:58 PM GMT+5:30</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Lead Reference ID</div>\n        <div class=\"field-val\"><code style=\"color: #F59E0B; font-family: monospace;\">l-1789198126562</code></div>\n      </div>\n      <div style=\"text-align: center; margin-top: 28px; padding-top: 16px; border-top: 1px solid #272B38;\">\n        <a href=\"https://metals-remember-location-yea.trycloudflare.com/admin/index.html#section-leads\" class=\"cta-btn\" target=\"_blank\">Open Inquiries in Admin Panel &rarr;</a>\n      </div>\n    </div>\n    <div class=\"footer\">\n      🔒 Confidential Lead Alert &middot; Nairi Ventures Management Dashboard<br>\n      This notification is sent strictly to designated administrative inboxes.\n    </div>\n  </div>\n</body>\n</html>"
+    },
+    {
+      "id": "email-log-1789190975299",
+      "timestamp": "2026-09-12T05:29:35.299Z",
+      "lead_id": "l-1789190975273",
+      "lead_name": "Aarav Test Kapoor",
+      "lead_email": "test@example.com",
+      "recipients": [
+        "ventures.nairi@gmail.com",
+        "leads.nairee@gmail.com"
+      ],
+      "subject": "⚡ New Lead Inflow: Aarav Test Kapoor [Tier 3: Management as a Service] · Nairi Ventures",
+      "status": "DISPATCHED_TO_OUTBOX",
+      "preview": "Testing cloned landing page lead intake pipeline",
+      "html": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <style>\n    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #0E1017; margin: 0; padding: 24px; color: #F8FAFC; }\n    .card { max-width: 620px; margin: 0 auto; background: #161922; border-radius: 12px; overflow: hidden; border: 1px solid #272B38; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }\n    .header { background: #0B0D13; padding: 28px 32px; border-bottom: 3px solid #D97706; text-align: left; }\n    .header h1 { margin: 0 0 8px 0; font-size: 20px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.01em; }\n    .header p { margin: 0; font-size: 13px; color: #94A3B8; }\n    .badge { display: inline-block; padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; background: rgba(217,119,6,0.15); color: #F59E0B; border: 1px solid rgba(217,119,6,0.3); margin-top: 12px; }\n    .content { padding: 32px; background: #161922; }\n    .field-row { margin-bottom: 20px; }\n    .field-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #94A3B8; font-weight: 700; margin-bottom: 6px; }\n    .field-val { font-size: 15px; color: #FFFFFF; font-weight: 600; background: #1E222D; padding: 12px 16px; border-radius: 8px; border: 1px solid #2E3342; word-break: break-word; }\n    .field-val a { color: #F59E0B; text-decoration: none; font-weight: 700; }\n    .message-box { font-size: 15px; line-height: 1.6; color: #FFFFFF; background: #1D2433; border: 1px solid #334155; padding: 16px; border-radius: 8px; white-space: pre-wrap; font-weight: 400; }\n    .footer { padding: 20px 32px; background: #0B0D13; border-top: 1px solid #272B38; font-size: 12px; color: #64748B; text-align: center; }\n    .cta-btn { display: inline-block; background: #D97706; color: #FFFFFF !important; text-decoration: none; font-weight: 700; font-size: 14px; padding: 12px 24px; border-radius: 6px; margin-top: 12px; box-shadow: 0 4px 14px rgba(217,119,6,0.4); }\n  </style>\n</head>\n<body>\n  <div class=\"card\">\n    <div class=\"header\">\n      <h1>🚀 Nairi Ventures · New Inquiry Alert</h1>\n      <p>A new potential venture client just submitted details on the Nairi Ventures portal.</p>\n      <div class=\"badge\">Dispatched to 2 Designated Inboxes: ventures.nairi@gmail.com & leads.nairee@gmail.com</div>\n    </div>\n    <div class=\"content\">\n      <div class=\"field-row\">\n        <div class=\"field-label\">Client / Inquirer Name</div>\n        <div class=\"field-val\"><strong>Aarav Test Kapoor</strong></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Email Address</div>\n        <div class=\"field-val\"><a href=\"mailto:test@example.com\">test@example.com</a></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Budget / Venture Interest</div>\n        <div class=\"field-val\">Tier 3: Management as a Service</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Inquiry Message / Details</div>\n        <div class=\"message-box\">Testing cloned landing page lead intake pipeline</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Submission Timestamp</div>\n        <div class=\"field-val\">Sat, Sep 12, 2026, 10:59 AM GMT+5:30</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Lead Reference ID</div>\n        <div class=\"field-val\"><code style=\"color: #F59E0B; font-family: monospace;\">l-1789190975273</code></div>\n      </div>\n      <div style=\"text-align: center; margin-top: 28px; padding-top: 16px; border-top: 1px solid #272B38;\">\n        <a href=\"https://metals-remember-location-yea.trycloudflare.com/admin/index.html#section-leads\" class=\"cta-btn\" target=\"_blank\">Open Inquiries in Admin Panel &rarr;</a>\n      </div>\n    </div>\n    <div class=\"footer\">\n      🔒 Confidential Lead Alert &middot; Nairi Ventures Management Dashboard<br>\n      This notification is sent strictly to designated administrative inboxes.\n    </div>\n  </div>\n</body>\n</html>"
+    },
+    {
+      "id": "email-log-1789097373632",
+      "timestamp": "2026-09-11T03:29:33.632Z",
+      "lead_id": "bidirectional-test-1789097373621",
+      "lead_name": "Julian Sterling (Sterling Capital & Media)",
+      "lead_email": "julian@sterlingmedia.vc",
+      "recipients": [
+        "ventures.nairi@gmail.com",
+        "leads.nairee@gmail.com"
+      ],
+      "subject": "⚡ New Lead Inflow: Julian Sterling (Sterling Capital & Media) [$10k+ (Turnkey Creative Sprint)] · Nairi Ventures",
+      "status": "DISPATCHED_TO_OUTBOX",
+      "preview": "[Website/URL: https://sterlingmedia.vc]\nVerifying that website contact form subm...",
+      "html": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <style>\n    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #0E1017; margin: 0; padding: 24px; color: #F8FAFC; }\n    .card { max-width: 620px; margin: 0 auto; background: #161922; border-radius: 12px; overflow: hidden; border: 1px solid #272B38; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }\n    .header { background: #0B0D13; padding: 28px 32px; border-bottom: 3px solid #D97706; text-align: left; }\n    .header h1 { margin: 0 0 8px 0; font-size: 20px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.01em; }\n    .header p { margin: 0; font-size: 13px; color: #94A3B8; }\n    .badge { display: inline-block; padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; background: rgba(217,119,6,0.15); color: #F59E0B; border: 1px solid rgba(217,119,6,0.3); margin-top: 12px; }\n    .content { padding: 32px; background: #161922; }\n    .field-row { margin-bottom: 20px; }\n    .field-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #94A3B8; font-weight: 700; margin-bottom: 6px; }\n    .field-val { font-size: 15px; color: #FFFFFF; font-weight: 600; background: #1E222D; padding: 12px 16px; border-radius: 8px; border: 1px solid #2E3342; word-break: break-word; }\n    .field-val a { color: #F59E0B; text-decoration: none; font-weight: 700; }\n    .message-box { font-size: 15px; line-height: 1.6; color: #FFFFFF; background: #1D2433; border: 1px solid #334155; padding: 16px; border-radius: 8px; white-space: pre-wrap; font-weight: 400; }\n    .footer { padding: 20px 32px; background: #0B0D13; border-top: 1px solid #272B38; font-size: 12px; color: #64748B; text-align: center; }\n    .cta-btn { display: inline-block; background: #D97706; color: #FFFFFF !important; text-decoration: none; font-weight: 700; font-size: 14px; padding: 12px 24px; border-radius: 6px; margin-top: 12px; box-shadow: 0 4px 14px rgba(217,119,6,0.4); }\n  </style>\n</head>\n<body>\n  <div class=\"card\">\n    <div class=\"header\">\n      <h1>🚀 Nairi Ventures · New Inquiry Alert</h1>\n      <p>A new potential venture client just submitted details on the Nairi Ventures portal.</p>\n      <div class=\"badge\">Dispatched to 2 Designated Inboxes: ventures.nairi@gmail.com & leads.nairee@gmail.com</div>\n    </div>\n    <div class=\"content\">\n      <div class=\"field-row\">\n        <div class=\"field-label\">Client / Inquirer Name</div>\n        <div class=\"field-val\"><strong>Julian Sterling (Sterling Capital & Media)</strong></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Email Address</div>\n        <div class=\"field-val\"><a href=\"mailto:julian@sterlingmedia.vc\">julian@sterlingmedia.vc</a></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Budget / Venture Interest</div>\n        <div class=\"field-val\">$10k+ (Turnkey Creative Sprint)</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Inquiry Message / Details</div>\n        <div class=\"message-box\">[Website/URL: https://sterlingmedia.vc]\nVerifying that website contact form submission appears instantly in Admin Panel, saves to Supabase, and dispatches to 2 Gmails.</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Submission Timestamp</div>\n        <div class=\"field-val\">Fri, Sep 11, 2026, 08:59 AM GMT+5:30</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Lead Reference ID</div>\n        <div class=\"field-val\"><code style=\"color: #F59E0B; font-family: monospace;\">bidirectional-test-1789097373621</code></div>\n      </div>\n      <div style=\"text-align: center; margin-top: 28px; padding-top: 16px; border-top: 1px solid #272B38;\">\n        <a href=\"https://metals-remember-location-yea.trycloudflare.com/admin/index.html#section-leads\" class=\"cta-btn\" target=\"_blank\">Open Inquiries in Admin Panel &rarr;</a>\n      </div>\n    </div>\n    <div class=\"footer\">\n      🔒 Confidential Lead Alert &middot; Nairi Ventures Management Dashboard<br>\n      This notification is sent strictly to designated administrative inboxes.\n    </div>\n  </div>\n</body>\n</html>"
+    },
+    {
+      "id": "email-log-1789096863712",
+      "timestamp": "2026-09-11T03:21:03.712Z",
+      "lead_id": "lead-audit-1789096863699",
+      "lead_name": "Harrison Sterling (Apex Robotics)",
+      "lead_email": "harrison.sterling@apexrobotics.tech",
+      "recipients": [
+        "ventures.nairi@gmail.com",
+        "leads.nairee@gmail.com"
+      ],
+      "subject": "⚡ New Lead Inflow: Harrison Sterling (Apex Robotics) [$5k-$10k (Growth Sprint)] · Nairi Ventures",
+      "status": "DISPATCHED_TO_OUTBOX",
+      "preview": "[Website/URL: https://apexrobotics.tech]\nRequesting 3-minute video teardown of o...",
+      "html": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <style>\n    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #0E1017; margin: 0; padding: 24px; color: #F8FAFC; }\n    .card { max-width: 620px; margin: 0 auto; background: #161922; border-radius: 12px; overflow: hidden; border: 1px solid #272B38; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }\n    .header { background: #0B0D13; padding: 28px 32px; border-bottom: 3px solid #D97706; text-align: left; }\n    .header h1 { margin: 0 0 8px 0; font-size: 20px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.01em; }\n    .header p { margin: 0; font-size: 13px; color: #94A3B8; }\n    .badge { display: inline-block; padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; background: rgba(217,119,6,0.15); color: #F59E0B; border: 1px solid rgba(217,119,6,0.3); margin-top: 12px; }\n    .content { padding: 32px; background: #161922; }\n    .field-row { margin-bottom: 20px; }\n    .field-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #94A3B8; font-weight: 700; margin-bottom: 6px; }\n    .field-val { font-size: 15px; color: #FFFFFF; font-weight: 600; background: #1E222D; padding: 12px 16px; border-radius: 8px; border: 1px solid #2E3342; word-break: break-word; }\n    .field-val a { color: #F59E0B; text-decoration: none; font-weight: 700; }\n    .message-box { font-size: 15px; line-height: 1.6; color: #FFFFFF; background: #1D2433; border: 1px solid #334155; padding: 16px; border-radius: 8px; white-space: pre-wrap; font-weight: 400; }\n    .footer { padding: 20px 32px; background: #0B0D13; border-top: 1px solid #272B38; font-size: 12px; color: #64748B; text-align: center; }\n    .cta-btn { display: inline-block; background: #D97706; color: #FFFFFF !important; text-decoration: none; font-weight: 700; font-size: 14px; padding: 12px 24px; border-radius: 6px; margin-top: 12px; box-shadow: 0 4px 14px rgba(217,119,6,0.4); }\n  </style>\n</head>\n<body>\n  <div class=\"card\">\n    <div class=\"header\">\n      <h1>🚀 Nairi Ventures · New Inquiry Alert</h1>\n      <p>A new potential venture client just submitted details on the Nairi Ventures portal.</p>\n      <div class=\"badge\">Dispatched to 2 Designated Inboxes: ventures.nairi@gmail.com & leads.nairee@gmail.com</div>\n    </div>\n    <div class=\"content\">\n      <div class=\"field-row\">\n        <div class=\"field-label\">Client / Inquirer Name</div>\n        <div class=\"field-val\"><strong>Harrison Sterling (Apex Robotics)</strong></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Email Address</div>\n        <div class=\"field-val\"><a href=\"mailto:harrison.sterling@apexrobotics.tech\">harrison.sterling@apexrobotics.tech</a></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Budget / Venture Interest</div>\n        <div class=\"field-val\">$5k-$10k (Growth Sprint)</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Inquiry Message / Details</div>\n        <div class=\"message-box\">[Website/URL: https://apexrobotics.tech]\nRequesting 3-minute video teardown of our product demo page and landing funnel.</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Submission Timestamp</div>\n        <div class=\"field-val\">Fri, Sep 11, 2026, 08:51 AM GMT+5:30</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Lead Reference ID</div>\n        <div class=\"field-val\"><code style=\"color: #F59E0B; font-family: monospace;\">lead-audit-1789096863699</code></div>\n      </div>\n      <div style=\"text-align: center; margin-top: 28px; padding-top: 16px; border-top: 1px solid #272B38;\">\n        <a href=\"https://metals-remember-location-yea.trycloudflare.com/admin/index.html#section-leads\" class=\"cta-btn\" target=\"_blank\">Open Inquiries in Admin Panel &rarr;</a>\n      </div>\n    </div>\n    <div class=\"footer\">\n      🔒 Confidential Lead Alert &middot; Nairi Ventures Management Dashboard<br>\n      This notification is sent strictly to designated administrative inboxes.\n    </div>\n  </div>\n</body>\n</html>"
+    },
+    {
+      "id": "email-log-1789096863695",
+      "timestamp": "2026-09-11T03:21:03.695Z",
+      "lead_id": "test-lead-2860",
+      "lead_name": "Final Audit Verification Client",
+      "lead_email": "audit@client-ventures.org",
+      "recipients": [
+        "ventures.nairi@gmail.com",
+        "leads.nairee@gmail.com"
+      ],
+      "subject": "⚡ New Lead Inflow: Final Audit Verification Client [$10k+ (Executive Sprint)] · Nairi Ventures",
+      "status": "DISPATCHED_TO_OUTBOX",
+      "preview": "System verification inquiry to ensure both Gmail inboxes receive full inquiry pa...",
+      "html": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <style>\n    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #0E1017; margin: 0; padding: 24px; color: #F8FAFC; }\n    .card { max-width: 620px; margin: 0 auto; background: #161922; border-radius: 12px; overflow: hidden; border: 1px solid #272B38; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }\n    .header { background: #0B0D13; padding: 28px 32px; border-bottom: 3px solid #D97706; text-align: left; }\n    .header h1 { margin: 0 0 8px 0; font-size: 20px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.01em; }\n    .header p { margin: 0; font-size: 13px; color: #94A3B8; }\n    .badge { display: inline-block; padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; background: rgba(217,119,6,0.15); color: #F59E0B; border: 1px solid rgba(217,119,6,0.3); margin-top: 12px; }\n    .content { padding: 32px; background: #161922; }\n    .field-row { margin-bottom: 20px; }\n    .field-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #94A3B8; font-weight: 700; margin-bottom: 6px; }\n    .field-val { font-size: 15px; color: #FFFFFF; font-weight: 600; background: #1E222D; padding: 12px 16px; border-radius: 8px; border: 1px solid #2E3342; word-break: break-word; }\n    .field-val a { color: #F59E0B; text-decoration: none; font-weight: 700; }\n    .message-box { font-size: 15px; line-height: 1.6; color: #FFFFFF; background: #1D2433; border: 1px solid #334155; padding: 16px; border-radius: 8px; white-space: pre-wrap; font-weight: 400; }\n    .footer { padding: 20px 32px; background: #0B0D13; border-top: 1px solid #272B38; font-size: 12px; color: #64748B; text-align: center; }\n    .cta-btn { display: inline-block; background: #D97706; color: #FFFFFF !important; text-decoration: none; font-weight: 700; font-size: 14px; padding: 12px 24px; border-radius: 6px; margin-top: 12px; box-shadow: 0 4px 14px rgba(217,119,6,0.4); }\n  </style>\n</head>\n<body>\n  <div class=\"card\">\n    <div class=\"header\">\n      <h1>🚀 Nairi Ventures · New Inquiry Alert</h1>\n      <p>A new potential venture client just submitted details on the Nairi Ventures portal.</p>\n      <div class=\"badge\">Dispatched to 2 Designated Inboxes: ventures.nairi@gmail.com & leads.nairee@gmail.com</div>\n    </div>\n    <div class=\"content\">\n      <div class=\"field-row\">\n        <div class=\"field-label\">Client / Inquirer Name</div>\n        <div class=\"field-val\"><strong>Final Audit Verification Client</strong></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Email Address</div>\n        <div class=\"field-val\"><a href=\"mailto:audit@client-ventures.org\">audit@client-ventures.org</a></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Budget / Venture Interest</div>\n        <div class=\"field-val\">$10k+ (Executive Sprint)</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Inquiry Message / Details</div>\n        <div class=\"message-box\">System verification inquiry to ensure both Gmail inboxes receive full inquiry payload.</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Submission Timestamp</div>\n        <div class=\"field-val\">Fri, Sep 11, 2026, 08:51 AM GMT+5:30</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Lead Reference ID</div>\n        <div class=\"field-val\"><code style=\"color: #F59E0B; font-family: monospace;\">test-lead-2860</code></div>\n      </div>\n      <div style=\"text-align: center; margin-top: 28px; padding-top: 16px; border-top: 1px solid #272B38;\">\n        <a href=\"https://metals-remember-location-yea.trycloudflare.com/admin/index.html#section-leads\" class=\"cta-btn\" target=\"_blank\">Open Inquiries in Admin Panel &rarr;</a>\n      </div>\n    </div>\n    <div class=\"footer\">\n      🔒 Confidential Lead Alert &middot; Nairi Ventures Management Dashboard<br>\n      This notification is sent strictly to designated administrative inboxes.\n    </div>\n  </div>\n</body>\n</html>"
+    },
+    {
+      "id": "email-log-1789096433285",
+      "timestamp": "2026-09-11T03:13:53.285Z",
+      "lead_id": "lead-verify-1789096433223",
+      "lead_name": "Victoria Vance (Vance Logistics AI)",
+      "lead_email": "victoria@vancelogistics.com",
+      "recipients": [
+        "ventures.nairi@gmail.com",
+        "leads.nairee@gmail.com"
+      ],
+      "subject": "⚡ New Lead Inflow: Victoria Vance (Vance Logistics AI) [$10k+ (Complete Conversion Engine)] · Nairi Ventures",
+      "status": "DISPATCHED_TO_OUTBOX",
+      "preview": "[Website/URL: https://vancelogistics.ai]\nOur CPC on Google Search is $18.50 with...",
+      "html": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <style>\n    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #0E1017; margin: 0; padding: 24px; color: #F8FAFC; }\n    .card { max-width: 620px; margin: 0 auto; background: #161922; border-radius: 12px; overflow: hidden; border: 1px solid #272B38; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }\n    .header { background: #0B0D13; padding: 28px 32px; border-bottom: 3px solid #D97706; text-align: left; }\n    .header h1 { margin: 0 0 8px 0; font-size: 20px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.01em; }\n    .header p { margin: 0; font-size: 13px; color: #94A3B8; }\n    .badge { display: inline-block; padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; background: rgba(217,119,6,0.15); color: #F59E0B; border: 1px solid rgba(217,119,6,0.3); margin-top: 12px; }\n    .content { padding: 32px; background: #161922; }\n    .field-row { margin-bottom: 20px; }\n    .field-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #94A3B8; font-weight: 700; margin-bottom: 6px; }\n    .field-val { font-size: 15px; color: #FFFFFF; font-weight: 600; background: #1E222D; padding: 12px 16px; border-radius: 8px; border: 1px solid #2E3342; word-break: break-word; }\n    .field-val a { color: #F59E0B; text-decoration: none; font-weight: 700; }\n    .message-box { font-size: 15px; line-height: 1.6; color: #FFFFFF; background: #1D2433; border: 1px solid #334155; padding: 16px; border-radius: 8px; white-space: pre-wrap; font-weight: 400; }\n    .footer { padding: 20px 32px; background: #0B0D13; border-top: 1px solid #272B38; font-size: 12px; color: #64748B; text-align: center; }\n    .cta-btn { display: inline-block; background: #D97706; color: #FFFFFF !important; text-decoration: none; font-weight: 700; font-size: 14px; padding: 12px 24px; border-radius: 6px; margin-top: 12px; box-shadow: 0 4px 14px rgba(217,119,6,0.4); }\n  </style>\n</head>\n<body>\n  <div class=\"card\">\n    <div class=\"header\">\n      <h1>🚀 Nairi Ventures · New Inquiry Alert</h1>\n      <p>A new potential venture client just submitted details on the Nairi Ventures portal.</p>\n      <div class=\"badge\">Dispatched to 2 Designated Inboxes: ventures.nairi@gmail.com & leads.nairee@gmail.com</div>\n    </div>\n    <div class=\"content\">\n      <div class=\"field-row\">\n        <div class=\"field-label\">Client / Inquirer Name</div>\n        <div class=\"field-val\"><strong>Victoria Vance (Vance Logistics AI)</strong></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Email Address</div>\n        <div class=\"field-val\"><a href=\"mailto:victoria@vancelogistics.com\">victoria@vancelogistics.com</a></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Budget / Venture Interest</div>\n        <div class=\"field-val\">$10k+ (Complete Conversion Engine)</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Inquiry Message / Details</div>\n        <div class=\"message-box\">[Website/URL: https://vancelogistics.ai]\nOur CPC on Google Search is $18.50 with a landing page bounce rate of 68%. We need a 3-minute video teardown and a high converting landing page overhaul.</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Submission Timestamp</div>\n        <div class=\"field-val\">Fri, Sep 11, 2026, 08:43 AM GMT+5:30</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Lead Reference ID</div>\n        <div class=\"field-val\"><code style=\"color: #F59E0B; font-family: monospace;\">lead-verify-1789096433223</code></div>\n      </div>\n      <div style=\"text-align: center; margin-top: 28px; padding-top: 16px; border-top: 1px solid #272B38;\">\n        <a href=\"https://metals-remember-location-yea.trycloudflare.com/admin/index.html#section-leads\" class=\"cta-btn\" target=\"_blank\">Open Inquiries in Admin Panel &rarr;</a>\n      </div>\n    </div>\n    <div class=\"footer\">\n      🔒 Confidential Lead Alert &middot; Nairi Ventures Management Dashboard<br>\n      This notification is sent strictly to designated administrative inboxes.\n    </div>\n  </div>\n</body>\n</html>"
+    },
+    {
+      "id": "email-log-1789094857851",
+      "timestamp": "2026-09-11T02:47:37.851Z",
+      "lead_id": "test-lead-6670",
+      "lead_name": "Alexander Wright",
+      "lead_email": "alex.wright@swiftpay.io",
+      "recipients": [
+        "ventures.nairi@gmail.com",
+        "leads.nairee@gmail.com"
+      ],
+      "subject": "⚡ New Lead Inflow: Alexander Wright [+] · Nairi Ventures",
+      "status": "DISPATCHED_TO_OUTBOX",
+      "preview": "We want to scale our high-conversion video ads to 5 new angles.",
+      "html": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <style>\n    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #0E1017; margin: 0; padding: 24px; color: #F8FAFC; }\n    .card { max-width: 620px; margin: 0 auto; background: #161922; border-radius: 12px; overflow: hidden; border: 1px solid #272B38; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }\n    .header { background: #0B0D13; padding: 28px 32px; border-bottom: 3px solid #D97706; text-align: left; }\n    .header h1 { margin: 0 0 8px 0; font-size: 20px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.01em; }\n    .header p { margin: 0; font-size: 13px; color: #94A3B8; }\n    .badge { display: inline-block; padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; background: rgba(217,119,6,0.15); color: #F59E0B; border: 1px solid rgba(217,119,6,0.3); margin-top: 12px; }\n    .content { padding: 32px; background: #161922; }\n    .field-row { margin-bottom: 20px; }\n    .field-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #94A3B8; font-weight: 700; margin-bottom: 6px; }\n    .field-val { font-size: 15px; color: #FFFFFF; font-weight: 600; background: #1E222D; padding: 12px 16px; border-radius: 8px; border: 1px solid #2E3342; word-break: break-word; }\n    .field-val a { color: #F59E0B; text-decoration: none; font-weight: 700; }\n    .message-box { font-size: 15px; line-height: 1.6; color: #FFFFFF; background: #1D2433; border: 1px solid #334155; padding: 16px; border-radius: 8px; white-space: pre-wrap; font-weight: 400; }\n    .footer { padding: 20px 32px; background: #0B0D13; border-top: 1px solid #272B38; font-size: 12px; color: #64748B; text-align: center; }\n    .cta-btn { display: inline-block; background: #D97706; color: #FFFFFF !important; text-decoration: none; font-weight: 700; font-size: 14px; padding: 12px 24px; border-radius: 6px; margin-top: 12px; box-shadow: 0 4px 14px rgba(217,119,6,0.4); }\n  </style>\n</head>\n<body>\n  <div class=\"card\">\n    <div class=\"header\">\n      <h1>🚀 Nairi Ventures · New Inquiry Alert</h1>\n      <p>A new potential venture client just submitted details on the Nairi Ventures portal.</p>\n      <div class=\"badge\">Dispatched to 2 Designated Inboxes: ventures.nairi@gmail.com & leads.nairee@gmail.com</div>\n    </div>\n    <div class=\"content\">\n      <div class=\"field-row\">\n        <div class=\"field-label\">Client / Inquirer Name</div>\n        <div class=\"field-val\"><strong>Alexander Wright</strong></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Email Address</div>\n        <div class=\"field-val\"><a href=\"mailto:alex.wright@swiftpay.io\">alex.wright@swiftpay.io</a></div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Budget / Venture Interest</div>\n        <div class=\"field-val\">+</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Inquiry Message / Details</div>\n        <div class=\"message-box\">We want to scale our high-conversion video ads to 5 new angles.</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Submission Timestamp</div>\n        <div class=\"field-val\">Fri, Sep 11, 2026, 08:17 AM GMT+5:30</div>\n      </div>\n      <div class=\"field-row\">\n        <div class=\"field-label\">Lead Reference ID</div>\n        <div class=\"field-val\"><code style=\"color: #F59E0B; font-family: monospace;\">test-lead-6670</code></div>\n      </div>\n      <div style=\"text-align: center; margin-top: 28px; padding-top: 16px; border-top: 1px solid #272B38;\">\n        <a href=\"https://metals-remember-location-yea.trycloudflare.com/admin/index.html#section-leads\" class=\"cta-btn\" target=\"_blank\">Open Inquiries in Admin Panel &rarr;</a>\n      </div>\n    </div>\n    <div class=\"footer\">\n      🔒 Confidential Lead Alert &middot; Nairi Ventures Management Dashboard<br>\n      This notification is sent strictly to designated administrative inboxes.\n    </div>\n  </div>\n</body>\n</html>"
+    }
+  ]
+}

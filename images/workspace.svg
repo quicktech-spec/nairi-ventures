@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="deskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2EFE7"/>
+      <stop offset="100%" stop-color="#E5E0D5"/>
+    </linearGradient>
+    <linearGradient id="warmLight" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#E4A63A" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#1E8A7A" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24316B"/>
+      <stop offset="100%" stop-color="#171F45"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="600" fill="#F7F5EF"/>
+  <rect width="800" height="600" fill="url(#warmLight)"/>
+
+  <!-- Architectural Grid Lines -->
+  <g stroke="#171512" stroke-width="0.7" stroke-opacity="0.12">
+    <line x1="80" y1="0" x2="80" y2="600"/>
+    <line x1="240" y1="0" x2="240" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="560" y1="0" x2="560" y2="600"/>
+    <line x1="720" y1="0" x2="720" y2="600"/>
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="280" x2="800" y2="280"/>
+    <line x1="0" y1="440" x2="800" y2="440"/>
+  </g>
+
+  <!-- Studio Table Surface -->
+  <polygon points="120,440 680,440 760,560 40,560" fill="url(#deskGrad)" stroke="#171512" stroke-width="1.5" stroke-opacity="0.3"/>
+
+  <!-- Hardware / Blueprint Workstation Object -->
+  <rect x="220" y="240" width="360" height="220" rx="4" fill="url(#screenGrad)" stroke="#171512" stroke-width="1.5"/>
+  <rect x="360" y="460" width="80" height="40" fill="#D0CCC0"/>
+  <rect x="320" y="500" width="160" height="8" rx="2" fill="#171512" fill-opacity="0.6"/>
+
+  <!-- Screen Content: Hybrid Engineering Schematics -->
+  <g stroke="#E4A63A" stroke-width="1.5" fill="none">
+    <circle cx="340" cy="340" r="45" stroke-dasharray="3,3"/>
+    <circle cx="460" cy="340" r="45" stroke="#1E8A7A"/>
+    <line x1="340" y1="340" x2="460" y2="340" stroke="#F7F5EF" stroke-width="2"/>
+    <rect x="250" y="270" width="120" height="20" rx="2" fill="#1E8A7A" fill-opacity="0.3" stroke="none"/>
+    <line x1="260" y1="310" x2="310" y2="310" stroke="#F7F5EF" stroke-opacity="0.6"/>
+    <line x1="260" y1="385" x2="420" y2="385" stroke="#F7F5EF" stroke-opacity="0.4"/>
+  </g>
+
+  <!-- Physical Blueprint Roll & Precision Tools -->
+  <g transform="translate(100, 470)">
+    <rect x="0" y="0" width="120" height="26" rx="3" fill="#1E8A7A" fill-opacity="0.2" stroke="#1E8A7A" stroke-width="1.2"/>
+    <line x1="15" y1="13" x2="105" y2="13" stroke="#1E8A7A" stroke-dasharray="4,4"/>
+  </g>
+  <g transform="translate(560, 480)">
+    <rect x="0" y="0" width="140" height="18" fill="#E4A63A" fill-opacity="0.3" stroke="#E4A63A" stroke-width="1"/>
+    <line x1="20" y1="0" x2="20" y2="18" stroke="#171512" stroke-opacity="0.5"/>
+    <line x1="50" y1="0" x2="50" y2="18" stroke="#171512" stroke-opacity="0.5"/>
+    <line x1="80" y1="0" x2="80" y2="18" stroke="#171512" stroke-opacity="0.5"/>
+    <line x1="110" y1="0" x2="110" y2="18" stroke="#171512" stroke-opacity="0.5"/>
+  </g>
+
+  <!-- Editorial Studio Tag -->
+  <text x="400" y="160" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="20" font-style="italic" fill="#171512" opacity="0.65">Nairi Studio Environments — Hardware &amp; Intelligence</text>
+</svg>

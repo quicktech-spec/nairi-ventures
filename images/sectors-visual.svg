@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E2B58"/>
+      <stop offset="100%" stop-color="#12110E"/>
+    </linearGradient>
+    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#164A42"/>
+      <stop offset="100%" stop-color="#12110E"/>
+    </linearGradient>
+    <linearGradient id="cardGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#543A14"/>
+      <stop offset="100%" stop-color="#12110E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="#F7F5EF"/>
+
+  <!-- Three Architectural Domain Columns -->
+  <!-- Sector 1: Autonomous Robotics & Manufacturing -->
+  <g transform="translate(60, 100)">
+    <rect x="0" y="0" width="200" height="400" rx="4" fill="url(#cardGrad1)" stroke="#171512" stroke-width="1.2"/>
+    <circle cx="100" cy="80" r="32" fill="#E4A63A" fill-opacity="0.15" stroke="#E4A63A" stroke-width="1.5"/>
+    <!-- Cog / Tooling Icon -->
+    <path d="M 90 70 L 110 70 L 110 90 L 90 90 Z" fill="#E4A63A"/>
+    <text x="100" y="160" text-anchor="middle" font-family="'General Sans', sans-serif" font-size="10" font-weight="700" fill="#E4A63A">DOMAIN 01</text>
+    <text x="100" y="195" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="16" fill="#F7F5EF">Advanced</text>
+    <text x="100" y="220" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="16" font-style="italic" fill="#F7F5EF">Manufacturing</text>
+    <line x1="30" y1="250" x2="170" y2="250" stroke="#F7F5EF" stroke-opacity="0.2"/>
+    <text x="100" y="280" text-anchor="middle" font-family="'General Sans', sans-serif" font-size="11" fill="rgba(247, 245, 239, 0.7)">Robotics &amp; Vision</text>
+    <text x="100" y="305" text-anchor="middle" font-family="'General Sans', sans-serif" font-size="11" fill="rgba(247, 245, 239, 0.7)">Micro-Tooling</text>
+    <text x="100" y="330" text-anchor="middle" font-family="'General Sans', sans-serif" font-size="11" fill="rgba(247, 245, 239, 0.7)">Automated Assembly</text>
+  </g>
+
+  <!-- Sector 2: Frontier AI & Cognitive Swarms -->
+  <g transform="translate(300, 70)">
+    <rect x="0" y="0" width="200" height="430" rx="4" fill="url(#cardGrad2)" stroke="#171512" stroke-width="1.5"/>
+    <circle cx="100" cy="80" r="32" fill="#1E8A7A" fill-opacity="0.25" stroke="#1E8A7A" stroke-width="1.5"/>
+    <!-- Neural Node Icon -->
+    <circle cx="100" cy="80" r="8" fill="#1E8A7A"/>
+    <circle cx="85" cy="72" r="4" fill="#F7F5EF"/>
+    <circle cx="115" cy="88" r="4" fill="#F7F5EF"/>
+    <line x1="85" y1="72" x2="100" y2="80" stroke="#F7F5EF"/>
+    <line x1="100" y1="80" x2="115" y2="88" stroke="#F7F5EF"/>
+    <text x="100" y="160" text-anchor="middle" font-family="'General Sans', sans-serif" font-size="10" font-weight="700" fill="#1E8A7A">DOMAIN 02</text>
+    <text x="100" y="195" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="16" fill="#F7F5EF">Frontier</text>
+    <text x="100" y="220" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="16" font-style="italic" fill="#F7F5EF">Artificial Intelligence</text>
+    <line x1="30" y1="250" x2="170" y2="250" stroke="#F7F5EF" stroke-opacity="0.2"/>
+    <text x="100" y="280" text-anchor="middle" font-family="'General Sans', sans-serif" font-size="11" fill="rgba(247, 245, 239, 0.7)">Multi-Agent Systems</text>
+    <text x="100" y="305" text-anchor="middle" font-family="'General Sans', sans-serif" font-size="11" fill="rgba(247, 245, 239, 0.7)">Spatial WebGL Runtimes</text>
+    <text x="100" y="330" text-anchor="middle" font-family="'General Sans', sans-serif" font-size="11" fill="rgba(247, 245, 239, 0.7)">Cognitive Orchestration</text>
+  </g>
+
+  <!-- Sector 3: Sovereign Cross-Border Rails -->
+  <g transform="translate(540, 100)">
+    <rect x="0" y="0" width="200" height="400" rx="4" fill="url(#cardGrad3)" stroke="#171512" stroke-width="1.2"/>
+    <circle cx="100" cy="80" r="32" fill="#E4A63A" fill-opacity="0.2" stroke="#E4A63A" stroke-width="1.5"/>
+    <!-- Globe Rails Icon -->
+    <ellipse cx="100" cy="80" rx="16" ry="7" fill="none" stroke="#E4A63A" stroke-width="1.5"/>
+    <circle cx="100" cy="80" r="16" fill="none" stroke="#E4A63A" stroke-width="1.5"/>
+    <text x="100" y="160" text-anchor="middle" font-family="'General Sans', sans-serif" font-size="10" font-weight="700" fill="#E4A63A">DOMAIN 03</text>
+    <text x="100" y="195" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="16" fill="#F7F5EF">Sovereign</text>
+    <text x="100" y="220" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="16" font-style="italic" fill="#F7F5EF">Cross-Border Rails</text>
+    <line x1="30" y1="250" x2="170" y2="250" stroke="#F7F5EF" stroke-opacity="0.2"/>
+    <text x="100" y="280" text-anchor="middle" font-family="'General Sans', sans-serif" font-size="11" fill="rgba(247, 245, 239, 0.7)">Multi-Currency Treasury</text>
+    <text x="100" y="305" text-anchor="middle" font-family="'General Sans', sans-serif" font-size="11" fill="rgba(247, 245, 239, 0.7)">Cross-Jurisdiction IP</text>
+    <text x="100" y="330" text-anchor="middle" font-family="'General Sans', sans-serif" font-size="11" fill="rgba(247, 245, 239, 0.7)">Institutional Compliance</text>
+  </g>
+
+  <text x="400" y="550" text-anchor="middle" font-family="'General Sans', sans-serif" font-size="12" fill="#797368">
+    Three Integrated Pillars Defining the Next Decade of Industrial Venture Creation
+  </text>
+</svg>
