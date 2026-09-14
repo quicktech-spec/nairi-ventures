@@ -7,14 +7,44 @@
 const SEED_DATA = {
   "page_content": [
     {
+      "id": "pc-brand_footer_name",
+      "page": "Home",
+      "part_name": "Footer Brand Wordmark / Subtext",
+      "section_key": "brand.footer_name",
+      "section_group": "Footer & Company Info",
+      "content": "<span class=\"text-sky-400\">Ventures</span>",
+      "is_deleted": false,
+      "updated_at": "2026-09-14T06:07:45.742Z"
+    },
+    {
+      "id": "pc-nav_cta",
+      "page": "Home",
+      "part_name": "Header Navigation CTA Button",
+      "section_key": "nav.cta",
+      "section_group": "Header & Branding",
+      "content": "Book Strategy Session →",
+      "is_deleted": false,
+      "updated_at": "2026-09-14T06:07:45.742Z"
+    },
+    {
+      "id": "pc-brand_name",
+      "page": "Home",
+      "part_name": "Header Brand Wordmark / Subtext",
+      "section_key": "brand.name",
+      "section_group": "Header & Branding",
+      "content": "Ventures",
+      "is_deleted": false,
+      "updated_at": "2026-09-14T06:07:45.742Z"
+    },
+    {
       "id": "pc-hero_slogan",
       "page": "Home",
       "part_name": "Hero Slogan Headline",
       "section_key": "hero.slogan",
       "section_group": "Hero Section",
-      "content": "<span class=\"block overflow-hidden pb-1\"><span class=\"block\" style=\"transform: none;\">You Direct the <span class=\"text-sky-600\">Vision.</span></span></span><span class=\"block overflow-hidden pb-1\"><span class=\"block\" style=\"transform: none;\">We Execute the <span class=\"text-sky-600\">Engine.</span></span></span>"block overflow-hidden pb-1\"><span class=\"block\" style=\"transform: none;\">You Direct the <span class=\"text-sky-600\">Vision.</span></span></span><span class=\"block overflow-hidden pb-1\"><span class=\"block\" style=\"transform: none;\">We Execute the <span class=\"text-sky-600\">Engine.</span></span></span>"block overflow-hidden pb-1\"><span class=\"block whitespace-normal sm:whitespace-nowrap\" style=\"transform: none;\">You Direct the <span class=\"text-sky-600\">Vision.</span></span></span><span class=\"block overflow-hidden pb-1\"><span class=\"block whitespace-normal sm:whitespace-nowrap\" style=\"transform: none;\">We Execute the <span class=\"text-sky-600\">Engine.</span></span></span>"block overflow-hidden pb-1\"><span class=\"block\" style=\"transform: none;\">You Direct the <span class=\"text-sky-600\">Vision.</span></span></span><span class=\"block overflow-hidden pb-1\"><span class=\"block\" style=\"transform: none;\">We Execute the <span class=\"text-sky-600\">Engine.</span></span></span>"block overflow-hidden pb-1\"><span class=\"block\" style=\"transform: none;\">You Direct<span class=\"text-sky-600\"> the Vision.</span></span></span><span class=\"block overflow-hidden pb-1\"><span class=\"block\" style=\"transform: none;\">We Execute<span class=\"text-sky-600\"> the</span></span></span><span class=\"block overflow-hidden pb-1\"><span class=\"block\" style=\"transform: none;\">Entire Engine.</span></span>",
+      "content": "<span class=\"block overflow-hidden pb-1\"><span class=\"block\" style=\"transform: none;\">You Direct the <span class=\"text-sky-600\">Vision.</span></span></span><span class=\"block overflow-hidden pb-1\"><span class=\"block\" style=\"transform: none;\">We Execute the <span class=\"text-sky-600\">Engine.</span></span></span>",
       "is_deleted": false,
-      "updated_at": "2026-09-13T04:07:15.913Z"
+      "updated_at": "2026-09-14T04:08:32.968Z"
     },
     {
       "id": "pc-hero_subtext",
@@ -669,6 +699,16 @@ const SEED_DATA = {
   ],
   "images": [
     {
+      "id": "img-brand_header_logo",
+      "page": "Home",
+      "element_key": "brand.header_logo",
+      "part_name": "Header Brand Logo (Dark/Navy)",
+      "section_group": "Header & Branding",
+      "url": "images/nairee-logo-navy-sky.png",
+      "alt": "Nairee Ventures Header Logo",
+      "updated_at": "2026-09-14T06:07:45.742Z"
+    },
+    {
       "id": "img-hero_image",
       "page": "Home",
       "element_key": "hero.image",
@@ -717,17 +757,27 @@ const SEED_DATA = {
       "url": "https://images.unsplash.com/photo-1737574821698-862e77f044c1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHw0fHxpbmRpYW4lMjBidXNpbmVzc21hbiUyMHBvcnRyYWl0JTIwc21pbGluZ3xlbnwwfHx8fDE3ODkxODIxNTF8MA&ixlib=rb-4.1.0&q=85",
       "alt": "Karthik Subramanian · Principal Systems & Web Architect",
       "updated_at": "2026-09-13T04:07:15.913Z"
+    },
+    {
+      "id": "img-brand_footer_logo",
+      "page": "Home",
+      "element_key": "brand.footer_logo",
+      "part_name": "Footer Brand Logo (Light/White)",
+      "section_group": "Footer & Company Info",
+      "url": "images/nairee-logo-white-sky.png",
+      "alt": "Nairee Ventures Footer Logo",
+      "updated_at": "2026-09-14T06:07:45.742Z"
     }
   ],
   "branding": {
-  "logo_text": "Nairee Ventures",
-  "logo_image": "images/nairee-logo-navy-sky.png",
-  "font_heading": "Fraunces",
-  "font_subheading": "General Sans",
-  "font_body": "General Sans",
-  "font_mono": "JetBrains Mono",
-  "accent_color": "#0284C7"
-},
+    "logo_text": "Nairee Ventures",
+    "logo_image": "images/nairee-logo-navy-sky.png",
+    "font_heading": "Fraunces",
+    "font_subheading": "General Sans",
+    "font_body": "General Sans",
+    "font_mono": "JetBrains Mono",
+    "accent_color": "#0284C7"
+  },
   "ventures": [],
   "testimonials": [
     {

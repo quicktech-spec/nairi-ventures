@@ -133,7 +133,7 @@ function updateHtmlLogo(newLogoText, logoImage) {
       if (!fs.existsSync(htmlPath)) return;
       let html = fs.readFileSync(htmlPath, 'utf8');
 
-      // Update standard data-cms-logo links
+      // Update standard data-cms-logo links (if any)
       const logoContainers = /(<a[^>]+data-cms-logo=["']site\.logo["'][^>]*>)([\s\S]*?)(<\/a>)/gi;
       if (logoContainers.test(html)) {
         html = html.replace(logoContainers, (match, openTag, inner, closeTag) => {
@@ -155,9 +155,33 @@ function updateHtmlLogo(newLogoText, logoImage) {
 
       // Update landing page header logo button
       const navLogoBtnRegex = /(<button[^>]+data-testid=["']nav-logo["'][^>]*>)([\s\S]*?)(<\/button>)/i;
-      if (navLogoBtnRegex.test(html) && logoImage) {
+      if (navLogoBtnRegex.test(html)) {
         html = html.replace(navLogoBtnRegex, (match, openTag, inner, closeTag) => {
-          let updatedInner = inner.replace(/<img[^>]+src=["'][^"']*["']/i, `<img src="${logoImage}"`);
+          let updatedInner = inner;
+          if (logoImage) {
+            updatedInner = updatedInner.replace(/<img[^>]+src=["'][^"']*["']/i, `<img src="${logoImage}"`);
+          }
+          if (newLogoText !== undefined && newLogoText !== null && newLogoText !== '') {
+            updatedInner = updatedInner.replace(/(<span[^>]*>)([\s\S]*?)(<\/span>)/i, `$1${newLogoText}$3`);
+          }
+          return `${openTag}${updatedInner}${closeTag}`;
+        });
+      }
+
+      // Update landing page footer brand logo block
+      const footerLogoBlockRegex = /(<div[^>]+data-testid=["']footer-logo-block["'][^>]*>)([\s\S]*?)(<\/div>)/i;
+      if (footerLogoBlockRegex.test(html)) {
+        html = html.replace(footerLogoBlockRegex, (match, openTag, inner, closeTag) => {
+          let updatedInner = inner;
+          if (logoImage) {
+            const footerSrc = (logoImage.includes('navy') || logoImage.includes('icon.svg'))
+              ? logoImage.replace('navy', 'white')
+              : logoImage;
+            updatedInner = updatedInner.replace(/<img[^>]+src=["'][^"']*["']/i, `<img src="${footerSrc}"`);
+          }
+          if (newLogoText !== undefined && newLogoText !== null && newLogoText !== '') {
+            updatedInner = updatedInner.replace(/(<span[^>]+data-cms-key=["']brand\.footer_name["'][^>]*>)([\s\S]*?)(<\/span>)/i, `$1<span class="text-sky-400">${newLogoText}</span>$3`);
+          }
           return `${openTag}${updatedInner}${closeTag}`;
         });
       }
@@ -567,6 +591,11 @@ const server = http.createServer((req, res) => {
         } else {
           data.images.push(img);
         }
+
+        // Sync branding logo_image if header logo was changed in images tab
+        if (img.element_key === 'brand.header_logo' && img.url) {
+          data.branding = { ...(data.branding || {}), logo_image: img.url };
+        }
         writeCMSData(data);
 
         // Update target HTML on disk
@@ -593,6 +622,16 @@ const server = http.createServer((req, res) => {
         const branding = JSON.parse(body);
         const data = readCMSData();
         data.branding = { ...(data.branding || {}), ...branding };
+
+        // Sync to images collection if logo_image changed in branding bar
+        if (branding.logo_image) {
+          if (!data.images) data.images = [];
+          const headerIdx = data.images.findIndex(i => i.element_key === 'brand.header_logo');
+          if (headerIdx >= 0) {
+            data.images[headerIdx].url = branding.logo_image;
+          }
+        }
+
         writeCMSData(data);
 
         // Update HTML logo text and image across pages
