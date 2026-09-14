@@ -49,18 +49,9 @@ function writeCMSData(data) {
   }
 }
 
+// ADMIN CMS RESTRICTION: Exclusively connected to the Main Website (index.html / clone-preview.html)
 function resolveTargetPages(pageFile, sectionKey) {
-  const allPages = ['index.html', 'services.html', 'about.html', 'success-stories.html', 'contact.html'];
-  if (!pageFile || pageFile === 'all' || (sectionKey && sectionKey.startsWith('site.'))) {
-    return allPages;
-  }
-  const norm = String(pageFile).toLowerCase().replace(/[\s_\-]+/g, '').replace('.html', '');
-  if (norm === 'home' || norm === 'index') return ['index.html'];
-  if (norm === 'services' || norm === 'ventures') return ['services.html'];
-  if (norm === 'about') return ['about.html'];
-  if (norm === 'successstories' || norm === 'success' || norm === 'casestudies') return ['success-stories.html'];
-  if (norm === 'contact') return ['contact.html'];
-  return [pageFile.endsWith('.html') ? pageFile : pageFile + '.html'];
+  return ['index.html', 'clone-preview.html'];
 }
 
 // Physically update HTML file on disk so changes become permanent
@@ -95,50 +86,54 @@ function updateHtmlFileContent(pageFile, sectionKey, newContent, isDeleted) {
   }
 }
 
-// Physically update an image src or background-image in HTML file
+// Physically update an image src or background-image in HTML file (Main Website only)
 function updateHtmlImage(pageFile, elementKey, newUrl, altText) {
   try {
-    const htmlPath = path.join(ROOT, pageFile);
-    if (!fs.existsSync(htmlPath)) return;
-    let html = fs.readFileSync(htmlPath, 'utf8');
+    const targetPages = ['index.html', 'clone-preview.html'];
+    targetPages.forEach(p => {
+      const htmlPath = path.join(ROOT, p);
+      if (!fs.existsSync(htmlPath)) return;
+      let html = fs.readFileSync(htmlPath, 'utf8');
 
-    // Look for element with data-cms-img="elementKey"
-    const tagRegex = new RegExp(`(<[^>]+data-cms-img=["']${elementKey}["'][^>]*>)`, 'i');
-    const match = tagRegex.exec(html);
-    if (match) {
-      let tag = match[1];
-      if (/src=["'][^"']*["']/i.test(tag)) {
-        tag = tag.replace(/src=["'][^"']*["']/i, `src="${newUrl}"`);
-        if (altText && /alt=["'][^"']*["']/i.test(tag)) {
-          tag = tag.replace(/alt=["'][^"']*["']/i, `alt="${altText}"`);
-        }
-      } else if (/style=["'][^"']*["']/i.test(tag)) {
-        if (/background-image:[^;"]+/i.test(tag)) {
-          tag = tag.replace(/background-image:\s*url\([^)]+\)/i, `background-image: url('${newUrl}')`);
+      // Look for element with data-cms-img="elementKey"
+      const tagRegex = new RegExp(`(<[^>]+data-cms-img=["']${elementKey}["'][^>]*>)`, 'i');
+      const match = tagRegex.exec(html);
+      if (match) {
+        let tag = match[1];
+        if (/src=["'][^"']*["']/i.test(tag)) {
+          tag = tag.replace(/src=["'][^"']*["']/i, `src="${newUrl}"`);
+          if (altText && /alt=["'][^"']*["']/i.test(tag)) {
+            tag = tag.replace(/alt=["'][^"']*["']/i, `alt="${altText}"`);
+          }
+        } else if (/style=["'][^"']*["']/i.test(tag)) {
+          if (/background-image:[^;"]+/i.test(tag)) {
+            tag = tag.replace(/background-image:\s*url\([^)]+\)/i, `background-image: url('${newUrl}')`);
+          } else {
+            tag = tag.replace(/style=["']([^"']*)["']/i, `style="$1; background-image: url('${newUrl}');"`);
+          }
         } else {
-          tag = tag.replace(/style=["']([^"']*)["']/i, `style="$1; background-image: url('${newUrl}');"`);
+          tag = tag.replace(/>$/, ` style="background-image: url('${newUrl}');">`);
         }
-      } else {
-        tag = tag.replace(/>$/, ` style="background-image: url('${newUrl}');">`);
+        html = html.replace(match[1], tag);
+        fs.writeFileSync(htmlPath, html, 'utf8');
+        console.log(`[IMAGE SYNC] Updated image ${elementKey} directly in ${p}`);
       }
-      html = html.replace(match[1], tag);
-      fs.writeFileSync(htmlPath, html, 'utf8');
-      console.log(`[IMAGE SYNC] Updated image ${elementKey} directly in ${pageFile}`);
-    }
+    });
   } catch (err) {
     console.error('[IMAGE SYNC ERROR]:', err);
   }
 }
 
-// Physically update global brand logo text and logo image across all HTML pages
+// Physically update global brand logo text and logo image across Main Website pages
 function updateHtmlLogo(newLogoText, logoImage) {
-  const pages = ['index.html', 'about.html', 'services.html', 'success-stories.html', 'contact.html'];
+  const pages = ['index.html', 'clone-preview.html'];
   pages.forEach(p => {
     try {
       const htmlPath = path.join(ROOT, p);
       if (!fs.existsSync(htmlPath)) return;
       let html = fs.readFileSync(htmlPath, 'utf8');
 
+      // Update standard data-cms-logo links
       const logoContainers = /(<a[^>]+data-cms-logo=["']site\.logo["'][^>]*>)([\s\S]*?)(<\/a>)/gi;
       if (logoContainers.test(html)) {
         html = html.replace(logoContainers, (match, openTag, inner, closeTag) => {
@@ -147,8 +142,8 @@ function updateHtmlLogo(newLogoText, logoImage) {
           const brandText = newLogoText !== undefined && newLogoText !== null && newLogoText !== '' ? newLogoText : 'Nairee';
 
           if (logoImage) {
-            const finalSrc = (isFooter && (logoImage === 'images/nairi-icon.svg' || logoImage === 'images/nairi-logo.svg'))
-              ? 'images/nairi-icon-white.svg'
+            const finalSrc = (isFooter && (logoImage.includes('navy') || logoImage.includes('icon.svg')))
+              ? (logoImage.replace('navy', 'white'))
               : logoImage;
             content = `\n        <img src="${finalSrc}" alt="${brandText}" class="custom-logo-icon" id="${isFooter ? 'site-footer-logo-icon' : 'site-logo-icon'}">\n        <span class="logo-text" id="${isFooter ? 'site-footer-logo-text' : 'site-logo-text'}" data-cms-key="site.logo_text">${brandText}</span>\n      `;
           } else {
@@ -156,9 +151,19 @@ function updateHtmlLogo(newLogoText, logoImage) {
           }
           return `${openTag}${content}${closeTag}`;
         });
-        fs.writeFileSync(htmlPath, html, 'utf8');
-        console.log(`[LOGO SYNC] Updated brand logo (icon: ${logoImage || 'none'}, text: "${newLogoText}") in ${p}`);
       }
+
+      // Update landing page header logo button
+      const navLogoBtnRegex = /(<button[^>]+data-testid=["']nav-logo["'][^>]*>)([\s\S]*?)(<\/button>)/i;
+      if (navLogoBtnRegex.test(html) && logoImage) {
+        html = html.replace(navLogoBtnRegex, (match, openTag, inner, closeTag) => {
+          let updatedInner = inner.replace(/<img[^>]+src=["'][^"']*["']/i, `<img src="${logoImage}"`);
+          return `${openTag}${updatedInner}${closeTag}`;
+        });
+      }
+
+      fs.writeFileSync(htmlPath, html, 'utf8');
+      console.log(`[LOGO SYNC] Updated brand logo (icon: ${logoImage || 'none'}, text: "${newLogoText}") in ${p}`);
     } catch (e) {
       console.error('[LOGO SYNC ERROR]:', e);
     }
@@ -186,6 +191,83 @@ function updateCssFonts(fontSerif, fontSans, accentColor) {
   } catch (e) {
     console.error('[CSS SYNC ERROR]:', e);
   }
+}
+
+// Physically update granular typography across Main Website pages on disk
+function updateDiskTypography(branding) {
+  if (!branding || typeof branding !== 'object') return;
+  const targetPages = ['index.html', 'clone-preview.html'];
+
+  const headingFont = branding.font_heading || branding.font_serif || 'Fraunces';
+  const subheadingFont = branding.font_subheading || branding.font_sans || 'General Sans';
+  const bodyFont = branding.font_body || branding.font_sans || 'General Sans';
+  const monoFont = branding.font_mono || 'JetBrains Mono';
+  const accentColor = branding.accent_color || '#0284C7';
+
+  const fontshareMap = {
+    'general sans': 'https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap',
+    'satoshi': 'https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap',
+    'cabinet grotesk': 'https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&display=swap',
+    'clash display': 'https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap'
+  };
+
+  const fontsToLoad = [headingFont, subheadingFont, bodyFont, monoFont].filter(Boolean);
+  const uniqueFonts = [...new Set(fontsToLoad)];
+
+  targetPages.forEach(p => {
+    try {
+      const htmlPath = path.join(ROOT, p);
+      if (!fs.existsSync(htmlPath)) return;
+      let html = fs.readFileSync(htmlPath, 'utf8');
+
+      // 1. Update CSS variables in <style>
+      if (html.includes('--font-heading:')) {
+        html = html.replace(/--font-heading:\s*[^;]+;/gi, `--font-heading: '${headingFont}', Georgia, serif;`);
+      }
+      if (html.includes('--font-subheading:')) {
+        html = html.replace(/--font-subheading:\s*[^;]+;/gi, `--font-subheading: '${subheadingFont}', -apple-system, BlinkMacSystemFont, sans-serif;`);
+      }
+      if (html.includes('--font-body:')) {
+        html = html.replace(/--font-body:\s*[^;]+;/gi, `--font-body: '${bodyFont}', -apple-system, BlinkMacSystemFont, sans-serif;`);
+      }
+      if (html.includes('--font-mono:')) {
+        html = html.replace(/--font-mono:\s*[^;]+;/gi, `--font-mono: '${monoFont}', ui-monospace, monospace;`);
+      }
+
+      // Legacy fallback variables
+      if (html.includes('--font-serif:')) {
+        html = html.replace(/--font-serif:\s*[^;]+;/gi, `--font-serif: '${headingFont}', Georgia, serif;`);
+      }
+      if (html.includes('--font-sans:')) {
+        html = html.replace(/--font-sans:\s*[^;]+;/gi, `--font-sans: '${bodyFont}', -apple-system, BlinkMacSystemFont, sans-serif;`);
+      }
+
+      // 2. Inject font stylesheet links into <head> if not already present
+      uniqueFonts.forEach(font => {
+        const lower = font.toLowerCase().trim();
+        if (fontshareMap[lower]) {
+          const url = fontshareMap[lower];
+          if (!html.includes(url)) {
+            html = html.replace('</head>', `  <link href="${url}" rel="stylesheet">\n</head>`);
+          }
+        } else if (!['georgia', 'times new roman', 'arial', 'helvetica', 'sans-serif', 'serif', 'monospace'].includes(lower)) {
+          const slug = encodeURIComponent(font).replace(/%20/g, '+');
+          if (!html.includes(slug)) {
+            const googleUrl = `https://fonts.googleapis.com/css2?family=${slug}:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap`;
+            html = html.replace('</head>', `  <link href="${googleUrl}" rel="stylesheet">\n</head>`);
+          }
+        }
+      });
+
+      fs.writeFileSync(htmlPath, html, 'utf8');
+      console.log(`[DISK TYPOGRAPHY SYNC] Updated typography in ${p}`);
+    } catch (e) {
+      console.error(`[DISK TYPOGRAPHY SYNC ERROR in ${p}]:`, e);
+    }
+  });
+
+  // Also update css/style.css
+  updateCssFonts(headingFont, bodyFont, accentColor);
 }
 
 // --- Lead Email Alerts & Dual-Gmail Forwarding Subsystem ---
@@ -243,7 +325,7 @@ function logEmailAlert(logEntry) {
   }
 }
 
-async function sendLeadAlertEmails(lead) {
+async function sendLeadAlertEmails(lead, reqOrigin) {
   const settings = getEmailAlertSettings();
   if (settings.enabled === false) {
     console.log('[EMAIL ALERTS] Forwarding is disabled in settings.');
@@ -255,6 +337,9 @@ async function sendLeadAlertEmails(lead) {
     console.warn('[EMAIL ALERTS] No recipient Gmail addresses configured.');
     return { status: 'NO_RECIPIENTS', message: 'No recipient emails specified' };
   }
+
+  const adminBase = reqOrigin || process.env.PUBLIC_URL || 'http://localhost:3300';
+  const adminLink = `${adminBase.replace(/\/+$/, '')}/admin/index.html#section-leads`;
 
   const clientName = lead.name || lead.fullName || 'Anonymous Visitor';
   const clientEmail = lead.email || 'Not provided';
@@ -270,7 +355,7 @@ async function sendLeadAlertEmails(lead) {
     timeZoneName: 'short'
   });
 
-  const subject = `⚡ New Lead Inflow: ${clientName} [${clientVenture}] — Nairi Ventures`;
+  const subject = `⚡ New Lead Inflow: ${clientName} [${clientVenture}] - Nairi Ventures`;
 
   const htmlContent = `
 <!DOCTYPE html>
@@ -297,7 +382,7 @@ async function sendLeadAlertEmails(lead) {
 <body>
   <div class="card">
     <div class="header">
-      <h1>🚀 Nairi Ventures — New Inquiry Alert</h1>
+      <h1>🚀 Nairi Ventures - New Inquiry Alert</h1>
       <p>A new potential venture client just submitted details on the Nairi Ventures portal.</p>
       <div class="badge">Dispatched to 2 Designated Inboxes: ${recipients.join(' & ')}</div>
     </div>
@@ -311,12 +396,12 @@ async function sendLeadAlertEmails(lead) {
         <div class="field-val"><a href="mailto:${clientEmail}">${clientEmail}</a></div>
       </div>
       <div class="field-row">
-        <div class="field-label">Budget / Venture Interest</div>
+        <div class="field-label">Tier / Focus Area</div>
         <div class="field-val">${clientVenture}</div>
       </div>
       <div class="field-row">
         <div class="field-label">Inquiry Message / Details</div>
-        <div class="message-box">${clientMessage}</div>
+        <div class="field-box message-box">${clientMessage}</div>
       </div>
       <div class="field-row">
         <div class="field-label">Submission Timestamp</div>
@@ -327,7 +412,7 @@ async function sendLeadAlertEmails(lead) {
         <div class="field-val"><code style="color: #F59E0B; font-family: monospace;">${lead.id || 'N/A'}</code></div>
       </div>
       <div style="text-align: center; margin-top: 28px; padding-top: 16px; border-top: 1px solid #272B38;">
-        <a href="https://metals-remember-location-yea.trycloudflare.com/admin/index.html#section-leads" class="cta-btn" target="_blank">Open Inquiries in Admin Panel &rarr;</a>
+        <a href="${adminLink}" class="cta-btn" target="_blank">Open Inquiries in Admin Panel &rarr;</a>
       </div>
     </div>
     <div class="footer">
@@ -340,7 +425,7 @@ async function sendLeadAlertEmails(lead) {
   `.trim();
 
   const textContent = `
-NEW INQUIRY NOTIFICATION — NAIRI VENTURES
+NEW INQUIRY NOTIFICATION - NAIRI VENTURES
 ===========================================
 Client Name: ${clientName}
 Client Email: ${clientEmail}
@@ -355,7 +440,7 @@ Dispatched to Designated Inboxes:
 ${recipients.join(', ')}
 
 Review in Admin Panel:
-https://metals-remember-location-yea.trycloudflare.com/admin/index.html#section-leads
+${adminLink}
 ===========================================
   `.trim();
 
@@ -514,9 +599,9 @@ const server = http.createServer((req, res) => {
         if (branding.logo_text !== undefined || branding.logo_image !== undefined) {
           updateHtmlLogo(branding.logo_text, branding.logo_image);
         }
-        // Update CSS fonts
-        if (branding.font_serif || branding.font_sans || branding.accent_color) {
-          updateCssFonts(branding.font_serif, branding.font_sans, branding.accent_color);
+        // Update granular typography and CSS fonts across all pages
+        if (branding.font_heading || branding.font_subheading || branding.font_body || branding.font_mono || branding.font_serif || branding.font_sans || branding.accent_color) {
+          updateDiskTypography(data.branding);
         }
 
         res.writeHead(200, { 'Content-Type': 'application/json' });
@@ -603,7 +688,10 @@ const server = http.createServer((req, res) => {
         // Automatically dispatch email alert to the 2 configured Gmail addresses
         let emailDispatch = null;
         try {
-          emailDispatch = await sendLeadAlertEmails(lead);
+          const reqProto = req.headers['x-forwarded-proto'] || (req.socket.encrypted ? 'https' : 'http');
+          const reqHost = req.headers['x-forwarded-host'] || req.headers.host || `localhost:${PORT}`;
+          const reqOrigin = `${reqProto}://${reqHost}`;
+          emailDispatch = await sendLeadAlertEmails(lead, reqOrigin);
         } catch (mailErr) {
           console.error('[LEAD EMAIL DISPATCH ERROR]:', mailErr.message);
         }
@@ -704,7 +792,10 @@ const server = http.createServer((req, res) => {
           status: 'Test Verified'
         };
 
-        const dispatchResult = await sendLeadAlertEmails(sampleLead);
+        const reqProto = req.headers['x-forwarded-proto'] || (req.socket.encrypted ? 'https' : 'http');
+        const reqHost = req.headers['x-forwarded-host'] || req.headers.host || `localhost:${PORT}`;
+        const reqOrigin = `${reqProto}://${reqHost}`;
+        const dispatchResult = await sendLeadAlertEmails(sampleLead, reqOrigin);
         const data = readCMSData();
 
         res.writeHead(200, { 'Content-Type': 'application/json' });
@@ -926,6 +1017,6 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, () => {
-  console.log(`Nairi Ventures live server active at http://localhost:${PORT}/`);
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`Nairi Ventures live server active at http://localhost:${PORT}/ and http://127.0.0.1:${PORT}/`);
 });

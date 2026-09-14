@@ -57,5 +57,5 @@
 
   <!-- Studio Wordmark on Slate -->
   <text x="400" y="140" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="22" font-style="italic" fill="#171512">Nairi Ventures — Studio Operators &amp; Founders</text>
-  <text x="400" y="580" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#797368">Multi-Disciplinary Team Spanning Advanced Manufacturing &amp; Artificial Intelligence</text>
+  <text x="400" y="580" text-anchor="middle" font-family="'General Sans', sans-serif" font-size="12" fill="#797368">Multi-Disciplinary Team Spanning Advanced Manufacturing &amp; Artificial Intelligence</text>
 </svg>

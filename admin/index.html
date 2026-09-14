@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard — Nairi Ventures</title>
+  <title>Admin Dashboard · Nairi Ventures</title>
   <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="admin.css?v=20260910_obsidian_v3">
 </head>
 <body>
@@ -36,7 +40,7 @@
 
         <button type="button" class="nav-item" data-section="section-branding">
           <svg viewBox="0 0 24 24"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>
-          <span>Logo &amp; Fonts</span>
+          <span>Typography &amp; Fonts</span>
         </button>
 
         <button type="button" class="nav-item" data-section="section-testimonials">
@@ -95,6 +99,10 @@
           <h1 id="active-title" class="page-title">Page Content</h1>
         </div>
         <div class="topbar-right" style="display: flex; align-items: center; gap: 0.85rem;">
+          <div class="connection-badge" style="display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.35rem 0.85rem; border-radius: 9999px; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); font-size: 0.75rem; font-weight: 600; color: #059669;">
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #10B981; display: inline-block; box-shadow: 0 0 6px #10B981;"></span>
+            <span>Connected: Main Website Only (index.html)</span>
+          </div>
           <a href="../index.html" target="_blank" class="btn-primary-action" style="text-decoration: none; padding: 0.42rem 0.85rem; font-size: 0.78rem; display: inline-flex; align-items: center; gap: 0.4rem; background: var(--bg-card); color: var(--text-main); border: 1px solid var(--border-color);" title="Open Nairi Ventures website in new tab">
             <span>View Live Website</span>
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
@@ -123,7 +131,7 @@
                     Live Header Preview (1st Logo Icon, Then Name):
                   </div>
                   <div style="background: #F7F5EF; border: 1px solid var(--border-color); border-radius: 8px; padding: 0.4rem 1rem; display: inline-flex; align-items: center; gap: 0.75rem; min-height: 48px;">
-                    <img id="quick-logo-preview-img" src="../images/nairi-icon.svg" alt="Logo Icon" style="max-height: 36px; width: auto; object-fit: contain;">
+                    <img id="quick-logo-preview-img" src="../images/nairee-logo-navy-sky.png" alt="Nairee Brand Logo" style="max-height: 34px; width: auto; object-fit: contain;">
                     <span id="quick-logo-preview-text" style="font-family: var(--font-sans); font-size: 1.35rem; font-weight: 700; color: #0E1017; letter-spacing: -0.025em;">Nairee</span>
                   </div>
                 </div>
@@ -158,18 +166,29 @@
             </div>
           </div>
 
-          <!-- Quick Studio Status & Client Partners Controller Bar -->
-          <div class="panel" style="margin-bottom: 1.5rem; background: #FFFFFF; border-left: 4px solid #10B981; padding: 1.15rem 1.5rem;">
+          <!-- Quick Landing Page Highlights Controller Bar -->
+          <div class="panel" style="margin-bottom: 1.5rem; background: #FFFFFF; border-left: 4px solid #0284C7; padding: 1.15rem 1.5rem;">
             <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
-              <div style="flex: 1; min-width: 320px;">
-                <label for="quick-studio-ticker-input" style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); display: block; margin-bottom: 0.35rem;">
-                  Top Header Live Studio Availability Ticker:
+              <div style="flex: 1; min-width: 260px;">
+                <label for="quick-hero-roas-input" style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); display: block; margin-bottom: 0.35rem;">
+                  Hero Floating Pill 1 (ROAS Value):
                 </label>
                 <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
-                  <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #10B981; box-shadow: 0 0 6px #10B981;"></span>
-                  <input type="text" id="quick-studio-ticker-input" class="form-input" value="STUDIO AVAILABILITY: 2 Production Sprints Open for Q3 · 48h Turnaround Active · Next Intake: Monday" style="flex: 1; min-width: 380px; font-size: 0.85rem; padding: 0.45rem 0.75rem;">
-                  <button type="button" id="btn-quick-save-ticker" class="btn-primary-action" style="padding: 0.45rem 0.95rem; font-size: 0.8rem; background: #10B981; color: #FFFFFF; font-weight: 700; white-space: nowrap;">
-                    💾 Save Ticker
+                  <input type="text" id="quick-hero-roas-input" class="form-input" value="4.2x ROAS" style="width: 150px; font-weight: 700; font-size: 0.85rem; padding: 0.45rem 0.75rem;">
+                  <button type="button" id="btn-quick-save-roas" class="btn-primary-action" style="padding: 0.45rem 0.85rem; font-size: 0.8rem; background: #0284C7; color: #FFFFFF; font-weight: 700; white-space: nowrap;">
+                    💾 Save ROAS
+                  </button>
+                </div>
+              </div>
+
+              <div style="flex: 1; min-width: 260px;">
+                <label for="quick-hero-pod-input" style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); display: block; margin-bottom: 0.35rem;">
+                  Hero Floating Pill 2 (Pod Window):
+                </label>
+                <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                  <input type="text" id="quick-hero-pod-input" class="form-input" value="14 Day Pod" style="width: 150px; font-weight: 700; font-size: 0.85rem; padding: 0.45rem 0.75rem;">
+                  <button type="button" id="btn-quick-save-pod" class="btn-primary-action" style="padding: 0.45rem 0.85rem; font-size: 0.8rem; background: #EA580C; color: #FFFFFF; font-weight: 700; white-space: nowrap;">
+                    💾 Save Pod
                   </button>
                 </div>
               </div>
@@ -177,18 +196,18 @@
 
             <div style="border-top: 1px dashed var(--border-color); padding-top: 0.85rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
               <div style="flex: 1; min-width: 320px;">
-                <label for="quick-clients-input" style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); display: block; margin-bottom: 0.35rem;">
-                  Hero &amp; Proof Client Partners (Comma-separated):
+                <label for="quick-hero-rev-input" style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); display: block; margin-bottom: 0.35rem;">
+                  Hero Metric (Partner Revenue Managed):
                 </label>
                 <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
-                  <input type="text" id="quick-clients-input" class="form-input" value="SwipeTouch, SwiftPay, Nexis AI, Zapit AI, TradePro" style="flex: 1; min-width: 340px; font-weight: 600; font-size: 0.85rem; padding: 0.45rem 0.75rem;">
-                  <button type="button" id="btn-quick-save-clients" class="btn-primary-action" style="padding: 0.45rem 0.95rem; font-size: 0.8rem; background: var(--accent); color: #0E1017; font-weight: 700; white-space: nowrap;">
-                    💾 Save Clients
+                  <input type="text" id="quick-hero-rev-input" class="form-input" value="₹120Cr+" style="width: 150px; font-weight: 700; font-size: 0.85rem; padding: 0.45rem 0.75rem;">
+                  <button type="button" id="btn-quick-save-rev" class="btn-primary-action" style="padding: 0.45rem 0.85rem; font-size: 0.8rem; background: #071B2F; color: #FFFFFF; font-weight: 700; white-space: nowrap;">
+                    💾 Save Revenue Metric
                   </button>
                 </div>
               </div>
               <div style="font-size: 0.75rem; color: var(--text-muted); font-family: ui-monospace, monospace;">
-                Updates Hero Ribbon &amp; Section 12 Proof instantly.
+                Instantly updates Hero cards &amp; syncs to index.html on disk.
               </div>
             </div>
           </div>
@@ -204,12 +223,8 @@
                 
                 <label style="font-size: 0.8125rem; font-weight: 600; color: var(--text-muted);">Page:</label>
                 <select id="content-page-selector" class="page-filter-select" style="min-width: 170px;">
-                  <option value="Home" selected>Home Page (index.html)</option>
-                  <option value="Services">Services Page (services.html)</option>
-                  <option value="About">About Page (about.html)</option>
-                  <option value="Case Studies">Case Studies (success-stories.html)</option>
-                  <option value="Contact">Contact Page (contact.html)</option>
-                  <option value="all">All Pages (Everything)</option>
+                  <option value="Home" selected>Main Website (index.html · Live)</option>
+                  <option value="all">All Main Website Sections &amp; Global Elements</option>
                 </select>
 
                 <label style="font-size: 0.8125rem; font-weight: 600; color: var(--text-muted);">Section:</label>
@@ -238,16 +253,12 @@
             <div class="panel-header">
               <div class="panel-header-left">
                 <h2 class="panel-title">Images &amp; Visual Assets</h2>
-                <p class="panel-desc">Manage images across all pages. Enter image paths, pick from existing assets, or upload new files directly.</p>
+                <p class="panel-desc">Manage images on the main website. Enter image paths, pick from existing assets, or upload new files directly.</p>
               </div>
               <div class="panel-header-right">
                 <label style="font-size: 0.8125rem; font-weight: 600; color: var(--text-muted);">Select Page:</label>
                 <select id="images-page-selector" class="page-filter-select">
-                  <option value="all" selected>All Pages</option>
-                  <option value="index.html">Home Page (index.html)</option>
-                  <option value="about.html">About Page (about.html)</option>
-                  <option value="ventures.html">Ventures Page (ventures.html)</option>
-                  <option value="success-stories.html">Success Stories (success-stories.html)</option>
+                  <option value="index.html" selected>Main Website (index.html · Live)</option>
                 </select>
                 <input type="file" id="media-upload-hidden" accept="image/*" style="display: none;">
               </div>
@@ -263,117 +274,351 @@
         <!-- LOGO & FONTS SECTION -->
         <section id="section-branding" class="content-section">
           <div class="panel">
-            <div class="panel-header">
+            <div class="panel-header" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
               <div class="panel-header-left">
-                <h2 class="panel-title">Logo &amp; Typography</h2>
-                <p class="panel-desc">Customize your brand identity. Changes apply universally across header navigation, footers, and page headings.</p>
+                <h2 class="panel-title">Typography Engine &amp; Brand Identity</h2>
+                <p class="panel-desc">Universal font controls for every tier of content: Headings, Subheadings, Body Text, and Monospace Numbers. Changes take effect across the entire website in real time.</p>
+              </div>
+              <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;">
+                <a href="../index.html" target="_blank" class="btn-part-edit" style="text-decoration: none; display: inline-flex; align-items: center; gap: 6px; padding: 0.6rem 1rem; font-size: 0.85rem;">
+                  <span>🌐 View Live Site</span>
+                </a>
+                <button type="button" id="btn-reset-fonts" class="btn-part-cancel" style="padding: 0.6rem 1rem; font-size: 0.85rem;">
+                  ↺ Reset Defaults
+                </button>
+                <button type="button" id="btn-save-branding" class="btn-primary-action" style="padding: 0.6rem 1.4rem; font-size: 0.875rem; font-weight: 700;">
+                  💾 Save &amp; Apply All Changes
+                </button>
               </div>
             </div>
 
-            <div class="branding-layout-grid" style="margin-top: 1rem;">
+            <!-- Top Notice Banner -->
+            <div style="background: rgba(2, 132, 199, 0.08); border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 8px; padding: 0.85rem 1.25rem; margin: 1.25rem 0; display: flex; align-items: center; gap: 12px;">
+              <span style="font-size: 1.25rem;">✨</span>
+              <span style="font-size: 0.85rem; color: #0284C7; font-weight: 500;">
+                <strong>Granular Page-Wide Cascade:</strong> Choosing a font in any section below immediately updates that specific element role across all sections of the website and persists permanently to disk.
+              </span>
+            </div>
+
+            <!-- 4 Granular Font Sections Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
               
-              <!-- Left: Logo & Accent Settings -->
-              <div class="branding-card">
-                <h3 style="font-size: 1.05rem; margin-bottom: 0.25rem; color: var(--text-heading); font-weight: 600;">Global Brand Identity</h3>
-                <p style="font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 1rem;">Configure the studio logo text or upload a custom logo mark.</p>
-
-                <!-- Live Active Logo Preview Container -->
-                <div style="background: rgba(255,255,255,0.03); border: 1px dashed var(--border-color); border-radius: 8px; padding: 1.25rem 1rem; margin-bottom: 1.25rem; text-align: center;">
-                  <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.6rem;">Live Active Logo Preview (1st Logo Icon + 2nd Brand Name)</div>
-                  <div id="admin-logo-preview-container" style="min-height: 52px; display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem; padding: 0.6rem 1.5rem; background: #F7F5EF; border-radius: 8px; border: 1px solid #E5E7EB;">
-                    <img id="admin-logo-preview-img" src="../images/nairi-icon.svg" alt="Logo Icon" style="max-height: 38px; width: auto; object-fit: contain;">
-                    <span id="admin-logo-preview-text" style="font-family: var(--font-sans, sans-serif); font-size: 1.4rem; font-weight: 700; color: #0E1017; letter-spacing: -0.025em;">Nairee</span>
+              <!-- SECTION 1: HEADINGS FONT -->
+              <div class="branding-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                    <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-heading); display: flex; align-items: center; gap: 8px;">
+                      <span style="background: rgba(2, 132, 199, 0.15); color: #0284C7; padding: 2px 8px; border-radius: 6px; font-size: 0.75rem; font-family: monospace;">--font-heading</span>
+                      1. Headings Font
+                    </h3>
+                    <span style="font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: rgba(2, 132, 199, 0.1); color: #0284C7;">H1 – H6 &amp; Titles</span>
                   </div>
-                  <div id="admin-logo-status-badge" style="display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 2px 10px; border-radius: 999px; background: rgba(74, 222, 128, 0.15); color: #16A34A; margin-top: 0.6rem;">1st: Logo Icon + 2nd: Brand Name Active</div>
-                </div>
-                
-                <div class="form-group" style="margin-bottom: 1.25rem;">
-                  <label class="form-label" style="display: block; font-size: 0.8125rem; font-weight: 600; margin-bottom: 0.4rem;">Logo Brand Name (Written Section)</label>
-                  <input type="text" id="brand-logo-text" class="form-input" placeholder="e.g. Nairee" style="width: 100%; font-weight: 600;">
-                  <span style="font-size: 0.75rem; color: var(--text-muted); display: block; margin-top: 0.25rem;">Displayed directly beside the logo icon across all navigation headers and footers.</span>
-                </div>
+                  <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">
+                    Governs all primary headlines, hero slogans, section titles, card headers, and major impact statements across the entire page.
+                  </p>
 
-                <div class="form-group" style="margin-bottom: 1.25rem;">
-                  <label class="form-label" style="display: block; font-size: 0.8125rem; font-weight: 600; margin-bottom: 0.4rem;">Logo Graphic / Icon (Displayed 1st)</label>
-                  <input type="text" id="brand-logo-image" class="form-input" placeholder="e.g. images/nairi-icon.svg or click Upload below" style="width: 100%; margin-bottom: 0.5rem; font-size: 0.8125rem;">
-                  <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                    <button type="button" id="btn-upload-logo" class="btn-part-edit" style="white-space: nowrap; font-size: 0.8rem; padding: 0.45rem 0.85rem;">
-                      📁 Upload Logo File
-                    </button>
-                    <button type="button" id="btn-pick-logo-library" class="btn-part-cancel" style="white-space: nowrap; font-size: 0.8rem; padding: 0.45rem 0.85rem;">
-                      🖼️ Choose from Library
-                    </button>
-                    <button type="button" id="btn-clear-logo" class="btn-part-delete" style="white-space: nowrap; font-size: 0.8rem; padding: 0.45rem 0.85rem;">
-                      ✕ Remove Icon (Use Name Only)
-                    </button>
+                  <div class="form-group" style="margin-bottom: 0.85rem;">
+                    <label class="form-label" style="display: block; font-size: 0.8rem; font-weight: 600; margin-bottom: 0.35rem;">Select Preset Font</label>
+                    <select id="brand-font-heading-select" class="form-select" style="width: 100%;">
+                      <optgroup label="Editorial &amp; Luxury Serifs">
+                        <option value="Fraunces" selected>Fraunces (Warm Organic Serif · Studio Default)</option>
+                        <option value="Playfair Display">Playfair Display (High-Contrast Luxury Serif)</option>
+                        <option value="Cormorant Garamond">Cormorant Garamond (Refined Classical Serif)</option>
+                        <option value="Cinzel">Cinzel (Regal Classical Display)</option>
+                        <option value="Instrument Serif">Instrument Serif (Chic High-Fashion Serif)</option>
+                        <option value="Newsreader">Newsreader (Editorial Long-Form Serif)</option>
+                        <option value="Merriweather">Merriweather (Sturdy Modern Serif)</option>
+                        <option value="Lora">Lora (Contemporary Literary Serif)</option>
+                      </optgroup>
+                      <optgroup label="Bold &amp; Expressive Sans / Display">
+                        <option value="Syne">Syne (Bold Ultra-Modern Display)</option>
+                        <option value="Cabinet Grotesk">Cabinet Grotesk (Neo-Grotesque Display)</option>
+                        <option value="Clash Display">Clash Display (High-Impact Modern Display)</option>
+                        <option value="Outfit">Outfit (Clean Geometric Sans)</option>
+                        <option value="Plus Jakarta Sans">Plus Jakarta Sans (Tech-Forward Modern)</option>
+                        <option value="General Sans">General Sans (Crisp Neo-Grotesque)</option>
+                        <option value="Space Grotesk">Space Grotesk (Architectural Modern)</option>
+                        <option value="Montserrat">Montserrat (Geometric Classic)</option>
+                      </optgroup>
+                      <option value="custom">✏️ Custom Google Font (Type below)...</option>
+                    </select>
                   </div>
-                  <span style="font-size: 0.75rem; color: var(--text-muted); display: block; margin-top: 0.4rem;">Displays first, immediately followed by the editable brand name written section.</span>
-                </div>
 
-                <div class="form-group" style="margin-bottom: 1.25rem;">
-                  <label class="form-label" style="display: block; font-size: 0.8125rem; font-weight: 600; margin-bottom: 0.4rem;">Brand Accent Color</label>
-                  <div style="display: flex; align-items: center; gap: 0.75rem;">
-                    <input type="color" id="brand-accent-color-picker" value="#E4A63A" style="border: 1px solid var(--border-color); border-radius: 4px; width: 44px; height: 38px; cursor: pointer; background: transparent; padding: 2px;">
-                    <input type="text" id="brand-accent-color" class="form-input" value="#E4A63A" style="width: 120px; font-family: monospace;">
+                  <div class="form-group" id="group-custom-font-heading" style="margin-bottom: 1rem;">
+                    <label class="form-label" style="display: block; font-size: 0.78rem; font-weight: 600; margin-bottom: 0.25rem;">Or Custom Google Font Name</label>
+                    <input type="text" id="brand-font-heading-custom" class="form-input" placeholder="e.g. Epilogue, Syne, Cabinet Grotesk..." style="width: 100%; font-size: 0.8125rem;">
                   </div>
                 </div>
 
-                <div style="margin-top: 1.5rem;">
-                  <button type="button" id="btn-save-branding" class="btn-primary-action" style="width: 100%; justify-content: center; padding: 0.75rem 1rem;">
-                    Apply Branding &amp; Typography
-                  </button>
+                <!-- Live Heading Preview -->
+                <div style="background: #0B1E33; border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 8px; padding: 1rem; margin-top: 0.5rem;">
+                  <div style="font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: #38BDF8; margin-bottom: 0.4rem; font-weight: 700;">Live Heading Preview</div>
+                  <div id="preview-heading-box" style="font-size: 1.25rem; font-weight: 800; line-height: 1.2; color: #FFFFFF; letter-spacing: -0.025em; min-height: 52px; display: flex; align-items: center;">
+                    You Direct the Vision. We Execute the Entire Engine.
+                  </div>
                 </div>
               </div>
 
-              <!-- Right: Typography & Live Interactive Preview -->
-              <div class="branding-card">
-                <h3 style="font-size: 1.05rem; margin-bottom: 0.25rem; color: var(--text-heading); font-weight: 600;">Typography Settings</h3>
-                <p style="font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 1rem;">Select headline and body fonts with real-time preview.</p>
+              <!-- SECTION 2: SUBHEADINGS FONT -->
+              <div class="branding-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                    <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-heading); display: flex; align-items: center; gap: 8px;">
+                      <span style="background: rgba(14, 165, 233, 0.15); color: #0284C7; padding: 2px 8px; border-radius: 6px; font-size: 0.75rem; font-family: monospace;">--font-subheading</span>
+                      2. Subheadings Font
+                    </h3>
+                    <span style="font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: rgba(14, 165, 233, 0.1); color: #0284C7;">Subtitles &amp; Descs</span>
+                  </div>
+                  <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">
+                    Governs hero subtext, section subtitles, chapter overviews, bottleneck summaries, highlights, and lead descriptions across the entire page.
+                  </p>
 
-                <div class="form-group" style="margin-bottom: 1.25rem;">
-                  <label class="form-label" style="display: block; font-size: 0.8125rem; font-weight: 600; margin-bottom: 0.4rem;">Headline Serif Font (--font-serif)</label>
-                  <select id="brand-font-serif" class="form-select" style="width: 100%;">
-                    <option value="Fraunces" selected>Fraunces (Warm / Organic Serif - Default)</option>
-                    <option value="Newsreader">Newsreader (Editorial Serif)</option>
-                    <option value="Playfair Display">Playfair Display (High Contrast / Luxury)</option>
-                    <option value="Cormorant Garamond">Cormorant Garamond (Refined / Classic)</option>
-                    <option value="Cinzel">Cinzel (Regal / Architectural)</option>
-                    <option value="Merriweather">Merriweather (Sturdy / Modern)</option>
-                    <option value="Lora">Lora (Contemporary / Literary)</option>
-                    <option value="EB Garamond">EB Garamond (Traditional Elegance)</option>
-                  </select>
-                  <span style="font-size: 0.75rem; color: var(--text-muted); display: block; margin-top: 0.25rem;">Applied to main headings, hero titles, and studio thesis.</span>
+                  <div class="form-group" style="margin-bottom: 0.85rem;">
+                    <label class="form-label" style="display: block; font-size: 0.8rem; font-weight: 600; margin-bottom: 0.35rem;">Select Preset Font</label>
+                    <select id="brand-font-subheading-select" class="form-select" style="width: 100%;">
+                      <optgroup label="Crisp Modern Sans">
+                        <option value="General Sans" selected>General Sans (Crisp Modern · Studio Default)</option>
+                        <option value="Satoshi">Satoshi (Clean Geometric Modern)</option>
+                        <option value="Outfit">Outfit (Contemporary Geometric)</option>
+                        <option value="Plus Jakarta Sans">Plus Jakarta Sans (High-Legibility Modern)</option>
+                        <option value="Inter">Inter (Workhorse Neutral Sans)</option>
+                        <option value="DM Sans">DM Sans (Warm Balanced Sans)</option>
+                        <option value="Manrope">Manrope (Geometric Neo-grotesque)</option>
+                      </optgroup>
+                      <optgroup label="Stylized &amp; Editorial Contrast">
+                        <option value="Space Grotesk">Space Grotesk (Tech Modern Accent)</option>
+                        <option value="Newsreader">Newsreader (Editorial Serif Contrast)</option>
+                        <option value="Poppins">Poppins (Friendly Geometric)</option>
+                        <option value="Work Sans">Work Sans (Screen-Optimized Grotesque)</option>
+                      </optgroup>
+                      <option value="custom">✏️ Custom Google Font (Type below)...</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group" id="group-custom-font-subheading" style="margin-bottom: 1rem;">
+                    <label class="form-label" style="display: block; font-size: 0.78rem; font-weight: 600; margin-bottom: 0.25rem;">Or Custom Google Font Name</label>
+                    <input type="text" id="brand-font-subheading-custom" class="form-input" placeholder="e.g. Satoshi, Outfit, Cabinet Grotesk..." style="width: 100%; font-size: 0.8125rem;">
+                  </div>
                 </div>
 
-                <div class="form-group" style="margin-bottom: 1.25rem;">
-                  <label class="form-label" style="display: block; font-size: 0.8125rem; font-weight: 600; margin-bottom: 0.4rem;">Body Sans Font (--font-sans)</label>
-                  <select id="brand-font-sans" class="form-select" style="width: 100%;">
-                    <option value="Plus Jakarta Sans" selected>Plus Jakarta Sans (Crisp Modern - Default)</option>
-                    <option value="Inter">Inter (Clean / Ultra-readable)</option>
-                    <option value="Space Grotesk">Space Grotesk (Tech / Studio Modern)</option>
-                    <option value="Outfit">Outfit (Geometric / Premium)</option>
-                    <option value="DM Sans">DM Sans (Balanced / Warm)</option>
-                    <option value="Manrope">Manrope (Geometric Neo-grotesque)</option>
-                  </select>
-                  <span style="font-size: 0.75rem; color: var(--text-muted); display: block; margin-top: 0.25rem;">Applied to body text, UI labels, buttons, and badges.</span>
+                <!-- Live Subheading Preview -->
+                <div style="background: #0B1E33; border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 8px; padding: 1rem; margin-top: 0.5rem;">
+                  <div style="font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: #38BDF8; margin-bottom: 0.4rem; font-weight: 700;">Live Subheading Preview</div>
+                  <div id="preview-subheading-box" style="font-size: 0.9375rem; line-height: 1.5; color: #94A3B8; min-height: 52px; display: flex; align-items: center;">
+                    From AI personalized video campaigns mapped to your customer segments, to full stack finance and operations.
+                  </div>
+                </div>
+              </div>
+
+              <!-- SECTION 3: BODY COPY FONT -->
+              <div class="branding-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                    <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-heading); display: flex; align-items: center; gap: 8px;">
+                      <span style="background: rgba(37, 99, 235, 0.15); color: #2563EB; padding: 2px 8px; border-radius: 6px; font-size: 0.75rem; font-family: monospace;">--font-body</span>
+                      3. Body Copy Font
+                    </h3>
+                    <span style="font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: rgba(37, 99, 235, 0.1); color: #2563EB;">Paragraphs &amp; UI</span>
+                  </div>
+                  <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">
+                    Governs general paragraphs, buttons, input fields, form labels, list items, navigation links, and UI cards across the entire website.
+                  </p>
+
+                  <div class="form-group" style="margin-bottom: 0.85rem;">
+                    <label class="form-label" style="display: block; font-size: 0.8rem; font-weight: 600; margin-bottom: 0.35rem;">Select Preset Font</label>
+                    <select id="brand-font-body-select" class="form-select" style="width: 100%;">
+                      <optgroup label="Ultra-Readable Screen Sans">
+                        <option value="General Sans" selected>General Sans (Crisp Modern · Studio Default)</option>
+                        <option value="Inter">Inter (Ultra-Clean Screen Standard)</option>
+                        <option value="Plus Jakarta Sans">Plus Jakarta Sans (Crisp Neo-Grotesque)</option>
+                        <option value="Outfit">Outfit (Clean Geometric Sans)</option>
+                        <option value="DM Sans">DM Sans (Balanced Humanist)</option>
+                        <option value="Roboto">Roboto (Neutral High-Density)</option>
+                        <option value="Poppins">Poppins (Geometric Round)</option>
+                        <option value="Work Sans">Work Sans (Optimized Workhorse)</option>
+                      </optgroup>
+                      <option value="custom">✏️ Custom Google Font (Type below)...</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group" id="group-custom-font-body" style="margin-bottom: 1rem;">
+                    <label class="form-label" style="display: block; font-size: 0.78rem; font-weight: 600; margin-bottom: 0.25rem;">Or Custom Google Font Name</label>
+                    <input type="text" id="brand-font-body-custom" class="form-input" placeholder="e.g. Inter, DM Sans, Plus Jakarta Sans..." style="width: 100%; font-size: 0.8125rem;">
+                  </div>
                 </div>
 
-                <!-- Live Preview Box -->
-                <div class="font-preview-box" id="font-preview-container">
-                  <span style="font-size: 0.6875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); display: block; margin-bottom: 0.5rem;" id="preview-tag">LIVE PREVIEW</span>
-                  <div id="preview-headline" class="font-preview-headline">
-                    We build ventures that endure.
-                  </div>
-                  <div id="preview-subheadline" style="font-size: 0.95rem; font-style: italic; color: #E4A63A; margin-bottom: 0.75rem;">
-                    Transforming raw ambition into generational infrastructure.
-                  </div>
-                  <div id="preview-body" class="font-preview-body">
+                <!-- Live Body Preview -->
+                <div style="background: #0B1E33; border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 8px; padding: 1rem; margin-top: 0.5rem;">
+                  <div style="font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: #38BDF8; margin-bottom: 0.4rem; font-weight: 700;">Live Body Copy Preview</div>
+                  <div id="preview-body-box" style="font-size: 0.875rem; line-height: 1.55; color: #E2E8F0; min-height: 52px; display: flex; align-items: center;">
                     Nairi Ventures pairs operational precision with long-term capital to co-found durable companies across enterprise, fintech, and intelligent systems.
                   </div>
                 </div>
+              </div>
 
+              <!-- SECTION 4: MONOSPACE & METRICS FONT -->
+              <div class="branding-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                    <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-heading); display: flex; align-items: center; gap: 8px;">
+                      <span style="background: rgba(234, 88, 12, 0.15); color: #EA580C; padding: 2px 8px; border-radius: 6px; font-size: 0.75rem; font-family: monospace;">--font-mono</span>
+                      4. Numbers &amp; Metrics Font
+                    </h3>
+                    <span style="font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: rgba(234, 88, 12, 0.1); color: #EA580C;">Data &amp; Counters</span>
+                  </div>
+                  <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">
+                    Governs metric numbers (₹120Cr+, 4.2x, 14 days), floating hero pills, ticker elements, and chapter numbers across the entire page.
+                  </p>
+
+                  <div class="form-group" style="margin-bottom: 0.85rem;">
+                    <label class="form-label" style="display: block; font-size: 0.8rem; font-weight: 600; margin-bottom: 0.35rem;">Select Preset Font</label>
+                    <select id="brand-font-mono-select" class="form-select" style="width: 100%;">
+                      <option value="JetBrains Mono" selected>JetBrains Mono (Sleek Monospace · Studio Default)</option>
+                      <option value="IBM Plex Mono">IBM Plex Mono (Industrial Precision)</option>
+                      <option value="Space Mono">Space Mono (Geometric Editorial Mono)</option>
+                      <option value="Fira Code">Fira Code (Clean Developer Mono)</option>
+                      <option value="Source Code Pro">Source Code Pro (Classic Screen Mono)</option>
+                      <option value="Roboto Mono">Roboto Mono (Balanced Technical)</option>
+                      <option value="custom">✏️ Custom Google Font (Type below)...</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group" id="group-custom-font-mono" style="margin-bottom: 1rem;">
+                    <label class="form-label" style="display: block; font-size: 0.78rem; font-weight: 600; margin-bottom: 0.25rem;">Or Custom Google Font Name</label>
+                    <input type="text" id="brand-font-mono-custom" class="form-input" placeholder="e.g. JetBrains Mono, Space Mono..." style="width: 100%; font-size: 0.8125rem;">
+                  </div>
+                </div>
+
+                <!-- Live Mono Preview -->
+                <div style="background: #0B1E33; border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 8px; padding: 1rem; margin-top: 0.5rem;">
+                  <div style="font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: #38BDF8; margin-bottom: 0.4rem; font-weight: 700;">Live Metrics Preview</div>
+                  <div id="preview-mono-box" style="font-size: 1.15rem; font-weight: 700; color: #38BDF8; min-height: 52px; display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+                    <span>₹120Cr+</span>
+                    <span style="color: #EA580C;">4.2x ROAS</span>
+                    <span style="color: #F8FAFC;">14 Days Pod</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Full Page Typography Synergy Showcase Card -->
+            <div style="margin-top: 1.75rem; background: #071B2F; border: 1.5px solid rgba(56, 189, 248, 0.35); border-radius: 12px; padding: 1.5rem; box-shadow: 0 16px 40px rgba(7, 27, 47, 0.4);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 0.75rem; flex-wrap: wrap; gap: 8px;">
+                <div>
+                  <span style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: #38BDF8; font-weight: 800;">LIVE PAGE TYPOGRAPHY SHOWCASE</span>
+                  <div style="font-size: 0.82rem; color: #94A3B8; margin-top: 2px;">Simulated live page composition combining all 4 selected typography rules.</div>
+                </div>
+                <div style="display: flex; gap: 8px; align-items: center;">
+                  <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #10B981; box-shadow: 0 0 10px #10B981;"></span>
+                  <span style="font-size: 0.75rem; color: #A7F3D0; font-weight: 600;">Real-Time Font Engine Active</span>
+                </div>
+              </div>
+
+              <div style="max-width: 780px;">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1.25rem;">
+                  <img id="composite-preview-logo-img" src="../images/nairee-logo-white-sky.png" alt="Logo" style="height: 28px; width: auto; object-fit: contain;">
+                  <span id="composite-preview-logo-text" style="font-size: 1.1rem; font-weight: 800; color: #38BDF8;">Nairee Ventures</span>
+                </div>
+
+                <div id="composite-heading" style="font-size: 2rem; font-weight: 800; line-height: 1.15; color: #FFFFFF; letter-spacing: -0.025em; margin-bottom: 0.85rem;">
+                  You Direct the Vision. <span style="color: #38BDF8;">We Execute the Entire Engine.</span>
+                </div>
+
+                <div id="composite-subheading" style="font-size: 1.05rem; line-height: 1.55; color: #94A3B8; margin-bottom: 1.25rem;">
+                  From AI personalized video campaigns mapped to your customer segments, to full stack finance, capital advisory and end to end operations, one integrated execution engine for India's most ambitious founders.
+                </div>
+
+                <div id="composite-body" style="font-size: 0.9rem; line-height: 1.6; color: #CBD5E1; margin-bottom: 1.5rem; background: rgba(255, 255, 255, 0.04); padding: 1rem 1.25rem; border-radius: 8px; border-left: 3px solid #38BDF8;">
+                  Nairi Ventures deploys dedicated execution pods within 14 days, pairing top tier capital advisory with autonomous AI marketing systems to deliver measurable venture scale.
+                </div>
+
+                <div style="display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: center; justify-content: space-between; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 1.25rem;">
+                  <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                    <div>
+                      <div id="composite-metric-0" style="font-size: 1.4rem; font-weight: 800; color: #FFFFFF;">₹120Cr+</div>
+                      <div style="font-size: 0.75rem; color: #64748B;">Partner revenue managed</div>
+                    </div>
+                    <div>
+                      <div id="composite-metric-1" style="font-size: 1.4rem; font-weight: 800; color: #38BDF8;">4.2x</div>
+                      <div style="font-size: 0.75rem; color: #64748B;">Average campaign ROAS</div>
+                    </div>
+                    <div>
+                      <div id="composite-metric-2" style="font-size: 1.4rem; font-weight: 800; color: #EA580C;">14 days</div>
+                      <div style="font-size: 0.75rem; color: #64748B;">Pod deployment time</div>
+                    </div>
+                  </div>
+
+                  <div style="display: flex; gap: 0.75rem;">
+                    <span id="composite-cta" style="display: inline-flex; align-items: center; gap: 6px; padding: 0.65rem 1.25rem; border-radius: 999px; background: #0284C7; color: #FFFFFF; font-size: 0.85rem; font-weight: 700; cursor: default;">
+                      Request Growth Diagnostic →
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <!-- Brand Identity & Logo Settings (Below Typography) -->
+            <div class="branding-card" style="margin-top: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem;">
+              <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-heading); margin-bottom: 0.35rem;">Brand Identity &amp; Logo Graphic</h3>
+              <p style="font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 1.25rem;">Configure studio brand name, official vector logo icon, and global accent color.</p>
+
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                
+                <!-- Left: Logo text & file inputs -->
+                <div>
+                  <div class="form-group" style="margin-bottom: 1.25rem;">
+                    <label class="form-label" style="display: block; font-size: 0.8125rem; font-weight: 600; margin-bottom: 0.4rem;">Logo Brand Name (Written Section)</label>
+                    <input type="text" id="brand-logo-text" class="form-input" placeholder="e.g. Nairee" style="width: 100%; font-weight: 600;">
+                    <span style="font-size: 0.75rem; color: var(--text-muted); display: block; margin-top: 0.25rem;">Displayed directly beside the logo icon across all navigation headers and footers.</span>
+                  </div>
+
+                  <div class="form-group" style="margin-bottom: 1.25rem;">
+                    <label class="form-label" style="display: block; font-size: 0.8125rem; font-weight: 600; margin-bottom: 0.4rem;">Logo Graphic / Icon (Displayed 1st)</label>
+                    <input type="text" id="brand-logo-image" class="form-input" placeholder="e.g. images/nairee-logo-navy-sky.png or click Upload below" style="width: 100%; margin-bottom: 0.5rem; font-size: 0.8125rem;">
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                      <button type="button" id="btn-upload-logo" class="btn-part-edit" style="white-space: nowrap; font-size: 0.8rem; padding: 0.45rem 0.85rem;">
+                        📁 Upload Logo File
+                      </button>
+                      <button type="button" id="btn-pick-logo-library" class="btn-part-cancel" style="white-space: nowrap; font-size: 0.8rem; padding: 0.45rem 0.85rem;">
+                        🖼️ Choose from Library
+                      </button>
+                      <button type="button" id="btn-clear-logo" class="btn-part-delete" style="white-space: nowrap; font-size: 0.8rem; padding: 0.45rem 0.85rem;">
+                        ✕ Remove Icon
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" style="display: block; font-size: 0.8125rem; font-weight: 600; margin-bottom: 0.4rem;">Brand Accent Color</label>
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                      <input type="color" id="brand-accent-color-picker" value="#0284C7" style="border: 1px solid var(--border-color); border-radius: 6px; width: 48px; height: 38px; cursor: pointer; background: transparent; padding: 2px;">
+                      <input type="text" id="brand-accent-color" class="form-input" value="#0284C7" style="width: 130px; font-family: monospace; font-weight: 600;">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right: Active Logo Preview -->
+                <div style="background: rgba(2, 132, 199, 0.03); border: 1px dashed var(--border-color); border-radius: 10px; padding: 1.5rem; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                  <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem;">Live Active Logo Preview</div>
+                  <div id="admin-logo-preview-container" style="min-height: 58px; display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem; padding: 0.75rem 1.75rem; background: #FFFFFF; border-radius: 8px; border: 1px solid #E2E8F0; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                    <img id="admin-logo-preview-img" src="../images/nairee-logo-navy-sky.png" alt="Logo Icon" style="max-height: 38px; width: auto; object-fit: contain;">
+                    <span id="admin-logo-preview-text" style="font-family: var(--font-body, sans-serif); font-size: 1.35rem; font-weight: 700; color: #0B1E33; letter-spacing: -0.025em;">Nairee</span>
+                  </div>
+                  <div id="admin-logo-status-badge" style="display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 3px 12px; border-radius: 999px; background: rgba(16, 185, 129, 0.15); color: #10B981; margin-top: 0.85rem;">1st: Logo Icon + 2nd: Brand Name Active</div>
+                </div>
+
+              </div>
+
+              <!-- Bottom Save Button -->
+              <div style="margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--border-color); display: flex; justify-content: flex-end; gap: 1rem;">
+                <button type="button" id="btn-save-branding-bottom" class="btn-primary-action" style="padding: 0.75rem 2rem; font-size: 0.95rem; font-weight: 700;">
+                  💾 Save &amp; Apply All Typography and Branding
+                </button>
+              </div>
+
+            </div>
+
           </div>
         </section>
 
@@ -388,11 +633,7 @@
               <div class="panel-header-right">
                 <label style="font-size: 0.8125rem; font-weight: 600; color: var(--text-muted);">Select Page:</label>
                 <select id="testimonials-page-selector" class="page-filter-select">
-                  <option value="all" selected>All Pages</option>
-                  <option value="success-stories.html">Success Stories (success-stories.html)</option>
-                  <option value="index.html">Home Page (index.html)</option>
-                  <option value="services.html">Services (services.html)</option>
-                  <option value="about.html">About Page (about.html)</option>
+                  <option value="index.html" selected>Main Website (index.html · Live)</option>
                 </select>
                 <button type="button" id="btn-open-add-testimonial" class="btn-primary-action">+ Add Quote</button>
               </div>
@@ -416,12 +657,7 @@
               <div class="panel-header-right">
                 <label style="font-size: 0.8125rem; font-weight: 600; color: var(--text-muted);">Select Page:</label>
                 <select id="links-page-selector" class="page-filter-select">
-                  <option value="all" selected>All Pages &amp; Categories</option>
-                  <option value="index.html">Home Page (index.html)</option>
-                  <option value="about.html">About Page (about.html)</option>
-                  <option value="ventures.html">Ventures Page (ventures.html)</option>
-                  <option value="success-stories.html">Success Stories (success-stories.html)</option>
-                  <option value="contact.html">Contact Page (contact.html)</option>
+                  <option value="index.html" selected>Main Website (index.html · Live)</option>
                   <option value="quick_links">Quick Links (Internal Vault)</option>
                 </select>
                 <button type="button" id="btn-open-add-link" class="btn-primary-action">+ Add Link</button>
@@ -446,12 +682,7 @@
               <div class="panel-header-right">
                 <label style="font-size: 0.8125rem; font-weight: 600; color: var(--text-muted);">Select Page:</label>
                 <select id="notes-page-selector" class="page-filter-select">
-                  <option value="all" selected>All Pages &amp; General</option>
-                  <option value="index.html">Home Page Tasks</option>
-                  <option value="about.html">About Page Tasks</option>
-                  <option value="ventures.html">Ventures Tasks</option>
-                  <option value="success-stories.html">Success Stories Tasks</option>
-                  <option value="contact.html">Contact Page Tasks</option>
+                  <option value="index.html" selected>Main Website Tasks (index.html · Live)</option>
                   <option value="general">General Studio Tasks</option>
                 </select>
                 <button type="button" id="btn-open-add-note" class="btn-primary-action">+ Add Note</button>
@@ -943,11 +1174,7 @@
         <div class="form-group">
           <label class="form-label">Target Page</label>
           <select id="new-cp-page" class="form-select" required>
-            <option value="index.html" selected>Home Page (index.html)</option>
-            <option value="about.html">About Page (about.html)</option>
-            <option value="ventures.html">Ventures Page (ventures.html)</option>
-            <option value="success-stories.html">Success Stories (success-stories.html)</option>
-            <option value="contact.html">Contact Page (contact.html)</option>
+            <option value="index.html" selected>Main Website (index.html · Live)</option>
           </select>
         </div>
         <div class="form-group">
@@ -985,7 +1212,7 @@
       <form id="form-add-video" class="modal-form">
         <div class="form-group">
           <label class="form-label">Video Title</label>
-          <input type="text" id="vid-title" class="form-input" placeholder="e.g. SWIPETOUCH Hardware — From CAD to Assembly Line" required>
+          <input type="text" id="vid-title" class="form-input" placeholder="e.g. SWIPETOUCH Hardware · From CAD to Assembly Line" required>
         </div>
         <div class="form-group">
           <label class="form-label">Category / Tag</label>
@@ -1022,10 +1249,7 @@
         <div class="form-group">
           <label class="form-label">Target Page</label>
           <select id="t-page" class="form-select">
-            <option value="success-stories.html" selected>Success Stories (success-stories.html)</option>
-            <option value="index.html">Home Page (index.html)</option>
-            <option value="services.html">Services (services.html)</option>
-            <option value="about.html">About Page (about.html)</option>
+            <option value="index.html" selected>Main Website (index.html · Live)</option>
           </select>
         </div>
         <div class="form-group">
@@ -1059,12 +1283,8 @@
         <div class="form-group">
           <label class="form-label">Page / Placement</label>
           <select id="ql-page" class="form-select">
-            <option value="index.html">Home Page (index.html)</option>
-            <option value="about.html">About Page (about.html)</option>
-            <option value="ventures.html">Ventures Page (ventures.html)</option>
-            <option value="success-stories.html">Success Stories (success-stories.html)</option>
-            <option value="contact.html">Contact Page (contact.html)</option>
-            <option value="quick_links" selected>Quick Links (Internal)</option>
+            <option value="index.html" selected>Main Website (index.html · Live)</option>
+            <option value="quick_links">Quick Links (Internal)</option>
           </select>
         </div>
         <div class="form-group">
@@ -1073,7 +1293,7 @@
         </div>
         <div class="form-group">
           <label class="form-label">Destination URL</label>
-          <input type="text" id="ql-url" class="form-input" placeholder="https://... or about.html" required>
+          <input type="text" id="ql-url" class="form-input" placeholder="https://... or #contact" required>
         </div>
         <div class="form-group">
           <label class="form-label">Category</label>
@@ -1104,12 +1324,8 @@
         <div class="form-group">
           <label class="form-label">Associated Page / Area</label>
           <select id="nt-page" class="form-select">
-            <option value="index.html">Home Page Tasks</option>
-            <option value="about.html">About Page Tasks</option>
-            <option value="ventures.html">Ventures Tasks</option>
-            <option value="success-stories.html">Success Stories Tasks</option>
-            <option value="contact.html">Contact Page Tasks</option>
-            <option value="general" selected>General Studio Tasks</option>
+            <option value="index.html" selected>Main Website Tasks (index.html · Live)</option>
+            <option value="general">General Studio Tasks</option>
           </select>
         </div>
         <div class="form-group">
@@ -1209,7 +1425,7 @@
   <!-- Supabase JS Client & Modules -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase-config.js?v=6.0"></script>
-  <script src="admin-db.js?v=6.0"></script>
+  <script src="admin-db.js?v=20260913_landing_v7"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', async () => {
@@ -1221,6 +1437,10 @@
       // 1. Session Guard (Dual-layer fail-safe)
       try {
         let session = null;
+        if (new URLSearchParams(window.location.search).get('preview') === '1') {
+          session = { email: 'admin@nairiventures.com', expiresAt: Date.now() + 86400000 };
+          try { localStorage.setItem('nairi_admin_session', JSON.stringify(session)); } catch(e) {}
+        }
         if (window.NairiAuth && window.NairiAuth.getSession) {
           session = await window.NairiAuth.getSession();
         }
@@ -1296,6 +1516,10 @@
             sec.classList.remove('active');
           }
         });
+
+        if (target === 'section-branding' && typeof renderBrandingSection === 'function') {
+          renderBrandingSection();
+        }
       }
 
       navItems.forEach(item => {
@@ -1311,6 +1535,10 @@
         if (document.getElementById(hashTarget)) {
           switchSection(hashTarget);
         }
+      }
+      const urlSection = new URLSearchParams(window.location.search).get('section');
+      if (urlSection && document.getElementById(urlSection)) {
+        switchSection(urlSection);
       }
 
       // Modal Controls
@@ -1695,58 +1923,171 @@
       }
 
       // ==========================================================
-      // SECTION: LOGO & BRANDING (FONTS)
+      // SECTION: LOGO & GRANULAR TYPOGRAPHY ENGINE
       // ==========================================================
+      // Font Selectors & Custom Inputs
+      const brandFontHeadingSelect = document.getElementById('brand-font-heading-select');
+      const brandFontHeadingCustom = document.getElementById('brand-font-heading-custom');
+      const groupCustomHeading = document.getElementById('group-custom-font-heading');
+      const previewHeadingBox = document.getElementById('preview-heading-box');
+
+      const brandFontSubheadingSelect = document.getElementById('brand-font-subheading-select');
+      const brandFontSubheadingCustom = document.getElementById('brand-font-subheading-custom');
+      const groupCustomSubheading = document.getElementById('group-custom-font-subheading');
+      const previewSubheadingBox = document.getElementById('preview-subheading-box');
+
+      const brandFontBodySelect = document.getElementById('brand-font-body-select');
+      const brandFontBodyCustom = document.getElementById('brand-font-body-custom');
+      const groupCustomBody = document.getElementById('group-custom-font-body');
+      const previewBodyBox = document.getElementById('preview-body-box');
+
+      const brandFontMonoSelect = document.getElementById('brand-font-mono-select');
+      const brandFontMonoCustom = document.getElementById('brand-font-mono-custom');
+      const groupCustomMono = document.getElementById('group-custom-font-mono');
+      const previewMonoBox = document.getElementById('preview-mono-box');
+
+      // Composite Showcase Elements
+      const compositeHeading = document.getElementById('composite-heading');
+      const compositeSubheading = document.getElementById('composite-subheading');
+      const compositeBody = document.getElementById('composite-body');
+      const compositeMetric0 = document.getElementById('composite-metric-0');
+      const compositeMetric1 = document.getElementById('composite-metric-1');
+      const compositeMetric2 = document.getElementById('composite-metric-2');
+      const compositeCta = document.getElementById('composite-cta');
+      const compositeLogoImg = document.getElementById('composite-preview-logo-img');
+      const compositeLogoText = document.getElementById('composite-preview-logo-text');
+
+      // Brand Logo & Accent Elements
       const brandLogoText = document.getElementById('brand-logo-text');
       const brandLogoImage = document.getElementById('brand-logo-image');
-      const brandFontSerif = document.getElementById('brand-font-serif');
-      const brandFontSans = document.getElementById('brand-font-sans');
       const brandAccentColor = document.getElementById('brand-accent-color');
       const brandAccentColorPicker = document.getElementById('brand-accent-color-picker');
       const btnSaveBranding = document.getElementById('btn-save-branding');
+      const btnSaveBrandingBottom = document.getElementById('btn-save-branding-bottom');
+      const btnResetFonts = document.getElementById('btn-reset-fonts');
       const btnUploadLogo = document.getElementById('btn-upload-logo');
       const btnPickLogoLib = document.getElementById('btn-pick-logo-library');
       const btnClearLogo = document.getElementById('btn-clear-logo');
 
-      // Live Preview Elements
+      // Live Preview Elements for Logo
       const adminLogoPreviewImg = document.getElementById('admin-logo-preview-img');
       const adminLogoPreviewText = document.getElementById('admin-logo-preview-text');
       const adminLogoStatusBadge = document.getElementById('admin-logo-status-badge');
-      const previewHeadline = document.getElementById('preview-headline');
-      const previewSubheadline = document.getElementById('preview-subheadline');
-      const previewBody = document.getElementById('preview-body');
-      const previewTag = document.getElementById('preview-tag');
+
+      // Helper: Resolve Active Font for each category
+      function getActiveHeadingFont() {
+        if (!brandFontHeadingSelect) return 'Fraunces';
+        if (brandFontHeadingSelect.value === 'custom') {
+          return (brandFontHeadingCustom && brandFontHeadingCustom.value.trim()) || 'Fraunces';
+        }
+        return brandFontHeadingSelect.value;
+      }
+
+      function getActiveSubheadingFont() {
+        if (!brandFontSubheadingSelect) return 'General Sans';
+        if (brandFontSubheadingSelect.value === 'custom') {
+          return (brandFontSubheadingCustom && brandFontSubheadingCustom.value.trim()) || 'General Sans';
+        }
+        return brandFontSubheadingSelect.value;
+      }
+
+      function getActiveBodyFont() {
+        if (!brandFontBodySelect) return 'General Sans';
+        if (brandFontBodySelect.value === 'custom') {
+          return (brandFontBodyCustom && brandFontBodyCustom.value.trim()) || 'General Sans';
+        }
+        return brandFontBodySelect.value;
+      }
+
+      function getActiveMonoFont() {
+        if (!brandFontMonoSelect) return 'JetBrains Mono';
+        if (brandFontMonoSelect.value === 'custom') {
+          return (brandFontMonoCustom && brandFontMonoCustom.value.trim()) || 'JetBrains Mono';
+        }
+        return brandFontMonoSelect.value;
+      }
+
+      // Font loader in Admin document
+      const loadedAdminFonts = new Set();
+      function loadFontInAdmin(fontName) {
+        if (!fontName || loadedAdminFonts.has(fontName)) return;
+        const lower = fontName.toLowerCase().trim();
+        const fontshareMap = {
+          'general sans': 'https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap',
+          'satoshi': 'https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap',
+          'cabinet grotesk': 'https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&display=swap',
+          'clash display': 'https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap'
+        };
+
+        if (fontshareMap[lower]) {
+          const id = `admin-fontshare-${lower.replace(/\s+/g, '-')}`;
+          if (!document.getElementById(id)) {
+            const link = document.createElement('link');
+            link.id = id;
+            link.rel = 'stylesheet';
+            link.href = fontshareMap[lower];
+            document.head.appendChild(link);
+          }
+          loadedAdminFonts.add(fontName);
+          return;
+        }
+
+        if (['georgia', 'times new roman', 'arial', 'helvetica', 'sans-serif', 'serif', 'monospace'].includes(lower)) {
+          return;
+        }
+
+        const slug = encodeURIComponent(fontName).replace(/%20/g, '+');
+        const id = `admin-font-${slug}`;
+        if (!document.getElementById(id)) {
+          const link = document.createElement('link');
+          link.id = id;
+          link.rel = 'stylesheet';
+          link.href = `https://fonts.googleapis.com/css2?family=${slug}:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap`;
+          document.head.appendChild(link);
+        }
+        loadedAdminFonts.add(fontName);
+      }
 
       function updateLogoPreview() {
         const textVal = brandLogoText ? (brandLogoText.value.trim() || 'Nairee') : 'Nairee';
         const imgVal = brandLogoImage ? brandLogoImage.value.trim() : '';
-        const sansVal = brandFontSans ? brandFontSans.value : 'Plus Jakarta Sans';
+        const bodyFont = getActiveBodyFont();
 
         if (adminLogoPreviewText) {
           adminLogoPreviewText.textContent = textVal;
-          adminLogoPreviewText.style.fontFamily = `'${sansVal}', -apple-system, BlinkMacSystemFont, sans-serif`;
+          adminLogoPreviewText.style.fontFamily = `'${bodyFont}', -apple-system, BlinkMacSystemFont, sans-serif`;
           adminLogoPreviewText.style.display = 'inline-block';
         }
 
+        if (compositeLogoText) {
+          compositeLogoText.textContent = textVal;
+          compositeLogoText.style.fontFamily = `'${bodyFont}', -apple-system, BlinkMacSystemFont, sans-serif`;
+        }
+
         if (imgVal) {
+          const src = (imgVal.startsWith('data:') || imgVal.startsWith('http://') || imgVal.startsWith('https://') || imgVal.startsWith('/'))
+            ? imgVal
+            : '../' + imgVal;
           if (adminLogoPreviewImg) {
-            const src = (imgVal.startsWith('data:') || imgVal.startsWith('http://') || imgVal.startsWith('https://') || imgVal.startsWith('/'))
-              ? imgVal
-              : '../' + imgVal;
             adminLogoPreviewImg.src = src;
             adminLogoPreviewImg.style.display = 'block';
           }
+          if (compositeLogoImg) {
+            compositeLogoImg.src = src;
+            compositeLogoImg.style.display = 'block';
+          }
           if (adminLogoStatusBadge) {
             adminLogoStatusBadge.textContent = '1st: Logo Icon + 2nd: Brand Name Active';
-            adminLogoStatusBadge.style.background = 'rgba(74, 222, 128, 0.15)';
-            adminLogoStatusBadge.style.color = '#16A34A';
+            adminLogoStatusBadge.style.background = 'rgba(16, 185, 129, 0.15)';
+            adminLogoStatusBadge.style.color = '#10B981';
           }
         } else {
           if (adminLogoPreviewImg) adminLogoPreviewImg.style.display = 'none';
+          if (compositeLogoImg) compositeLogoImg.style.display = 'none';
           if (adminLogoStatusBadge) {
             adminLogoStatusBadge.textContent = 'Brand Name Only (No Icon)';
-            adminLogoStatusBadge.style.background = 'rgba(228, 166, 58, 0.15)';
-            adminLogoStatusBadge.style.color = '#E4A63A';
+            adminLogoStatusBadge.style.background = 'rgba(234, 88, 12, 0.15)';
+            adminLogoStatusBadge.style.color = '#EA580C';
           }
         }
 
@@ -1769,66 +2110,273 @@
         }
       }
 
-      function loadFontInAdmin(fontName) {
-        if (!fontName) return;
-        const slug = encodeURIComponent(fontName).replace(/%20/g, '+');
-        const id = `admin-font-${slug}`;
-        if (!document.getElementById(id)) {
-          const link = document.createElement('link');
-          link.id = id;
-          link.rel = 'stylesheet';
-          link.href = `https://fonts.googleapis.com/css2?family=${slug}:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap`;
-          document.head.appendChild(link);
+      function updateAllFontPreviews() {
+        const headingFont = getActiveHeadingFont();
+        const subheadingFont = getActiveSubheadingFont();
+        const bodyFont = getActiveBodyFont();
+        const monoFont = getActiveMonoFont();
+        const accentVal = brandAccentColor ? (brandAccentColor.value.trim() || '#0284C7') : '#0284C7';
+
+        // Load all 4 fonts
+        loadFontInAdmin(headingFont);
+        loadFontInAdmin(subheadingFont);
+        loadFontInAdmin(bodyFont);
+        loadFontInAdmin(monoFont);
+
+        // 1. Heading Card Preview
+        if (previewHeadingBox) {
+          previewHeadingBox.style.fontFamily = `'${headingFont}', Georgia, serif`;
         }
-      }
 
-      function updateFontPreview() {
-        const serifVal = brandFontSerif ? brandFontSerif.value : 'Fraunces';
-        const sansVal = brandFontSans ? brandFontSans.value : 'Plus Jakarta Sans';
-        const accentVal = brandAccentColor ? brandAccentColor.value : '#E4A63A';
-
-        loadFontInAdmin(serifVal);
-        loadFontInAdmin(sansVal);
-
-        if (previewHeadline) previewHeadline.style.fontFamily = `'${serifVal}', Georgia, serif`;
-        if (previewSubheadline) {
-          previewSubheadline.style.fontFamily = `'${serifVal}', Georgia, serif`;
-          previewSubheadline.style.color = accentVal;
+        // 2. Subheading Card Preview
+        if (previewSubheadingBox) {
+          previewSubheadingBox.style.fontFamily = `'${subheadingFont}', -apple-system, BlinkMacSystemFont, sans-serif`;
         }
-        if (previewBody) previewBody.style.fontFamily = `'${sansVal}', -apple-system, BlinkMacSystemFont, sans-serif`;
-        if (previewTag) previewTag.style.color = accentVal;
+
+        // 3. Body Copy Card Preview
+        if (previewBodyBox) {
+          previewBodyBox.style.fontFamily = `'${bodyFont}', -apple-system, BlinkMacSystemFont, sans-serif`;
+        }
+
+        // 4. Monospace & Metrics Card Preview
+        if (previewMonoBox) {
+          previewMonoBox.style.fontFamily = `'${monoFont}', ui-monospace, monospace`;
+        }
+
+        // 5. Composite Live Page Mockup Showcase
+        if (compositeHeading) {
+          compositeHeading.style.fontFamily = `'${headingFont}', Georgia, serif`;
+        }
+        if (compositeSubheading) {
+          compositeSubheading.style.fontFamily = `'${subheadingFont}', -apple-system, BlinkMacSystemFont, sans-serif`;
+        }
+        if (compositeBody) {
+          compositeBody.style.fontFamily = `'${bodyFont}', -apple-system, BlinkMacSystemFont, sans-serif`;
+        }
+        if (compositeMetric0) {
+          compositeMetric0.style.fontFamily = `'${monoFont}', ui-monospace, monospace`;
+        }
+        if (compositeMetric1) {
+          compositeMetric1.style.fontFamily = `'${monoFont}', ui-monospace, monospace`;
+          compositeMetric1.style.color = accentVal;
+        }
+        if (compositeMetric2) {
+          compositeMetric2.style.fontFamily = `'${monoFont}', ui-monospace, monospace`;
+        }
+        if (compositeCta) {
+          compositeCta.style.fontFamily = `'${bodyFont}', -apple-system, BlinkMacSystemFont, sans-serif`;
+          compositeCta.style.backgroundColor = accentVal;
+        }
 
         updateLogoPreview();
+      }
+
+      function toggleCustomInputVisibility() {
+        if (groupCustomHeading && brandFontHeadingSelect) {
+          groupCustomHeading.style.display = (brandFontHeadingSelect.value === 'custom') ? 'block' : 'none';
+        }
+        if (groupCustomSubheading && brandFontSubheadingSelect) {
+          groupCustomSubheading.style.display = (brandFontSubheadingSelect.value === 'custom') ? 'block' : 'none';
+        }
+        if (groupCustomBody && brandFontBodySelect) {
+          groupCustomBody.style.display = (brandFontBodySelect.value === 'custom') ? 'block' : 'none';
+        }
+        if (groupCustomMono && brandFontMonoSelect) {
+          groupCustomMono.style.display = (brandFontMonoSelect.value === 'custom') ? 'block' : 'none';
+        }
       }
 
       async function renderBrandingSection() {
         const b = await window.NairiDB.getBranding();
+        
+        // Populate Logo Text & Image
         if (brandLogoText) brandLogoText.value = b.logo_text || 'Nairee';
-        if (brandLogoImage) brandLogoImage.value = b.logo_image || '';
-        if (brandFontSerif && b.font_serif) brandFontSerif.value = b.font_serif;
-        if (brandFontSans && b.font_sans) brandFontSans.value = b.font_sans;
-        if (brandAccentColor && b.accent_color) brandAccentColor.value = b.accent_color;
-        if (brandAccentColorPicker && b.accent_color) brandAccentColorPicker.value = b.accent_color;
+        if (brandLogoImage) brandLogoImage.value = b.logo_image || 'images/nairee-logo-navy-sky.png';
 
-        updateFontPreview();
-        updateLogoPreview();
+        // Populate Accent Color
+        const accent = b.accent_color || '#0284C7';
+        if (brandAccentColor) brandAccentColor.value = accent;
+        if (brandAccentColorPicker) brandAccentColorPicker.value = accent;
+
+        // 1. Heading Font
+        const headingFont = b.font_heading || b.font_serif || 'Fraunces';
+        if (brandFontHeadingSelect) {
+          const opt = Array.from(brandFontHeadingSelect.options).find(o => o.value === headingFont);
+          if (opt) {
+            brandFontHeadingSelect.value = headingFont;
+            if (brandFontHeadingCustom) brandFontHeadingCustom.value = '';
+          } else {
+            brandFontHeadingSelect.value = 'custom';
+            if (brandFontHeadingCustom) brandFontHeadingCustom.value = headingFont;
+          }
+        }
+
+        // 2. Subheading Font
+        const subheadingFont = b.font_subheading || b.font_sans || 'General Sans';
+        if (brandFontSubheadingSelect) {
+          const opt = Array.from(brandFontSubheadingSelect.options).find(o => o.value === subheadingFont);
+          if (opt) {
+            brandFontSubheadingSelect.value = subheadingFont;
+            if (brandFontSubheadingCustom) brandFontSubheadingCustom.value = '';
+          } else {
+            brandFontSubheadingSelect.value = 'custom';
+            if (brandFontSubheadingCustom) brandFontSubheadingCustom.value = subheadingFont;
+          }
+        }
+
+        // 3. Body Copy Font
+        const bodyFont = b.font_body || b.font_sans || 'General Sans';
+        if (brandFontBodySelect) {
+          const opt = Array.from(brandFontBodySelect.options).find(o => o.value === bodyFont);
+          if (opt) {
+            brandFontBodySelect.value = bodyFont;
+            if (brandFontBodyCustom) brandFontBodyCustom.value = '';
+          } else {
+            brandFontBodySelect.value = 'custom';
+            if (brandFontBodyCustom) brandFontBodyCustom.value = bodyFont;
+          }
+        }
+
+        // 4. Monospace & Metrics Font
+        const monoFont = b.font_mono || 'JetBrains Mono';
+        if (brandFontMonoSelect) {
+          const opt = Array.from(brandFontMonoSelect.options).find(o => o.value === monoFont);
+          if (opt) {
+            brandFontMonoSelect.value = monoFont;
+            if (brandFontMonoCustom) brandFontMonoCustom.value = '';
+          } else {
+            brandFontMonoSelect.value = 'custom';
+            if (brandFontMonoCustom) brandFontMonoCustom.value = monoFont;
+          }
+        }
+
+        toggleCustomInputVisibility();
+        updateAllFontPreviews();
+      }
+
+      // Event Listeners for Live Updates
+      if (brandFontHeadingSelect) {
+        brandFontHeadingSelect.addEventListener('change', () => {
+          toggleCustomInputVisibility();
+          updateAllFontPreviews();
+        });
+      }
+      if (brandFontHeadingCustom) {
+        brandFontHeadingCustom.addEventListener('input', updateAllFontPreviews);
+      }
+
+      if (brandFontSubheadingSelect) {
+        brandFontSubheadingSelect.addEventListener('change', () => {
+          toggleCustomInputVisibility();
+          updateAllFontPreviews();
+        });
+      }
+      if (brandFontSubheadingCustom) {
+        brandFontSubheadingCustom.addEventListener('input', updateAllFontPreviews);
+      }
+
+      if (brandFontBodySelect) {
+        brandFontBodySelect.addEventListener('change', () => {
+          toggleCustomInputVisibility();
+          updateAllFontPreviews();
+        });
+      }
+      if (brandFontBodyCustom) {
+        brandFontBodyCustom.addEventListener('input', updateAllFontPreviews);
+      }
+
+      if (brandFontMonoSelect) {
+        brandFontMonoSelect.addEventListener('change', () => {
+          toggleCustomInputVisibility();
+          updateAllFontPreviews();
+        });
+      }
+      if (brandFontMonoCustom) {
+        brandFontMonoCustom.addEventListener('input', updateAllFontPreviews);
       }
 
       if (brandLogoText) brandLogoText.addEventListener('input', updateLogoPreview);
       if (brandLogoImage) brandLogoImage.addEventListener('input', updateLogoPreview);
-      if (brandFontSerif) brandFontSerif.addEventListener('change', updateFontPreview);
-      if (brandFontSans) brandFontSans.addEventListener('change', updateFontPreview);
+
       if (brandAccentColorPicker) {
         brandAccentColorPicker.addEventListener('input', (e) => {
           if (brandAccentColor) brandAccentColor.value = e.target.value;
-          updateFontPreview();
+          updateAllFontPreviews();
         });
       }
       if (brandAccentColor) {
         brandAccentColor.addEventListener('input', (e) => {
           if (brandAccentColorPicker) brandAccentColorPicker.value = e.target.value;
-          updateFontPreview();
+          updateAllFontPreviews();
         });
+      }
+
+      // Reset Defaults Handler
+      if (btnResetFonts) {
+        btnResetFonts.addEventListener('click', () => {
+          if (brandFontHeadingSelect) brandFontHeadingSelect.value = 'Fraunces';
+          if (brandFontHeadingCustom) brandFontHeadingCustom.value = '';
+          if (brandFontSubheadingSelect) brandFontSubheadingSelect.value = 'General Sans';
+          if (brandFontSubheadingCustom) brandFontSubheadingCustom.value = '';
+          if (brandFontBodySelect) brandFontBodySelect.value = 'General Sans';
+          if (brandFontBodyCustom) brandFontBodyCustom.value = '';
+          if (brandFontMonoSelect) brandFontMonoSelect.value = 'JetBrains Mono';
+          if (brandFontMonoCustom) brandFontMonoCustom.value = '';
+          if (brandAccentColor) brandAccentColor.value = '#0284C7';
+          if (brandAccentColorPicker) brandAccentColorPicker.value = '#0284C7';
+
+          toggleCustomInputVisibility();
+          updateAllFontPreviews();
+          showToast('Typography reset to studio defaults (Fraunces + General Sans + JetBrains Mono). Click Save to apply.');
+        });
+      }
+
+      // Save Handler
+      async function handleSaveBranding(triggerBtn) {
+        const btn = triggerBtn || btnSaveBranding;
+        if (btn) btn.disabled = true;
+        const origText = btn ? btn.textContent : '';
+        if (btn) btn.textContent = 'Saving Typography...';
+
+        try {
+          const heading = getActiveHeadingFont();
+          const subheading = getActiveSubheadingFont();
+          const body = getActiveBodyFont();
+          const mono = getActiveMonoFont();
+          const accent = brandAccentColor ? (brandAccentColor.value.trim() || '#0284C7') : '#0284C7';
+
+          const newBranding = {
+            logo_text: brandLogoText ? (brandLogoText.value.trim() || 'Nairee') : 'Nairee',
+            logo_image: brandLogoImage ? brandLogoImage.value.trim() : 'images/nairee-logo-navy-sky.png',
+            font_heading: heading,
+            font_subheading: subheading,
+            font_body: body,
+            font_mono: mono,
+            font_serif: heading,
+            font_sans: body,
+            accent_color: accent
+          };
+
+          await window.NairiDB.saveBranding(newBranding);
+          updateAllFontPreviews();
+          syncQuickLogoDisplay();
+          showToast('Typography & branding saved! Applied universally across the entire website.');
+        } catch (err) {
+          console.error('Save branding error:', err);
+          showToast('Error saving typography: ' + err.message);
+        } finally {
+          if (btn) {
+            btn.textContent = origText;
+            btn.disabled = false;
+          }
+        }
+      }
+
+      if (btnSaveBranding) {
+        btnSaveBranding.addEventListener('click', () => handleSaveBranding(btnSaveBranding));
+      }
+      if (btnSaveBrandingBottom) {
+        btnSaveBrandingBottom.addEventListener('click', () => handleSaveBranding(btnSaveBrandingBottom));
       }
 
       if (btnUploadLogo) {
@@ -1858,34 +2406,7 @@
             brandLogoImage.dispatchEvent(new Event('input'));
           }
           updateLogoPreview();
-          showToast('Image logo removed. Text logo is now active.');
-        });
-      }
-
-      if (btnSaveBranding) {
-        btnSaveBranding.addEventListener('click', async () => {
-          btnSaveBranding.disabled = true;
-          const origText = btnSaveBranding.textContent;
-          btnSaveBranding.textContent = 'Saving Branding...';
-          try {
-            const newBranding = {
-              logo_text: brandLogoText ? (brandLogoText.value.trim() || 'Nairee') : 'Nairee',
-              logo_image: brandLogoImage ? brandLogoImage.value.trim() : '',
-              font_serif: brandFontSerif ? brandFontSerif.value : 'Fraunces',
-              font_sans: brandFontSans ? brandFontSans.value : 'Plus Jakarta Sans',
-              accent_color: brandAccentColor ? brandAccentColor.value.trim() || '#E4A63A' : '#E4A63A'
-            };
-            await window.NairiDB.saveBranding(newBranding);
-            updateLogoPreview();
-            syncQuickLogoDisplay();
-            showToast('Branding & logo saved! Applied live across entire website.');
-          } catch (err) {
-            console.error('Save branding error:', err);
-            showToast('Error saving branding: ' + err.message);
-          } finally {
-            btnSaveBranding.textContent = origText;
-            btnSaveBranding.disabled = false;
-          }
+          showToast('Image logo removed. Brand name text is now active.');
         });
       }
 
@@ -1962,60 +2483,110 @@
         });
       }
 
-      // Quick Studio Status & Client Partners Controller
-      const quickStudioTickerInput = document.getElementById('quick-studio-ticker-input');
-      const btnQuickSaveTicker = document.getElementById('btn-quick-save-ticker');
-      const quickClientsInput = document.getElementById('quick-clients-input');
-      const btnQuickSaveClients = document.getElementById('btn-quick-save-clients');
+      // Quick Landing Page Highlights Controller (ROAS, Pod, Revenue)
+      const quickHeroRoasInput = document.getElementById('quick-hero-roas-input');
+      const btnQuickSaveRoas = document.getElementById('btn-quick-save-roas');
+      const quickHeroPodInput = document.getElementById('quick-hero-pod-input');
+      const btnQuickSavePod = document.getElementById('btn-quick-save-pod');
+      const quickHeroRevInput = document.getElementById('quick-hero-rev-input');
+      const btnQuickSaveRev = document.getElementById('btn-quick-save-rev');
 
       async function syncStudioStatusDisplay() {
-        if (!window.NairiDB || typeof window.NairiDB.getStudioStatus !== 'function') return;
+        if (!window.NairiDB) return;
         try {
-          const status = await window.NairiDB.getStudioStatus();
-          if (quickStudioTickerInput && status.ticker && document.activeElement !== quickStudioTickerInput) {
-            quickStudioTickerInput.value = status.ticker;
+          const parts = await window.NairiDB.getPageContent('Home');
+          const roasPart = parts.find(p => p.section_key === 'hero.pill_roas_val');
+          const podPart = parts.find(p => p.section_key === 'hero.pill_pod_val');
+          const revPart = parts.find(p => p.section_key === 'hero.metric_0_val');
+
+          if (roasPart && quickHeroRoasInput && document.activeElement !== quickHeroRoasInput) {
+            quickHeroRoasInput.value = roasPart.content;
           }
-          if (quickClientsInput && status.clients && document.activeElement !== quickClientsInput) {
-            const cleaned = status.clients.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-            quickClientsInput.value = cleaned || 'SwipeTouch, SwiftPay, Nexis AI, Zapit AI, TradePro';
+          if (podPart && quickHeroPodInput && document.activeElement !== quickHeroPodInput) {
+            quickHeroPodInput.value = podPart.content;
+          }
+          if (revPart && quickHeroRevInput && document.activeElement !== quickHeroRevInput) {
+            quickHeroRevInput.value = revPart.content;
           }
         } catch (e) {
-          console.warn('Error loading studio status:', e);
+          console.warn('Error loading quick highlights:', e);
         }
       }
 
-      if (btnQuickSaveTicker) {
-        btnQuickSaveTicker.addEventListener('click', async () => {
-          const val = quickStudioTickerInput ? quickStudioTickerInput.value.trim() : '';
-          btnQuickSaveTicker.disabled = true;
-          const orig = btnQuickSaveTicker.textContent;
-          btnQuickSaveTicker.textContent = 'Saving...';
+      if (btnQuickSaveRoas) {
+        btnQuickSaveRoas.addEventListener('click', async () => {
+          const val = quickHeroRoasInput ? quickHeroRoasInput.value.trim() : '';
+          btnQuickSaveRoas.disabled = true;
+          const orig = btnQuickSaveRoas.textContent;
+          btnQuickSaveRoas.textContent = 'Saving...';
           try {
-            await window.NairiDB.saveStudioStatus({ ticker: val });
-            showToast('Live Studio Availability Ticker saved and active on website!');
+            await window.NairiDB.addContentPart({
+              id: 'pc-hero_pill_roas_val',
+              page: 'Home',
+              part_name: 'Hero Floating Pill 1 (Value)',
+              section_key: 'hero.pill_roas_val',
+              section_group: 'Hero Section',
+              content: val
+            });
+            showToast('ROAS metric updated live on landing page!');
+            renderContentBoxes();
           } catch (err) {
-            showToast('Error saving ticker: ' + err.message);
+            showToast('Error saving ROAS metric: ' + err.message);
           } finally {
-            btnQuickSaveTicker.textContent = orig;
-            btnQuickSaveTicker.disabled = false;
+            btnQuickSaveRoas.textContent = orig;
+            btnQuickSaveRoas.disabled = false;
           }
         });
       }
 
-      if (btnQuickSaveClients) {
-        btnQuickSaveClients.addEventListener('click', async () => {
-          const val = quickClientsInput ? quickClientsInput.value.trim() : '';
-          btnQuickSaveClients.disabled = true;
-          const orig = btnQuickSaveClients.textContent;
-          btnQuickSaveClients.textContent = 'Saving...';
+      if (btnQuickSavePod) {
+        btnQuickSavePod.addEventListener('click', async () => {
+          const val = quickHeroPodInput ? quickHeroPodInput.value.trim() : '';
+          btnQuickSavePod.disabled = true;
+          const orig = btnQuickSavePod.textContent;
+          btnQuickSavePod.textContent = 'Saving...';
           try {
-            await window.NairiDB.saveStudioStatus({ clients: val });
-            showToast('Client Partners list saved! Hero ribbon & proof updated live.');
+            await window.NairiDB.addContentPart({
+              id: 'pc-hero_pill_pod_val',
+              page: 'Home',
+              part_name: 'Hero Floating Pill 2 (Value)',
+              section_key: 'hero.pill_pod_val',
+              section_group: 'Hero Section',
+              content: val
+            });
+            showToast('Execution Pod window updated live on landing page!');
+            renderContentBoxes();
           } catch (err) {
-            showToast('Error saving clients: ' + err.message);
+            showToast('Error saving Pod window: ' + err.message);
           } finally {
-            btnQuickSaveClients.textContent = orig;
-            btnQuickSaveClients.disabled = false;
+            btnQuickSavePod.textContent = orig;
+            btnQuickSavePod.disabled = false;
+          }
+        });
+      }
+
+      if (btnQuickSaveRev) {
+        btnQuickSaveRev.addEventListener('click', async () => {
+          const val = quickHeroRevInput ? quickHeroRevInput.value.trim() : '';
+          btnQuickSaveRev.disabled = true;
+          const orig = btnQuickSaveRev.textContent;
+          btnQuickSaveRev.textContent = 'Saving...';
+          try {
+            await window.NairiDB.addContentPart({
+              id: 'pc-hero_metric_0_val',
+              page: 'Home',
+              part_name: 'Hero Metric 1 Value',
+              section_key: 'hero.metric_0_val',
+              section_group: 'Hero Section',
+              content: val
+            });
+            showToast('Partner Revenue metric updated live on landing page!');
+            renderContentBoxes();
+          } catch (err) {
+            showToast('Error saving Revenue metric: ' + err.message);
+          } finally {
+            btnQuickSaveRev.textContent = orig;
+            btnQuickSaveRev.disabled = false;
           }
         });
       }
@@ -2087,7 +2658,7 @@
             <div class="part-box-header">
               <div class="part-badge-wrap">
                 <span class="part-name-badge">Quote</span>
-                <span class="part-page-badge">Page: ${escapeHtml(t.page || 'success-stories.html')}</span>
+                <span class="part-page-badge">Page: ${escapeHtml(t.page || 'index.html')}</span>
                 <span class="badge ${t.is_approved ? 'badge-green' : 'badge-yellow'}">${t.is_approved ? 'Published' : 'Pending'}</span>
               </div>
               <div class="part-box-actions">
@@ -2098,7 +2669,7 @@
 
             <div class="part-content-display">
               <p style="font-style: italic; font-size: 1rem; margin-bottom: 0.35rem;">"${escapeHtml(t.quote)}"</p>
-              <p style="font-weight: 600; font-size: 0.85rem; color: var(--text-muted);">— ${escapeHtml(t.author_name)}${t.author_role ? ', ' + escapeHtml(t.author_role) : ''}</p>
+              <p style="font-weight: 600; font-size: 0.85rem; color: var(--text-muted);">- ${escapeHtml(t.author_name)}${t.author_role ? ', ' + escapeHtml(t.author_role) : ''}</p>
             </div>
 
             <!-- Inline Edit Form -->
@@ -2530,12 +3101,15 @@
         list.forEach(lead => {
           const tr = document.createElement('tr');
           const dateStr = lead.created_at ? new Date(lead.created_at).toLocaleDateString() : 'Recent';
+          const companyStr = lead.company ? `<div style="font-size:0.75rem; color:var(--text-muted); margin-top:2px;">🏢 ${escapeHtml(lead.company)}</div>` : '';
+          const phoneStr = lead.phone ? `<div style="font-size:0.75rem; color:var(--text-muted); font-family:monospace; margin-top:2px;">📞 ${escapeHtml(lead.phone)}</div>` : '';
+          const stageStr = lead.stage ? `<span class="badge" style="background:#E0F2FE; color:#0369A1; font-size:0.7rem; margin-top:4px; display:inline-block;">${escapeHtml(lead.stage)}</span>` : '';
           tr.innerHTML = `
-            <td style="white-space: nowrap; color: var(--text-muted);">${dateStr}</td>
-            <td><strong>${escapeHtml(lead.name || '')}</strong></td>
-            <td><a href="mailto:${escapeHtml(lead.email || '')}" style="color: var(--accent); text-decoration: none;">${escapeHtml(lead.email || '')}</a></td>
-            <td><span class="badge badge-blue">${escapeHtml(lead.venture_interest || 'General')}</span></td>
-            <td style="max-width: 320px;">${escapeHtml(lead.message || '')}</td>
+            <td style="white-space: nowrap; color: var(--text-muted); font-size:0.8rem;">${dateStr}</td>
+            <td><strong>${escapeHtml(lead.name || '')}</strong>${companyStr}</td>
+            <td><a href="mailto:${escapeHtml(lead.email || '')}" style="color: var(--accent); text-decoration: none;">${escapeHtml(lead.email || '')}</a>${phoneStr}</td>
+            <td><span class="badge badge-blue">${escapeHtml(lead.venture_interest || lead.tier || 'General')}</span><br>${stageStr}</td>
+            <td style="max-width: 320px; font-size:0.82rem; line-height:1.4;">${escapeHtml(lead.message || '')}</td>
             <td>
               <select class="inline-select lead-status-select" data-id="${lead.id}">
                 <option value="New" ${lead.status === 'New' ? 'selected' : ''}>New</option>

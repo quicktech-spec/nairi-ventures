@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nairee Ventures · Venture Execution Studio · India</title>
+  <title>Nairee Ventures · Electric Amethyst & Royal Orchid</title>
     <link rel="icon" type="image/svg+xml" href="images/nairi-icon.svg">
   <link rel="apple-touch-icon" href="images/nairee-logo-navy-sky.png">
   <meta property="og:type" content="website">
@@ -74,8 +74,8 @@
       font-family: var(--font-body) !important;
     }
     ::selection {
-      background-color: #BAE6FD;
-      color: #0B1E33;
+      background-color: #DDD6FE;
+      color: #4C1D95;
     }
     /* Toast feedback notification */
     #clone-toast {
@@ -89,7 +89,7 @@
       padding: 16px 24px;
       background: #071B2F;
       color: #F0F9FF;
-      border: 1.5px solid #38BDF8;
+      border: 1.5px solid #8B5CF6;
       border-radius: 14px;
       box-shadow: 0 20px 50px rgba(7, 27, 47, 0.5);
       font-size: 0.9375rem;
@@ -143,11 +143,11 @@
     }
     .marquee-mask::before {
       left: 0;
-      background: linear-gradient(90deg, #071B2F 0%, rgba(7, 27, 47, 0) 100%);
+      background: linear-gradient(90deg, #140728 0%, rgba(0, 0, 0, 0) 100%);
     }
     .marquee-mask::after {
       right: 0;
-      background: linear-gradient(270deg, #071B2F 0%, rgba(7, 27, 47, 0) 100%);
+      background: linear-gradient(270deg, #140728 0%, rgba(0, 0, 0, 0) 100%);
     }
     /* Smooth floating animation for hero metric pills */
     .animate-float-slow {
@@ -185,135 +185,231 @@
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- [THEME OVERRIDES: Electric Amethyst & Royal Orchid (Amethyst Violet Edition)] -->
+  <style id="site-theme-palette">
+    :root {
+      --theme-primary: #7C3AED;
+      --theme-primary-hover: #6D28D9;
+      --theme-primary-dark: #5B21B6;
+      --theme-primary-deep: #4C1D95;
+      --theme-primary-bright: #8B5CF6;
+      --theme-primary-light: #EDE9FE;
+      --theme-primary-lighter: #DDD6FE;
+      --theme-primary-tint: #F5F3FF;
+      --theme-primary-10: rgba(124, 58, 237, 0.1);
+      --theme-primary-light60: rgba(237, 233, 254, 0.65);
+      --theme-primary-shadow: rgba(124, 58, 237, 0.55);
+      --theme-border-light: #DDD6FE;
+      --theme-border-mid: #C4B5FD;
+      --theme-border-light60: rgba(221, 214, 254, 0.6);
+      --theme-border-mid80: rgba(196, 181, 253, 0.8);
+      --theme-border-mid70: rgba(196, 181, 253, 0.7);
+      --theme-body-bg: #FAF8FF;
+      --theme-selection-bg: #DDD6FE;
+      --theme-selection-text: #4C1D95;
+    }
+
+    /* 100% Theme Palette Overrides across all 130+ occurrences */
+    .bg-sky-600 { background-color: var(--theme-primary) !important; }
+    .bg-sky-700 { background-color: var(--theme-primary-hover) !important; }
+    .hover\:bg-sky-700:hover, 
+    a.bg-sky-600:hover, 
+    button.bg-sky-600:hover { 
+      background-color: var(--theme-primary-hover) !important; 
+    }
+    .bg-sky-50 { background-color: var(--theme-primary-tint) !important; }
+    .bg-sky-100 { background-color: var(--theme-primary-light) !important; }
+    .bg-sky-200 { background-color: var(--theme-primary-lighter) !important; }
+    .hover\:bg-sky-50:hover { background-color: var(--theme-primary-tint) !important; }
+    .hover\:bg-sky-200:hover { background-color: var(--theme-primary-lighter) !important; }
+    .bg-sky-600\/10 { background-color: var(--theme-primary-10) !important; }
+    .bg-sky-100\/60 { background-color: var(--theme-primary-light60) !important; }
+
+    /* Typography & Text Accents */
+    .text-sky-600 { color: var(--theme-primary) !important; }
+    .text-sky-700 { color: var(--theme-primary-dark) !important; }
+    .text-sky-800 { color: var(--theme-primary-dark) !important; }
+    .text-sky-900 { color: var(--theme-primary-deep) !important; }
+    .text-sky-950 { color: var(--theme-primary-deep) !important; }
+    .text-sky-400 { color: var(--theme-primary-bright) !important; }
+    .text-sky-300 { color: var(--theme-primary-bright) !important; }
+    .text-sky-200 { color: var(--theme-primary-lighter) !important; }
+    .text-sky-100 { color: var(--theme-primary-light) !important; }
+    .text-sky-300\/80 { color: var(--theme-primary-bright) !important; opacity: 0.85; }
+    .text-sky-300\/60 { color: var(--theme-primary-bright) !important; opacity: 0.70; }
+    .text-sky-200\/80 { color: var(--theme-primary-lighter) !important; opacity: 0.85; }
+    .hover\:text-sky-600:hover { color: var(--theme-primary) !important; }
+    .hover\:text-sky-300:hover { color: var(--theme-primary-bright) !important; }
+
+    /* Structural Borders & Highlights */
+    .border-sky-100 { border-color: var(--theme-border-light) !important; }
+    .border-sky-200 { border-color: var(--theme-border-mid) !important; }
+    .border-sky-400 { border-color: var(--theme-primary-bright) !important; }
+    .border-sky-600 { border-color: var(--theme-primary) !important; }
+    .border-sky-100\/60 { border-color: var(--theme-border-light60) !important; }
+    .border-sky-200\/80 { border-color: var(--theme-border-mid80) !important; }
+    .border-sky-200\/70 { border-color: var(--theme-border-mid70) !important; }
+    .hover\:border-sky-400:hover { border-color: var(--theme-primary-bright) !important; }
+
+    /* Interactive Focus & Rings */
+    .focus\:border-sky-600:focus { border-color: var(--theme-primary) !important; }
+    .focus\:ring-sky-600\/20:focus { --tw-ring-color: rgba(124, 58, 237, 0.25) !important; }
+    .ring-sky-600 { --tw-ring-color: var(--theme-primary) !important; }
+
+    /* Dynamic Button Shadows */
+    [class*="shadow-[0_10px_24px_-10px"],
+    [class*="shadow-[0_12px_28px_-12px"] {
+      box-shadow: 0 10px 24px -10px var(--theme-primary-shadow) !important;
+    }
+    [class*="hover:shadow-[0_18px_40px_-14px"]:hover {
+      box-shadow: 0 18px 40px -14px var(--theme-primary-shadow) !important;
+    }
+
+    /* Page Body & Selection */
+    body {
+      background-color: var(--theme-body-bg) !important;
+    }
+    ::selection {
+      background-color: var(--theme-selection-bg) !important;
+      color: var(--theme-selection-text) !important;
+    }
+
+    /* Lead Form List Bullets */
+    span.bg-sky-600 {
+      background-color: var(--theme-primary) !important;
+    }
+  </style>
+
 </head>
-<body class="bg-[#F4F9FD] text-[#0B1E33] antialiased selection:bg-sky-200 selection:text-navy font-sans">
+<body class="bg-[#FAF8FF] text-[#16082B] antialiased selection:bg-sky-200 selection:text-navy font-sans">
   <div id="root">
-<div class="min-h-screen bg-background text-foreground font-sans"><header data-testid="header-nav" class="sticky top-0 z-50 backdrop-blur-xl border-b transition-all duration-300 bg-white/40 border-sky-100/60"><div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8"><button data-testid="nav-logo" class="flex items-center gap-2" onclick="window.scrollTo({top:0, behavior:'smooth'})"><img src="images/nairee-logo-navy-sky.png" alt="Nairee" class="h-8 w-auto object-contain" style="max-height:30px;"><span class="font-heading text-lg font-extrabold tracking-tight text-sky-600">Ventures</span></button><nav class="hidden items-center gap-7 lg:flex"><a href="#problems" class="text-sm font-medium text-slate-600 transition-colors hover:text-sky-600">Founder Bottlenecks</a><a href="#tiers" class="text-sm font-medium text-slate-600 transition-colors hover:text-sky-600">3 Tier Solutions</a><a href="#team" class="text-sm font-medium text-slate-600 transition-colors hover:text-sky-600">Leadership Team</a></nav><a href="#lead" class="group/button inline-flex shrink-0 items-center justify-center border border-transparent text-xs sm:text-[13px] whitespace-nowrap outline-none font-semibold rounded-full bg-sky-600 text-white transition-all hover:bg-sky-700 hover:shadow-lg px-5 py-2">Book Strategy Session →</a></div></header><main><section data-testid="hero-section" class="relative overflow-hidden" style="background: radial-gradient(circle at 82% 12%, rgb(186, 230, 253) 0%, rgb(224, 242, 254) 42%, rgb(244, 249, 253) 100%);"><div class="mx-auto grid max-w-7xl items-center gap-8 px-5 sm:px-8 hero-container-tight"><div class="min-w-0"><h1 data-testid="hero-slogan" data-cms-key="hero.slogan" class="font-heading text-4xl font-extrabold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-6xl hero-slogan-responsive"><span class="block overflow-hidden pb-1"><span class="block" style="transform: none;">You Direct the <span class="text-sky-600">Vision.</span></span></span><span class="block overflow-hidden pb-1"><span class="block" style="transform: none;">We Execute the <span class="text-sky-600">Engine.</span></span></span></h1><p class="mt-6 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg" data-testid="hero-subtext" data-cms-key="hero.subtext" style="opacity: 1; transform: none;">From AI personalized video campaigns mapped to your customer segments, to full stack finance, capital advisory and end to end operations, one integrated execution engine for India's most ambitious founders.</p><div class="mt-8 flex flex-wrap items-center gap-4" style="opacity: 1; transform: none;"><a href="#lead" data-cms-key="hero.cta_primary" class="group/button inline-flex shrink-0 items-center justify-center border border-transparent text-xs sm:text-[13px] whitespace-nowrap outline-none font-semibold rounded-full bg-sky-600 text-white transition-all hover:bg-sky-700 hover:shadow-lg px-5 py-2.5 sm:px-6 sm:py-2.5 min-h-[38px]">Request Growth Diagnostic<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-1.5 h-3.5 w-3.5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a><a href="#tiers" data-cms-key="hero.cta_secondary" class="group/button inline-flex shrink-0 items-center justify-center border border-sky-200 text-xs sm:text-[13px] whitespace-nowrap outline-none font-semibold rounded-full bg-white text-ink transition-all hover:bg-sky-50 hover:border-sky-400 px-5 py-2.5 sm:px-6 sm:py-2.5 min-h-[38px]">Explore the 3 Tiers</a></div></div><div class="relative max-w-[480px] lg:max-w-[460px] mx-auto lg:ml-auto w-full" style="opacity: 1; transform: none;"><div class="relative" style="transform: none;"><div class="overflow-hidden rounded-[1.75rem] border-4 border-white shadow-[0_25px_60px_-20px_rgba(7,27,47,0.35)] hero-image-frame"><img alt="Indian strategy collective collaborating in an executive session" class="w-full h-full object-cover object-center" style="max-height: 340px;" data-testid="hero-image" data-cms-img="hero.image" src="https://images.unsplash.com/photo-1781246212288-7fa538344718?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBidXNpbmVzcyUyMHRlYW0lMjBtZWV0aW5nJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3ODkxODIxNDN8MA&amp;ixlib=rb-4.1.0&amp;q=85"></div><div class="animate-float-slow absolute -left-4 top-4 z-20 rounded-2xl border border-sky-100 bg-white/95 px-4 py-2 shadow-lg backdrop-blur-xl sm:-left-6" data-testid="hero-pill-roas"><p data-cms-key="hero.pill_roas_val" class="font-heading text-xl font-extrabold text-sky-700">4.2x ROAS</p><p data-cms-key="hero.pill_roas_label" class="text-xs text-slate-500">Segment mapped AI creatives</p></div><div class="animate-float-slow absolute -right-3 -bottom-3 z-20 rounded-2xl border border-sky-100 bg-white/95 px-4 py-2 shadow-lg backdrop-blur-xl sm:-right-5" data-testid="hero-pill-pod" style="animation-delay: 1.4s;"><p data-cms-key="hero.pill_pod_val" class="font-heading text-xl font-extrabold text-terracotta">14 Day Pod</p><p data-cms-key="hero.pill_pod_label" class="text-xs text-slate-500">Full execution team deployed</p></div></div></div></div></section><section data-testid="editorial-marquee" class="marquee-mask" style="position:relative; overflow:hidden; border-top:1px solid rgba(56,189,248,0.22); border-bottom:1px solid rgba(56,189,248,0.22); background:#061424; padding:26px 0;">
+<div class="min-h-screen bg-background text-foreground font-sans"><header data-testid="header-nav" class="sticky top-0 z-50 backdrop-blur-xl border-b transition-all duration-300 bg-white/40 border-sky-100/60"><div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8"><button data-testid="nav-logo" class="flex items-center gap-2" onclick="window.scrollTo({top:0, behavior:'smooth'})"><img src="images/nairee-logo-navy-sky.png" alt="Nairee" class="h-8 w-auto object-contain" style="max-height:30px;"><span class="font-heading text-lg font-extrabold tracking-tight " style="color:#7C3AED;">Ventures</span></button><nav class="hidden items-center gap-7 lg:flex"><a href="#problems" class="text-sm font-medium text-slate-600 transition-colors hover:text-sky-600">Founder Bottlenecks</a><a href="#tiers" class="text-sm font-medium text-slate-600 transition-colors hover:text-sky-600">3 Tier Solutions</a><a href="#team" class="text-sm font-medium text-slate-600 transition-colors hover:text-sky-600">Leadership Team</a></nav><a href="#lead" class="group/button inline-flex shrink-0 items-center justify-center border border-transparent text-xs sm:text-[13px] whitespace-nowrap outline-none font-semibold rounded-full bg-sky-600 text-white transition-all hover:bg-sky-700 hover:shadow-lg px-5 py-2">Book Strategy Session →</a></div></header><main><section data-testid="hero-section" class="relative overflow-hidden" style="background: radial-gradient(circle at 82% 12%, rgb(237, 233, 254) 0%, rgb(245, 243, 255) 42%, rgb(251, 250, 255) 100%);"><div class="mx-auto grid max-w-7xl items-center gap-8 px-5 sm:px-8 hero-container-tight"><div class="min-w-0"><h1 data-testid="hero-slogan" data-cms-key="hero.slogan" class="font-heading text-4xl font-extrabold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-6xl hero-slogan-responsive"><span class="block overflow-hidden pb-1"><span class="block" style="transform: none;">You Direct the <span class="text-sky-600">Vision.</span></span></span><span class="block overflow-hidden pb-1"><span class="block" style="transform: none;">We Execute the <span class="text-sky-600">Engine.</span></span></span></h1><p class="mt-6 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg" data-testid="hero-subtext" data-cms-key="hero.subtext" style="opacity: 1; transform: none;">From AI personalized video campaigns mapped to your customer segments, to full stack finance, capital advisory and end to end operations, one integrated execution engine for India's most ambitious founders.</p><div class="mt-8 flex flex-wrap items-center gap-4" style="opacity: 1; transform: none;"><a href="#lead" data-cms-key="hero.cta_primary" class="group/button inline-flex shrink-0 items-center justify-center border border-transparent text-xs sm:text-[13px] whitespace-nowrap outline-none font-semibold rounded-full bg-sky-600 text-white transition-all hover:bg-sky-700 hover:shadow-lg px-5 py-2.5 sm:px-6 sm:py-2.5 min-h-[38px]">Request Growth Diagnostic<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-1.5 h-3.5 w-3.5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a><a href="#tiers" data-cms-key="hero.cta_secondary" class="group/button inline-flex shrink-0 items-center justify-center border border-sky-200 text-xs sm:text-[13px] whitespace-nowrap outline-none font-semibold rounded-full bg-white text-ink transition-all hover:bg-sky-50 hover:border-sky-400 px-5 py-2.5 sm:px-6 sm:py-2.5 min-h-[38px]">Explore the 3 Tiers</a></div></div><div class="relative max-w-[480px] lg:max-w-[460px] mx-auto lg:ml-auto w-full" style="opacity: 1; transform: none;"><div class="relative" style="transform: none;"><div class="overflow-hidden rounded-[1.75rem] border-4 border-white shadow-[0_25px_60px_-20px_rgba(7,27,47,0.35)] hero-image-frame"><img alt="Indian strategy collective collaborating in an executive session" class="w-full h-full object-cover object-center" style="max-height: 340px;" data-testid="hero-image" data-cms-img="hero.image" src="https://images.unsplash.com/photo-1781246212288-7fa538344718?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBidXNpbmVzcyUyMHRlYW0lMjBtZWV0aW5nJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3ODkxODIxNDN8MA&amp;ixlib=rb-4.1.0&amp;q=85"></div><div class="animate-float-slow absolute -left-4 top-4 z-20 rounded-2xl border border-sky-100 bg-white/95 px-4 py-2 shadow-lg backdrop-blur-xl sm:-left-6" data-testid="hero-pill-roas"><p data-cms-key="hero.pill_roas_val" class="font-heading text-xl font-extrabold text-sky-700">4.2x ROAS</p><p data-cms-key="hero.pill_roas_label" class="text-xs text-slate-500">Segment mapped AI creatives</p></div><div class="animate-float-slow absolute -right-3 -bottom-3 z-20 rounded-2xl border border-sky-100 bg-white/95 px-4 py-2 shadow-lg backdrop-blur-xl sm:-right-5" data-testid="hero-pill-pod" style="animation-delay: 1.4s;"><p data-cms-key="hero.pill_pod_val" class="font-heading text-xl font-extrabold text-terracotta">14 Day Pod</p><p data-cms-key="hero.pill_pod_label" class="text-xs text-slate-500">Full execution team deployed</p></div></div></div></div></section><section data-testid="editorial-marquee" class="marquee-mask" style="position:relative; overflow:hidden; border-top:1px solid rgba(139, 92, 246, 0.28); border-bottom:1px solid rgba(139, 92, 246, 0.28); background:#140728; padding:26px 0;">
   <div class="animate-marquee-drift" style="display:flex; width:max-content; align-items:center; gap:24px; white-space:nowrap;">
     
     <div class="ticker-pill-wrapper" style="display:inline-flex; align-items:center; gap:24px; flex-shrink:0;">
-      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#0A1627; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="1.2" fill="#F59E0B"/></svg>
+      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#200D3D; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="1.2" fill="#8B5CF6"/></svg>
         <span style="font-family:'General Sans',-apple-system,BlinkMacSystemFont,sans-serif; font-size:15px; font-weight:800; letter-spacing:0.14em; color:#FFFFFF; text-transform:uppercase; white-space:nowrap;">MANAGEMENT AS A SERVICE</span>
       </div>
-      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#EA580C; box-shadow:0 0 10px rgba(234,88,12,0.85); flex-shrink:0;"></span>
+      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#7C3AED; box-shadow:0 0 10px rgba(124, 58, 237, 0.85); flex-shrink:0;"></span>
     </div>
   
 
     <div class="ticker-pill-wrapper" style="display:inline-flex; align-items:center; gap:24px; flex-shrink:0;">
-      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#0A1627; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><path d="M4 3v16l2.5-1.5 2.5 1.5 2.5-1.5 2.5 1.5V3H4z"/><path d="M8 8h6"/><path d="M8 12h6"/><path d="M8 15h3"/><path d="m15 4 2.5 2.5 4-4.5"/></svg>
+      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#200D3D; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><path d="M4 3v16l2.5-1.5 2.5 1.5 2.5-1.5 2.5 1.5V3H4z"/><path d="M8 8h6"/><path d="M8 12h6"/><path d="M8 15h3"/><path d="m15 4 2.5 2.5 4-4.5"/></svg>
         <span style="font-family:'General Sans',-apple-system,BlinkMacSystemFont,sans-serif; font-size:15px; font-weight:800; letter-spacing:0.14em; color:#FFFFFF; text-transform:uppercase; white-space:nowrap;">GST & TAX STRUCTURING</span>
       </div>
-      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#EA580C; box-shadow:0 0 10px rgba(234,88,12,0.85); flex-shrink:0;"></span>
+      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#7C3AED; box-shadow:0 0 10px rgba(124, 58, 237, 0.85); flex-shrink:0;"></span>
     </div>
   
 
     <div class="ticker-pill-wrapper" style="display:inline-flex; align-items:center; gap:24px; flex-shrink:0;">
-      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#0A1627; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><line x1="3" y1="21" x2="21" y2="21"/><rect x="4.5" y="13" width="3.5" height="8" rx="0.5"/><rect x="10.2" y="9" width="3.5" height="12" rx="0.5"/><rect x="16" y="5" width="3.5" height="16" rx="0.5"/><polyline points="3.5 12 9.5 7 14.5 9 20.5 3"/><polyline points="16.5 3 20.5 3 20.5 7"/></svg>
+      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#200D3D; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><line x1="3" y1="21" x2="21" y2="21"/><rect x="4.5" y="13" width="3.5" height="8" rx="0.5"/><rect x="10.2" y="9" width="3.5" height="12" rx="0.5"/><rect x="16" y="5" width="3.5" height="16" rx="0.5"/><polyline points="3.5 12 9.5 7 14.5 9 20.5 3"/><polyline points="16.5 3 20.5 3 20.5 7"/></svg>
         <span style="font-family:'General Sans',-apple-system,BlinkMacSystemFont,sans-serif; font-size:15px; font-weight:800; letter-spacing:0.14em; color:#FFFFFF; text-transform:uppercase; white-space:nowrap;">FINANCIAL MODELING & CASH FLOW</span>
       </div>
-      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#EA580C; box-shadow:0 0 10px rgba(234,88,12,0.85); flex-shrink:0;"></span>
+      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#7C3AED; box-shadow:0 0 10px rgba(124, 58, 237, 0.85); flex-shrink:0;"></span>
     </div>
   
 
     <div class="ticker-pill-wrapper" style="display:inline-flex; align-items:center; gap:24px; flex-shrink:0;">
-      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#0A1627; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><rect x="3" y="3" width="16" height="18" rx="2.5"/><circle cx="11" cy="11" r="4.5"/><line x1="14.5" y1="14.5" x2="19.5" y2="19.5"/><line x1="8.5" y1="10" x2="13.5" y2="10"/><line x1="8.5" y1="12" x2="13.5" y2="12"/></svg>
+      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#200D3D; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><rect x="3" y="3" width="16" height="18" rx="2.5"/><circle cx="11" cy="11" r="4.5"/><line x1="14.5" y1="14.5" x2="19.5" y2="19.5"/><line x1="8.5" y1="10" x2="13.5" y2="10"/><line x1="8.5" y1="12" x2="13.5" y2="12"/></svg>
         <span style="font-family:'General Sans',-apple-system,BlinkMacSystemFont,sans-serif; font-size:15px; font-weight:800; letter-spacing:0.14em; color:#FFFFFF; text-transform:uppercase; white-space:nowrap;">CAPITAL RAISING & DUE DILIGENCE</span>
       </div>
-      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#EA580C; box-shadow:0 0 10px rgba(234,88,12,0.85); flex-shrink:0;"></span>
+      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#7C3AED; box-shadow:0 0 10px rgba(124, 58, 237, 0.85); flex-shrink:0;"></span>
     </div>
   
 
     <div class="ticker-pill-wrapper" style="display:inline-flex; align-items:center; gap:24px; flex-shrink:0;">
-      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#0A1627; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><circle cx="7.5" cy="15.5" r="4.2"/><circle cx="7.5" cy="6.5" r="3.2"/><circle cx="14.5" cy="8.5" r="2.2"/><circle cx="17" cy="15" r="3.5"/></svg>
+      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#200D3D; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><circle cx="7.5" cy="15.5" r="4.2"/><circle cx="7.5" cy="6.5" r="3.2"/><circle cx="14.5" cy="8.5" r="2.2"/><circle cx="17" cy="15" r="3.5"/></svg>
         <span style="font-family:'General Sans',-apple-system,BlinkMacSystemFont,sans-serif; font-size:15px; font-weight:800; letter-spacing:0.14em; color:#FFFFFF; text-transform:uppercase; white-space:nowrap;">CUSTOMER SEGMENTATION</span>
       </div>
-      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#EA580C; box-shadow:0 0 10px rgba(234,88,12,0.85); flex-shrink:0;"></span>
+      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#7C3AED; box-shadow:0 0 10px rgba(124, 58, 237, 0.85); flex-shrink:0;"></span>
     </div>
   
 
     <div class="ticker-pill-wrapper" style="display:inline-flex; align-items:center; gap:24px; flex-shrink:0;">
-      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#0A1627; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><rect x="2" y="5" width="14" height="14" rx="3"/><polygon points="16 10 22 6 22 18 16 14"/><polygon points="7.5 9.5 11.5 12 7.5 14.5" fill="#F59E0B"/></svg>
+      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#200D3D; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><rect x="2" y="5" width="14" height="14" rx="3"/><polygon points="16 10 22 6 22 18 16 14"/><polygon points="7.5 9.5 11.5 12 7.5 14.5" fill="#8B5CF6"/></svg>
         <span style="font-family:'General Sans',-apple-system,BlinkMacSystemFont,sans-serif; font-size:15px; font-weight:800; letter-spacing:0.14em; color:#FFFFFF; text-transform:uppercase; white-space:nowrap;">AI VIDEO CREATIVES</span>
       </div>
-      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#EA580C; box-shadow:0 0 10px rgba(234,88,12,0.85); flex-shrink:0;"></span>
+      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#7C3AED; box-shadow:0 0 10px rgba(124, 58, 237, 0.85); flex-shrink:0;"></span>
     </div>
   
 
     <div class="ticker-pill-wrapper" style="display:inline-flex; align-items:center; gap:24px; flex-shrink:0;">
-      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#0A1627; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><path d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"/><line x1="8" y1="6" x2="8" y2="14"/></svg>
+      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#200D3D; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><path d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"/><line x1="8" y1="6" x2="8" y2="14"/></svg>
         <span style="font-family:'General Sans',-apple-system,BlinkMacSystemFont,sans-serif; font-size:15px; font-weight:800; letter-spacing:0.14em; color:#FFFFFF; text-transform:uppercase; white-space:nowrap;">OMNICHANNEL PERFORMANCE ADS</span>
       </div>
-      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#EA580C; box-shadow:0 0 10px rgba(234,88,12,0.85); flex-shrink:0;"></span>
+      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#7C3AED; box-shadow:0 0 10px rgba(124, 58, 237, 0.85); flex-shrink:0;"></span>
     </div>
   
 
     <div class="ticker-pill-wrapper" style="display:inline-flex; align-items:center; gap:24px; flex-shrink:0;">
-      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#0A1627; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="1.2" fill="#F59E0B"/></svg>
+      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#200D3D; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="1.2" fill="#8B5CF6"/></svg>
         <span style="font-family:'General Sans',-apple-system,BlinkMacSystemFont,sans-serif; font-size:15px; font-weight:800; letter-spacing:0.14em; color:#FFFFFF; text-transform:uppercase; white-space:nowrap;">MANAGEMENT AS A SERVICE</span>
       </div>
-      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#EA580C; box-shadow:0 0 10px rgba(234,88,12,0.85); flex-shrink:0;"></span>
+      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#7C3AED; box-shadow:0 0 10px rgba(124, 58, 237, 0.85); flex-shrink:0;"></span>
     </div>
   
 
     <div class="ticker-pill-wrapper" style="display:inline-flex; align-items:center; gap:24px; flex-shrink:0;">
-      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#0A1627; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><path d="M4 3v16l2.5-1.5 2.5 1.5 2.5-1.5 2.5 1.5V3H4z"/><path d="M8 8h6"/><path d="M8 12h6"/><path d="M8 15h3"/><path d="m15 4 2.5 2.5 4-4.5"/></svg>
+      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#200D3D; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><path d="M4 3v16l2.5-1.5 2.5 1.5 2.5-1.5 2.5 1.5V3H4z"/><path d="M8 8h6"/><path d="M8 12h6"/><path d="M8 15h3"/><path d="m15 4 2.5 2.5 4-4.5"/></svg>
         <span style="font-family:'General Sans',-apple-system,BlinkMacSystemFont,sans-serif; font-size:15px; font-weight:800; letter-spacing:0.14em; color:#FFFFFF; text-transform:uppercase; white-space:nowrap;">GST & TAX STRUCTURING</span>
       </div>
-      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#EA580C; box-shadow:0 0 10px rgba(234,88,12,0.85); flex-shrink:0;"></span>
+      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#7C3AED; box-shadow:0 0 10px rgba(124, 58, 237, 0.85); flex-shrink:0;"></span>
     </div>
   
 
     <div class="ticker-pill-wrapper" style="display:inline-flex; align-items:center; gap:24px; flex-shrink:0;">
-      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#0A1627; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><line x1="3" y1="21" x2="21" y2="21"/><rect x="4.5" y="13" width="3.5" height="8" rx="0.5"/><rect x="10.2" y="9" width="3.5" height="12" rx="0.5"/><rect x="16" y="5" width="3.5" height="16" rx="0.5"/><polyline points="3.5 12 9.5 7 14.5 9 20.5 3"/><polyline points="16.5 3 20.5 3 20.5 7"/></svg>
+      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#200D3D; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><line x1="3" y1="21" x2="21" y2="21"/><rect x="4.5" y="13" width="3.5" height="8" rx="0.5"/><rect x="10.2" y="9" width="3.5" height="12" rx="0.5"/><rect x="16" y="5" width="3.5" height="16" rx="0.5"/><polyline points="3.5 12 9.5 7 14.5 9 20.5 3"/><polyline points="16.5 3 20.5 3 20.5 7"/></svg>
         <span style="font-family:'General Sans',-apple-system,BlinkMacSystemFont,sans-serif; font-size:15px; font-weight:800; letter-spacing:0.14em; color:#FFFFFF; text-transform:uppercase; white-space:nowrap;">FINANCIAL MODELING & CASH FLOW</span>
       </div>
-      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#EA580C; box-shadow:0 0 10px rgba(234,88,12,0.85); flex-shrink:0;"></span>
+      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#7C3AED; box-shadow:0 0 10px rgba(124, 58, 237, 0.85); flex-shrink:0;"></span>
     </div>
   
 
     <div class="ticker-pill-wrapper" style="display:inline-flex; align-items:center; gap:24px; flex-shrink:0;">
-      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#0A1627; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><rect x="3" y="3" width="16" height="18" rx="2.5"/><circle cx="11" cy="11" r="4.5"/><line x1="14.5" y1="14.5" x2="19.5" y2="19.5"/><line x1="8.5" y1="10" x2="13.5" y2="10"/><line x1="8.5" y1="12" x2="13.5" y2="12"/></svg>
+      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#200D3D; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><rect x="3" y="3" width="16" height="18" rx="2.5"/><circle cx="11" cy="11" r="4.5"/><line x1="14.5" y1="14.5" x2="19.5" y2="19.5"/><line x1="8.5" y1="10" x2="13.5" y2="10"/><line x1="8.5" y1="12" x2="13.5" y2="12"/></svg>
         <span style="font-family:'General Sans',-apple-system,BlinkMacSystemFont,sans-serif; font-size:15px; font-weight:800; letter-spacing:0.14em; color:#FFFFFF; text-transform:uppercase; white-space:nowrap;">CAPITAL RAISING & DUE DILIGENCE</span>
       </div>
-      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#EA580C; box-shadow:0 0 10px rgba(234,88,12,0.85); flex-shrink:0;"></span>
+      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#7C3AED; box-shadow:0 0 10px rgba(124, 58, 237, 0.85); flex-shrink:0;"></span>
     </div>
   
 
     <div class="ticker-pill-wrapper" style="display:inline-flex; align-items:center; gap:24px; flex-shrink:0;">
-      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#0A1627; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><circle cx="7.5" cy="15.5" r="4.2"/><circle cx="7.5" cy="6.5" r="3.2"/><circle cx="14.5" cy="8.5" r="2.2"/><circle cx="17" cy="15" r="3.5"/></svg>
+      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#200D3D; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><circle cx="7.5" cy="15.5" r="4.2"/><circle cx="7.5" cy="6.5" r="3.2"/><circle cx="14.5" cy="8.5" r="2.2"/><circle cx="17" cy="15" r="3.5"/></svg>
         <span style="font-family:'General Sans',-apple-system,BlinkMacSystemFont,sans-serif; font-size:15px; font-weight:800; letter-spacing:0.14em; color:#FFFFFF; text-transform:uppercase; white-space:nowrap;">CUSTOMER SEGMENTATION</span>
       </div>
-      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#EA580C; box-shadow:0 0 10px rgba(234,88,12,0.85); flex-shrink:0;"></span>
+      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#7C3AED; box-shadow:0 0 10px rgba(124, 58, 237, 0.85); flex-shrink:0;"></span>
     </div>
   
 
     <div class="ticker-pill-wrapper" style="display:inline-flex; align-items:center; gap:24px; flex-shrink:0;">
-      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#0A1627; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><rect x="2" y="5" width="14" height="14" rx="3"/><polygon points="16 10 22 6 22 18 16 14"/><polygon points="7.5 9.5 11.5 12 7.5 14.5" fill="#F59E0B"/></svg>
+      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#200D3D; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><rect x="2" y="5" width="14" height="14" rx="3"/><polygon points="16 10 22 6 22 18 16 14"/><polygon points="7.5 9.5 11.5 12 7.5 14.5" fill="#8B5CF6"/></svg>
         <span style="font-family:'General Sans',-apple-system,BlinkMacSystemFont,sans-serif; font-size:15px; font-weight:800; letter-spacing:0.14em; color:#FFFFFF; text-transform:uppercase; white-space:nowrap;">AI VIDEO CREATIVES</span>
       </div>
-      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#EA580C; box-shadow:0 0 10px rgba(234,88,12,0.85); flex-shrink:0;"></span>
+      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#7C3AED; box-shadow:0 0 10px rgba(124, 58, 237, 0.85); flex-shrink:0;"></span>
     </div>
   
 
     <div class="ticker-pill-wrapper" style="display:inline-flex; align-items:center; gap:24px; flex-shrink:0;">
-      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#0A1627; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><path d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"/><line x1="8" y1="6" x2="8" y2="14"/></svg>
+      <div class="ticker-pill" style="display:inline-flex; align-items:center; gap:16px; height:56px; padding:0 28px; border-radius:9999px; background:#200D3D; border:1px solid rgba(255,255,255,0.16); box-shadow:0 8px 24px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.1); flex-shrink:0; cursor:default; transition:all 0.25s ease;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:26px; height:26px; flex-shrink:0;"><path d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"/><line x1="8" y1="6" x2="8" y2="14"/></svg>
         <span style="font-family:'General Sans',-apple-system,BlinkMacSystemFont,sans-serif; font-size:15px; font-weight:800; letter-spacing:0.14em; color:#FFFFFF; text-transform:uppercase; white-space:nowrap;">OMNICHANNEL PERFORMANCE ADS</span>
       </div>
-      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#EA580C; box-shadow:0 0 10px rgba(234,88,12,0.85); flex-shrink:0;"></span>
+      <span class="ticker-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#7C3AED; box-shadow:0 0 10px rgba(124, 58, 237, 0.85); flex-shrink:0;"></span>
     </div>
   
   </div>
@@ -342,16 +438,15 @@
   <option value="₹2Cr to ₹10Cr / year">₹2Cr to ₹10Cr / year</option>
   <option value="₹10Cr+ / year">₹10Cr+ / year</option>
 </select>
-</div><div class="space-y-2 sm:col-span-2"><label data-slot="label" class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50" for="lead-challenge">What is the #1 bottleneck holding your company back?</label><textarea data-slot="textarea" class="flex field-sizing-content min-h-16 w-full rounded-lg border border-input bg-transparent px-2.5 py-2 text-base transition-colors outline-none placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:bg-input/50 disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 md:text-sm dark:bg-input/30 dark:disabled:bg-input/80 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40" id="lead-challenge" data-testid="lead-input-challenge" placeholder="e.g. We spend ₹4L/month on ads but every creative looks the same to every customer…" rows="4"></textarea></div></div><button type="submit" tabindex="0" data-slot="button" data-testid="lead-form-submit-button" class="group/button inline-flex shrink-0 items-center justify-center border border-transparent bg-clip-padding text-sm whitespace-nowrap outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 mt-7 w-full rounded-full bg-sky-600 font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-sky-700 hover:shadow-[0_18px_40px_-14px_rgba(2,132,199,0.65)]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send mr-2 h-4 w-4" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>Request Growth Diagnostic &amp; Proposal</button></form></div></section></main><footer data-testid="footer" class="bg-navy text-sky-100"><div class="mx-auto max-w-7xl px-5 py-20 sm:px-8"><p class="max-w-4xl font-heading text-3xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl" data-testid="footer-statement" data-cms-key="footer.statement">Building India's next <span class="text-sky-400">market leaders.</span></p><div class="mt-14 grid gap-10 border-t border-white/10 pt-10 sm:grid-cols-3"><div><div class="flex items-center gap-2"><img src="images/nairee-logo-white-sky.png" alt="Nairee" class="h-8 w-auto object-contain" style="max-height:30px;"><span class="font-heading text-lg font-extrabold text-white"><span class="text-sky-400">Ventures</span></span></div><p data-cms-key="footer.bio" class="mt-4 text-sm leading-relaxed text-sky-300/80">Marketing, finance and full stack management execution for visionary Indian enterprises.</p></div><div><p class="font-mono text-xs font-semibold uppercase tracking-[0.22em] text-sky-400">Explore</p><ul class="mt-4 space-y-2.5"><li><a href="#problems" class="text-sm font-medium text-slate-600 transition-colors hover:text-sky-600">Founder Bottlenecks</a></li><li><a href="#tiers" class="text-sm font-medium text-slate-600 transition-colors hover:text-sky-600">3 Tier Solutions</a></li><li></li><li><a href="#team" class="text-sm font-medium text-slate-600 transition-colors hover:text-sky-600">Leadership Team</a></li><li><a href="#lead" class="text-sky-300 hover:text-white">Book a Session</a></li></ul></div><div><p class="font-mono text-xs font-semibold uppercase tracking-[0.22em] text-sky-400">Reach Us</p><p class="mt-4 text-sm text-sky-200/80" data-testid="footer-email" data-cms-key="footer.email">hello@naireeventures.in</p><p class="mt-2 text-sm text-sky-200/80" data-testid="footer-location" data-cms-key="footer.location">Bengaluru · Mumbai, India</p></div></div><div class="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-sky-300/60 sm:flex-row sm:items-center sm:justify-between"><p data-cms-key="footer.copyright">© 2026 Nairee Ventures. All rights reserved.</p><p>Privacy · Terms · Crafted with intent in India · <a href="admin/index.html" class="text-sky-300/80 hover:text-white transition-colors underline-offset-2 hover:underline">Admin Portal</a></p></div></div></footer><section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section></div>
+</div><div class="space-y-2 sm:col-span-2"><label data-slot="label" class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50" for="lead-challenge">What is the #1 bottleneck holding your company back?</label><textarea data-slot="textarea" class="flex field-sizing-content min-h-16 w-full rounded-lg border border-input bg-transparent px-2.5 py-2 text-base transition-colors outline-none placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:bg-input/50 disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 md:text-sm dark:bg-input/30 dark:disabled:bg-input/80 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40" id="lead-challenge" data-testid="lead-input-challenge" placeholder="e.g. We spend ₹4L/month on ads but every creative looks the same to every customer…" rows="4"></textarea></div></div><button type="submit" tabindex="0" data-slot="button" data-testid="lead-form-submit-button" class="group/button inline-flex shrink-0 items-center justify-center border border-transparent bg-clip-padding text-sm whitespace-nowrap outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 mt-7 w-full rounded-full bg-sky-600 font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-sky-700 hover:shadow-[0_18px_40px_-14px_rgba(2,132,199,0.65)]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send mr-2 h-4 w-4" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>Request Growth Diagnostic &amp; Proposal</button></form></div></section></main><footer data-testid="footer" class="bg-navy text-sky-100"><div class="mx-auto max-w-7xl px-5 py-20 sm:px-8"><p class="max-w-4xl font-heading text-3xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl" data-testid="footer-statement" data-cms-key="footer.statement">Building India's next <span style="color:#8B5CF6; font-weight:800;">market leaders.</span></p><div class="mt-14 grid gap-10 border-t border-white/10 pt-10 sm:grid-cols-3"><div><div class="flex items-center gap-2"><img src="images/nairee-logo-white-sky.png" alt="Nairee" class="h-8 w-auto object-contain" style="max-height:30px;"><span class="font-heading text-lg font-extrabold text-white"><span style="color:#8B5CF6;">Ventures</span></span></div><p data-cms-key="footer.bio" class="mt-4 text-sm leading-relaxed text-sky-300/80">Marketing, finance and full stack management execution for visionary Indian enterprises.</p></div><div><p class="font-mono text-xs font-semibold uppercase tracking-[0.22em] text-sky-400">Explore</p><ul class="mt-4 space-y-2.5"><li><a href="#problems" class="text-sm font-medium text-slate-600 transition-colors hover:text-sky-600">Founder Bottlenecks</a></li><li><a href="#tiers" class="text-sm font-medium text-slate-600 transition-colors hover:text-sky-600">3 Tier Solutions</a></li><li></li><li><a href="#team" class="text-sm font-medium text-slate-600 transition-colors hover:text-sky-600">Leadership Team</a></li><li><a href="#lead" class="text-sky-300 hover:text-white">Book a Session</a></li></ul></div><div><p class="font-mono text-xs font-semibold uppercase tracking-[0.22em] text-sky-400">Reach Us</p><p class="mt-4 text-sm text-sky-200/80" data-testid="footer-email" data-cms-key="footer.email">hello@naireeventures.in</p><p class="mt-2 text-sm text-sky-200/80" data-testid="footer-location" data-cms-key="footer.location">Bengaluru · Mumbai, India</p></div></div><div class="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-sky-300/60 sm:flex-row sm:items-center sm:justify-between"><p data-cms-key="footer.copyright">© 2026 Nairee Ventures. All rights reserved.</p><p>Privacy · Terms · Crafted with intent in India · <span class="text-white/60 font-medium">Standalone Edition</span></p></div></div></footer><section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section></div>
   </div>
 
   <!-- Toast Feedback -->
   <div id="clone-toast" role="status" aria-live="polite">
-    <span style="color: #38BDF8; font-size: 1.35rem;">✓</span>
+    <span style="color: #8B5CF6; font-size: 1.35rem;">✓</span>
     <span id="clone-toast-msg">Growth Diagnostic Request Sent!</span>
   </div>
 
-  <script src="js/site-sync.js?v=20260913_live"></script>
   <script src="js/venture-marketing.js?v=20260912_clone_v2"></script>
 </body>
 </html>

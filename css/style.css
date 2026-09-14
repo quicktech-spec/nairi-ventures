@@ -1,44 +1,42 @@
 /* ==========================================================================
-   NAIRI VENTURES — MASTER STYLESHEET
+   NAIRI VENTURES · MASTER STYLESHEET
    Style: Premium Editorial Advertising & Venture Studio
    Palette: Ivory (#F7F5EF), Ink (#171512), Amber (#E4A63A)
    Accent Gradient: Indigo (#24316B) -> Teal (#1E8A7A) -> Amber (#E4A63A)
-   Typography: Fraunces (Serif) + Plus Jakarta Sans (Grotesk Sans)
+   Typography: Fraunces (Serif) + General Sans (Grotesk Sans)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap');
 
 /* --- CSS Variables --- */
 :root {
-  /* ==========================================================================
-     EDITORIAL ICE & OCEANIC NAVY PALETTE (Venture Marketing AI Design System)
-     ========================================================================== */
-  --color-ivory: #F4F9FD;          /* Frost Ice White Global Canvas */
-  --color-ivory-warm: #FFFFFF;     /* Pure White Surface (Cards) */
-  --color-ivory-surface: #E0F2FE;  /* Surface Tier 2 (Ice Sky Tint) */
+  --color-ivory: #F7F5EF;          /* Ivory Global Canvas */
+  --color-ivory-warm: #F2EFE7;     /* Warm Ivory Surface (Cards) */
+  --color-ivory-surface: #EFECE3;  /* Surface Tier 2 */
   --color-card-bg: #FFFFFF;        /* Pure White Card Background */
-  --color-card-bg-elevated: #F0F9FF; /* Subtle Elevated White-Ice */
-  --color-navy: #071B2F;           /* Deep Oceanic Navy for Footer & Flagship */
-  --color-navy-surface: #0B2540;   /* Elevated Deep Navy */
+  --color-card-bg-elevated: #FDFBF7;
+  --color-navy: #171512;           /* Deep Ink */
+  --color-navy-surface: #24221D;
 
-  --color-ink: #0B1E33;            /* High-Contrast Deep Midnight Ink */
-  --color-ink-muted: #48627D;      /* Slate Ice Gray for Secondary Text */
-  --color-ink-subtle: #034975;     /* Deep Sky Gray for Overlines & Monospace */
+  --color-ink: #171512;            /* Primary Ink */
+  --color-ink-muted: #4A463F;      /* Muted Ink */
+  --color-ink-subtle: #797368;     /* Subtle Ink */
 
-  --color-amber: #0284C7;          /* Primary Accent: Electric Sky Blue */
-  --color-amber-hover: #0369A1;    /* Deep Ocean Blue Hover */
-  --color-amber-glow: rgba(2, 132, 199, 0.28); /* Ambient Sky Glow */
-  --color-terracotta: #EA580C;     /* Warm Pop: Sunset Coral Terracotta */
-  --color-indigo: #0284C7;
-  --color-teal: #0284C7;
+  --color-amber: #0284C7;          /* Signature Amber */
+  --color-amber-hover: #D4962A;    /* Amber Hover */
+  --color-amber-glow: rgba(228, 166, 58, 0.28);
+  --color-terracotta: #EA580C;
+  --color-indigo: #24316B;         /* Indigo */
+  --color-teal: #1E8A7A;           /* Teal */
 
-  --color-border: rgba(186, 230, 253, 0.8);  /* Subtle Sky Border */
-  --color-border-subtle: rgba(186, 230, 253, 0.45);
-  --color-border-hover: #0284C7;
+  --color-border: rgba(23, 21, 18, 0.14);
+  --color-border-subtle: rgba(23, 21, 18, 0.08);
+  --color-border-hover: #E4A63A;
 
-  --font-serif: 'Outfit', sans-serif;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'General Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, monospace;
 
   --max-width: 1200px;
   --spacing-section: clamp(80px, 10vw, 140px);
@@ -182,7 +180,7 @@ a {
   background-color: var(--color-amber);
   color: #FFFFFF;
   border-color: var(--color-amber);
-  box-shadow: 0 4px 14px -2px rgba(2, 132, 199, 0.4);
+  box-shadow: 0 4px 14px -2px rgba(228, 166, 58, 0.4);
 }
 
 .btn-primary:hover {
@@ -190,7 +188,7 @@ a {
   border-color: var(--color-amber-hover);
   color: #FFFFFF;
   transform: translateY(-2px);
-  box-shadow: 0 8px 22px -2px rgba(2, 132, 199, 0.55);
+  box-shadow: 0 8px 22px -2px rgba(228, 166, 58, 0.55);
 }
 
 .btn-secondary {
@@ -255,7 +253,7 @@ a {
 
 .site-header.scrolled {
   background-color: rgba(244, 249, 253, 0.98) !important;
-  box-shadow: 0 8px 30px -18px rgba(2, 132, 199, 0.35);
+  box-shadow: 0 8px 30px -18px rgba(228, 166, 58, 0.35);
 }
 
 .site-header .logo-text {
@@ -274,7 +272,7 @@ a {
 }
 
 .site-header .nav-link::after {
-  background-color: #0284C7 !important;
+  background-color: var(--color-amber) !important;
 }
 
 .site-header .menu-toggle {
@@ -588,12 +586,12 @@ body.page-home #hero .hero-microline {
 }
 
 .hero-badge.badge-amber {
-  background: rgba(2, 132, 199, 0.22) !important;
+  background: rgba(228, 166, 58, 0.22) !important;
   color: #38BDF8 !important;
   border: 1.5px solid #0284C7 !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.3);
+  box-shadow: 0 4px 16px rgba(228, 166, 58, 0.3);
   font-weight: 700;
 }
 
@@ -641,9 +639,9 @@ body.page-home #hero .hero-microline {
 /* Primary Hero Button: High Visibility Electric Sky Blue */
 .hero-section .btn-primary,
 .hero-btn-main {
-  background-color: #0284C7 !important;
+  background-color: var(--color-amber) !important;
   color: #FFFFFF !important;
-  border: 2px solid #0284C7 !important;
+  border: 2px solid var(--color-amber) !important;
   font-weight: 700 !important;
   font-size: 1.05rem !important;
   padding: 0.95rem 2.2rem !important;
@@ -652,18 +650,18 @@ body.page-home #hero .hero-microline {
   align-items: center !important;
   justify-content: center !important;
   text-decoration: none !important;
-  box-shadow: 0 4px 24px rgba(2, 132, 199, 0.45), 0 2px 8px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 0 4px 24px rgba(228, 166, 58, 0.45), 0 2px 8px rgba(0, 0, 0, 0.4) !important;
   transition: all 0.22s ease !important;
   cursor: pointer !important;
 }
 
 .hero-section .btn-primary:hover,
 .hero-btn-main:hover {
-  background-color: #0369A1 !important;
-  border-color: #0369A1 !important;
+  background-color: var(--color-amber-hover) !important;
+  border-color: var(--color-amber-hover) !important;
   color: #FFFFFF !important;
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(2, 132, 199, 0.65), 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0 8px 30px rgba(228, 166, 58, 0.65), 0 4px 12px rgba(0, 0, 0, 0.5) !important;
 }
 
 /* Secondary Hero Button: High Contrast Crisp White Glass with White Border */
@@ -1825,7 +1823,7 @@ body.page-home #hero .hero-microline {
 }
 
 .pricing-features li::before {
-  content: "—";
+  content: "-";
   color: var(--color-amber);
   font-weight: 600;
   flex-shrink: 0;
@@ -1872,7 +1870,7 @@ body.page-home #hero .hero-microline {
 }
 
 /* ==========================================================================
-   ELEVATED UI/UX SYSTEMS (NINJAPROMO ARCHITECTURE — EDITORIAL LUXURY DESIGN)
+   ELEVATED UI/UX SYSTEMS (NINJAPROMO ARCHITECTURE · EDITORIAL LUXURY DESIGN)
    ========================================================================== */
 
 /* 1. Capabilities Arsenal ("Under One Studio Roof") */
@@ -4329,644 +4327,3 @@ body.page-home #hero .hero-microline {
     min-width: 100vw;
   }
 }
-
-
-
-
-
-/* ==========================================================================
-   EDITORIAL ICE & DEEP NAVY MASTER OVERRIDES (Venture Marketing AI Architecture)
-   ========================================================================== */
-
-/* Global Surface & Body */
-html, body {
-  background-color: #F4F9FD !important;
-  color: #0B1E33 !important;
-}
-
-main {
-  background-color: #F4F9FD !important;
-}
-
-/* Headings & Editorial Typography */
-h1, h2, h3, h4, h5, h6 {
-  color: #0B1E33 !important;
-}
-
-h1 em, h2 em, h3 em, .gradient-gold-text {
-  background: linear-gradient(135deg, #0284C7 15%, #0369A1 75%, #075985 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  font-style: italic;
-}
-
-p {
-  color: #48627D !important;
-}
-
-p.lead, .lead {
-  color: #0B1E33 !important;
-}
-
-/* Studio Ticker Bar */
-.studio-ticker-bar {
-  background: #E0F2FE !important;
-  border-bottom: 1px solid #BAE6FD !important;
-  color: #0C4A6E !important;
-}
-
-.ticker-beacon {
-  background: #0284C7 !important;
-  box-shadow: 0 0 10px #0284C7, 0 0 20px rgba(2, 132, 199, 0.5) !important;
-}
-
-/* Primary Button: Electric Sky Blue */
-.btn-primary,
-.btn-hero,
-.hero-btn-main {
-  background: #0284C7 !important;
-  color: #FFFFFF !important;
-  font-weight: 700 !important;
-  border: 1.5px solid #0284C7 !important;
-  border-radius: 9999px !important;
-  box-shadow: 0 4px 20px rgba(2, 132, 199, 0.4) !important;
-  text-decoration: none !important;
-  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.2s ease !important;
-}
-
-.btn-primary:hover,
-.btn-hero:hover,
-.hero-btn-main:hover {
-  background: #0369A1 !important;
-  border-color: #0369A1 !important;
-  color: #FFFFFF !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 8px 30px rgba(2, 132, 199, 0.6) !important;
-}
-
-/* Secondary Button: Clean Ice Pill */
-.btn-secondary,
-.hero-btn-talk {
-  background: rgba(255, 255, 255, 0.9) !important;
-  color: #0B1E33 !important;
-  border: 1.5px solid #BAE6FD !important;
-  border-radius: 9999px !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
-  text-decoration: none !important;
-}
-
-.btn-secondary:hover,
-.hero-btn-talk:hover {
-  background: #E0F2FE !important;
-  color: #0284C7 !important;
-  border-color: #0284C7 !important;
-  transform: translateY(-2px) !important;
-}
-
-/* Hero Client Ribbon */
-.hero-client-ribbon {
-  background: rgba(7, 27, 47, 0.88) !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.4) !important;
-  backdrop-filter: blur(16px) !important;
-  -webkit-backdrop-filter: blur(16px) !important;
-}
-
-.client-name-pill {
-  background: rgba(255, 255, 255, 0.08) !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
-  color: #F0F9FF !important;
-  transition: all 0.2s ease !important;
-}
-
-.client-name-pill:hover {
-  background: rgba(2, 132, 199, 0.2) !important;
-  border-color: #38BDF8 !important;
-  color: #38BDF8 !important;
-  box-shadow: 0 0 16px rgba(56, 189, 248, 0.25) !important;
-}
-
-.client-dot {
-  background: #38BDF8 !important;
-  box-shadow: 0 0 8px #38BDF8 !important;
-}
-
-/* Hero Audio Toggle Pill */
-.hero-audio-toggle {
-  background: rgba(7, 27, 47, 0.88) !important;
-  border: 1px solid rgba(56, 189, 248, 0.5) !important;
-  color: #F0F9FF !important;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5), 0 0 18px rgba(2, 132, 199, 0.2) !important;
-}
-
-.hero-audio-toggle:hover {
-  background: rgba(2, 132, 199, 0.25) !important;
-  border-color: #38BDF8 !important;
-  color: #38BDF8 !important;
-}
-
-.eq-b {
-  background: #38BDF8 !important;
-}
-
-/* Sections & Clean Cards Ecosystem */
-.section,
-.section-stats-bar,
-.section-traditional-paths,
-.section-thesis,
-.section-why-video,
-.section-toolkit,
-.section-comparison,
-.section-roi,
-.section-faq,
-.section-cta {
-  background-color: #F4F9FD !important;
-  color: #0B1E33 !important;
-}
-
-.section-stats-bar {
-  border-top: 1px solid #BAE6FD !important;
-  border-bottom: 1px solid #BAE6FD !important;
-  background: #E0F2FE !important;
-}
-
-.stat-col .stat-number {
-  color: #0284C7 !important;
-  text-shadow: none !important;
-}
-
-/* All Cards Re-skinned to Crisp Pure White with Sky Borders */
-.pricing-card,
-.cap-card,
-.bento-card,
-.funnel-step-card,
-.stage-pathfinder-wrap,
-.video-card-public,
-.home-test-card,
-.qualifier-box,
-.service-card,
-.objection-card,
-.fit-card,
-.timeline-step,
-.toolkit-card,
-.visual-gallery-card,
-.roi-calc-container,
-.top-video-caption,
-.anatomy-detail-box,
-.qa-item,
-.contact-card,
-.principle-card,
-.step-card {
-  background: #FFFFFF !important;
-  border: 1px solid rgba(186, 230, 253, 0.8) !important;
-  color: #0B1E33 !important;
-  box-shadow: 0 10px 30px -10px rgba(2, 132, 199, 0.08) !important;
-  border-radius: 20px !important;
-}
-
-.pricing-card:hover,
-.cap-card:hover,
-.bento-card:hover,
-.funnel-step-card:hover,
-.video-card-public:hover,
-.home-test-card:hover,
-.service-card:hover,
-.toolkit-card:hover,
-.principle-card:hover {
-  border-color: #0284C7 !important;
-  box-shadow: 0 20px 45px -12px rgba(2, 132, 199, 0.22) !important;
-  transform: translateY(-4px);
-}
-
-/* Interactive Before / After Split Slider */
-.section-before-after {
-  background: #E0F2FE !important;
-  border-top: 1px solid #BAE6FD !important;
-  border-bottom: 1px solid #BAE6FD !important;
-}
-
-.split-slider-container {
-  border: 1px solid #BAE6FD !important;
-  box-shadow: 0 20px 60px rgba(2, 132, 199, 0.12) !important;
-  background: #FFFFFF !important;
-}
-
-.split-slider-handle {
-  background: #0284C7 !important;
-  border: 3px solid #FFFFFF !important;
-  box-shadow: 0 0 25px rgba(2, 132, 199, 0.5), 0 4px 15px rgba(2, 132, 199, 0.3) !important;
-}
-
-/* Interactive Scope Builder */
-.section-scope-builder {
-  background: #F4F9FD !important;
-  border-bottom: 1px solid #BAE6FD !important;
-}
-
-.scope-option-card {
-  background: #FFFFFF !important;
-  border: 1.5px solid #BAE6FD !important;
-  color: #0B1E33 !important;
-}
-
-.scope-option-card:hover {
-  border-color: #0284C7 !important;
-  transform: translateY(-2px);
-}
-
-.scope-option-card.selected {
-  background: #E0F2FE !important;
-  border-color: #0284C7 !important;
-  box-shadow: 0 4px 20px rgba(2, 132, 199, 0.22) !important;
-}
-
-.scope-summary-card {
-  background: #071B2F !important;
-  color: #F0F9FF !important;
-  border: 1px solid rgba(56, 189, 248, 0.35) !important;
-  box-shadow: 0 20px 50px rgba(7, 27, 47, 0.4) !important;
-}
-
-.scope-summary-card h3, .scope-summary-card h4, .scope-summary-card strong {
-  color: #F0F9FF !important;
-}
-
-.scope-stat-num {
-  color: #38BDF8 !important;
-}
-
-/* Section 12 Client Proof Cards */
-.client-proof-card {
-  background: #FFFFFF !important;
-  border: 1px solid #BAE6FD !important;
-  box-shadow: 0 10px 30px rgba(2, 132, 199, 0.08) !important;
-}
-
-.client-proof-card:hover {
-  border-color: #0284C7 !important;
-  box-shadow: 0 16px 45px rgba(2, 132, 199, 0.2) !important;
-  transform: translateY(-4px);
-}
-
-.client-card-name {
-  color: #0B1E33 !important;
-}
-
-.client-metric-badge {
-  background: rgba(2, 132, 199, 0.1) !important;
-  color: #0284C7 !important;
-  border: 1px solid rgba(2, 132, 199, 0.3) !important;
-  font-weight: 700 !important;
-}
-
-.client-card-quote {
-  color: #48627D !important;
-}
-
-.client-card-deliverable {
-  color: #034975 !important;
-  border-top-color: #BAE6FD !important;
-}
-
-/* 60-Second Creative Teardown Audit Card */
-.teardown-intake-card {
-  background: #FFFFFF !important;
-  border: 1.5px solid #BAE6FD !important;
-  box-shadow: 0 12px 40px rgba(2, 132, 199, 0.1) !important;
-  color: #0B1E33 !important;
-}
-
-.teardown-input {
-  background: #F4F9FD !important;
-  border: 1.5px solid #BAE6FD !important;
-  color: #0B1E33 !important;
-}
-
-.teardown-input:focus {
-  border-color: #0284C7 !important;
-  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.2) !important;
-}
-
-/* Comparison Table */
-.comparison-table-wrapper {
-  background: #FFFFFF !important;
-  border: 1px solid #BAE6FD !important;
-  border-radius: 12px;
-}
-
-.comparison-table th {
-  background: #E0F2FE !important;
-  color: #0B1E33 !important;
-  border-bottom: 1px solid #BAE6FD !important;
-}
-
-.comparison-table td {
-  border-bottom: 1px solid rgba(186, 230, 253, 0.5) !important;
-  color: #48627D !important;
-}
-
-.comparison-table tr:hover td {
-  background: rgba(224, 242, 254, 0.4) !important;
-}
-
-/* Forms & Inputs */
-.form-input,
-.form-select,
-.form-textarea {
-  background-color: #0D111A !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  color: #F8FAFC !important;
-}
-
-.form-input:focus,
-.form-select:focus,
-.form-textarea:focus {
-  border-color: #F59E0B !important;
-  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2) !important;
-}
-
-.form-label {
-  color: #E2E8F0 !important;
-}
-
-/* ROI Calculator Custom Inputs */
-.roi-calc-container {
-  background: #111522 !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
-}
-
-.roi-metric-box {
-  background: #0D111A !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
-}
-
-/* Fill-In Placeholders (Preserved with Amber Border) */
-.fill-in-badge {
-  background: rgba(245, 158, 11, 0.15) !important;
-  color: #F59E0B !important;
-  border: 1px dashed #F59E0B !important;
-  padding: 0.2rem 0.6rem;
-  border-radius: 4px;
-}
-
-/* Site Footer */
-.site-footer {
-  background: #071B2F !important;
-  border-top: 1px solid rgba(56, 189, 248, 0.2) !important;
-  color: #E0F2FE !important;
-}
-
-.site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6,
-.footer-heading, .footer-col-title {
-  color: #F0F9FF !important;
-}
-
-.site-footer p, .footer-text {
-  color: #94A3B8 !important;
-}
-
-.footer-links a, .site-footer a {
-  color: #BAE6FD !important;
-}
-
-.footer-links a:hover, .site-footer a:hover {
-  color: #38BDF8 !important;
-}
-
-.footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
-}
-
-/* ==========================================================================
-   UNIVERSAL EDITORIAL ICE & DEEP NAVY CONTRAST ENGINE
-   ========================================================================== */
-
-body, main, section {
-  color: #0B1E33;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #0B1E33;
-}
-
-p.section-subtitle, p.story-lead, .service-desc {
-  color: #48627D !important;
-}
-
-/* Cards on Canvas: Pure Crisp White with Sky Borders & Hover Glow */
-.card,
-.stat-card,
-.service-card,
-.venture-card,
-.testimonial-card,
-.pricing-card,
-.faq-item,
-.how-step,
-.card-light,
-.box-light,
-.light-box,
-.anatomy-detail-box,
-[style*="background: #FFFFFF"],
-[style*="background: #FFF"],
-[style*="background:#FFFFFF"],
-[style*="background:#FFF"],
-[style*="background-color: #FFFFFF"],
-[style*="background-color: #FFF"],
-[style*="background-color:#FFFFFF"],
-[style*="background-color:#FFF"],
-[style*="background: white"],
-[style*="background-color: white"] {
-  background-color: #FFFFFF !important;
-  color: #0B1E33 !important;
-  border: 1px solid rgba(186, 230, 253, 0.8) !important;
-  border-radius: 20px !important;
-  box-shadow: 0 10px 30px -10px rgba(2, 132, 199, 0.08) !important;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
-
-.card h1, .card h2, .card h3, .card h4, .card h5, .card h6, .card strong,
-.box-light h1, .box-light h2, .box-light h3, .box-light h4, .box-light h5, .box-light h6, .box-light strong,
-.card-light h1, .card-light h2, .card-light h3, .card-light h4, .card-light h5, .card-light h6, .card-light strong,
-.service-card h1, .service-card h2, .service-card h3, .service-card h4,
-.stat-card h3, .venture-card h3, .testimonial-card h4, .pricing-card h3,
-.anatomy-detail-box h3 {
-  color: #0B1E33 !important;
-  font-weight: 700;
-}
-
-.card p, .box-light p, .card-light p, .service-card p, .stat-card p, .venture-card p, .testimonial-card p,
-.pricing-card p, .anatomy-detail-box p {
-  color: #48627D !important;
-}
-
-.card:hover,
-.stat-card:hover,
-.service-card:hover,
-.venture-card:hover,
-.testimonial-card:hover,
-.pricing-card:hover,
-.card-light:hover,
-.box-light:hover {
-  border-color: #0284C7 !important;
-  box-shadow: 0 20px 45px -12px rgba(2, 132, 199, 0.22) !important;
-  transform: translateY(-4px);
-}
-
-/* Inputs & Form Controls */
-input:not([type="submit"]):not([type="button"]),
-textarea,
-select {
-  background-color: #FFFFFF !important;
-  color: #0B1E33 !important;
-  border: 1.5px solid #BAE6FD !important;
-  border-radius: 8px;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-  border-color: #0284C7 !important;
-  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.2) !important;
-  outline: none;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #94A3B8 !important;
-}
-
-select option {
-  background-color: #FFFFFF !important;
-  color: #0B1E33 !important;
-}
-
-/* Flagship / Signature Showcase Card: Deep Oceanic Navy */
-.flagship-card,
-.venture-flagship,
-.tier-flagship {
-  background-color: #071B2F !important;
-  color: #F0F9FF !important;
-  border: 1px solid rgba(56, 189, 248, 0.28) !important;
-  box-shadow: 0 30px 70px -25px rgba(7, 27, 47, 0.6) !important;
-}
-.flagship-card h1, .flagship-card h2, .flagship-card h3, .flagship-card h4 {
-  color: #F0F9FF !important;
-}
-.flagship-card p {
-  color: #BAE6FD !important;
-}
-
-/* Anatomy / Tabs System */
-.section-anatomy {
-  background-color: #E0F2FE !important;
-}
-
-.anatomy-tab-btn {
-  background: #FFFFFF !important;
-  border: 1.5px solid #BAE6FD !important;
-  color: #0B1E33 !important;
-  border-radius: 9999px !important;
-  font-weight: 600 !important;
-}
-
-.anatomy-tab-btn:hover {
-  background: #F0F9FF !important;
-  color: #0284C7 !important;
-  border-color: #0284C7 !important;
-}
-
-.anatomy-tab-btn.active {
-  background: #0284C7 !important;
-  border-color: #0284C7 !important;
-  color: #FFFFFF !important;
-  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.35) !important;
-}
-
-/* Gradient Accents */
-.gradient-gold-text {
-  background: linear-gradient(135deg, #0284C7 0%, #0369A1 50%, #075985 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-}
-
-.client-metric-badge {
-  background: rgba(2, 132, 199, 0.1) !important;
-  color: #0284C7 !important;
-  border: 1px solid rgba(2, 132, 199, 0.25) !important;
-  box-shadow: 0 0 12px rgba(2, 132, 199, 0.15) !important;
-  border-radius: 9999px !important;
-}
-
-/* Hero Showreel Pill Button */
-.hero-showreel-pill,
-#btn-hero-showreel {
-  background: rgba(7, 27, 47, 0.85) !important;
-  border: 1.5px solid rgba(56, 189, 248, 0.5) !important;
-  color: #F0F9FF !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), inset 0 0 12px rgba(2, 132, 199, 0.15) !important;
-  border-radius: 9999px !important;
-}
-
-.hero-showreel-pill span,
-#btn-hero-showreel span {
-  color: #F0F9FF !important;
-}
-
-.hero-showreel-pill .waveform-bar,
-#btn-hero-showreel .waveform-bar {
-  background-color: #38BDF8 !important;
-}
-
-.hero-showreel-pill:hover,
-#btn-hero-showreel:hover {
-  background: #0284C7 !important;
-  border-color: #38BDF8 !important;
-  box-shadow: 0 8px 30px rgba(2, 132, 199, 0.55) !important;
-  transform: translateY(-2px) !important;
-}
-
-.hero-showreel-pill:hover span,
-#btn-hero-showreel:hover span {
-  color: #FFFFFF !important;
-}
-
-.hero-showreel-pill:hover .waveform-bar,
-#btn-hero-showreel:hover .waveform-bar {
-  background-color: #FFFFFF !important;
-}
-
-/* Toolkit Tabs */
-.toolkit-tab-btn {
-  background: #FFFFFF !important;
-  border: 1.5px solid #BAE6FD !important;
-  color: #0B1E33 !important;
-  font-weight: 700 !important;
-  border-radius: 9999px !important;
-  box-shadow: 0 3px 12px rgba(2, 132, 199, 0.08) !important;
-}
-
-.toolkit-tab-btn:hover {
-  background: #F0F9FF !important;
-  border-color: #0284C7 !important;
-  color: #0284C7 !important;
-  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.2) !important;
-  transform: translateY(-2px) !important;
-}
-
-.toolkit-tab-btn.active {
-  background: #0284C7 !important;
-  color: #FFFFFF !important;
-  font-weight: 800 !important;
-  border-color: #0284C7 !important;
-  box-shadow: 0 6px 22px rgba(2, 132, 199, 0.35) !important;
-}
-
-.toolkit-tab-btn.active:hover {
-  background: #0369A1 !important;
-  color: #FFFFFF !important;
-  border-color: #0369A1 !important;
-}
-
-

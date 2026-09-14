@@ -1,5 +1,5 @@
 /**
- * NAIRI VENTURES — SUPABASE CONFIGURATION & DUAL-LAYER AUTH
+ * NAIRI VENTURES · SUPABASE CONFIGURATION & DUAL-LAYER AUTH
  * 
  * Instructions:
  * When you create your Supabase project, paste your Project URL and anon key below:

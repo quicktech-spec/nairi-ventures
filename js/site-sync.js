@@ -1,5 +1,5 @@
 /**
- * NAIRI VENTURES — REAL-TIME SITE SYNC ENGINE (v5.0)
+ * NAIRI VENTURES · REAL-TIME SITE SYNC ENGINE (v5.0)
  * Automatically synchronizes public page content, media images, logo, and typography
  * with the Admin CMS in real time using BroadcastChannel and localStorage events.
  */
@@ -12,7 +12,7 @@
   const TESTIMONIALS_STORAGE_KEY = 'nairi_db_testimonials';
 
   // Invalidate stale client caches to guarantee fresh display
-  const SYNC_SCHEMA_VERSION = 'v3_obsidian_20260910';
+  const SYNC_SCHEMA_VERSION = 'v7_headline_update_20260914';
   try {
     const savedVer = localStorage.getItem('nairi_cache_version');
     if (savedVer !== SYNC_SCHEMA_VERSION) {
@@ -23,6 +23,14 @@
       localStorage.setItem('nairi_cache_version', SYNC_SCHEMA_VERSION);
     }
   } catch (e) {}
+
+  // Helper to decode HTML entities like &amp; when inserting plain text
+  function decodeEntities(str) {
+    if (!str || typeof str !== 'string') return '';
+    const txt = document.createElement('textarea');
+    txt.innerHTML = str;
+    return txt.value;
+  }
 
   // 1. Text & HTML Sync
   function applyContentSync() {
@@ -45,7 +53,7 @@
             if (item.content.includes('<') && item.content.includes('>')) {
               el.innerHTML = item.content;
             } else {
-              el.textContent = item.content;
+              el.textContent = decodeEntities(item.content);
             }
           }
         });
@@ -86,16 +94,37 @@
     }
   }
 
-  // Google Font Loader Helper
+  // Google Font & Fontshare Loader Helper
   const loadedFonts = new Set();
   function loadGoogleFont(fontName) {
     if (!fontName || loadedFonts.has(fontName)) return;
-    const standardWebFonts = ['Georgia', 'Times New Roman', 'Arial', 'Helvetica', 'sans-serif', 'serif'];
+    const standardWebFonts = ['Georgia', 'Times New Roman', 'Arial', 'Helvetica', 'sans-serif', 'serif', 'monospace'];
     if (standardWebFonts.includes(fontName)) return;
 
     try {
+      const lower = fontName.toLowerCase().trim();
+      const fontshareMap = {
+        'general sans': 'https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap',
+        'satoshi': 'https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap',
+        'cabinet grotesk': 'https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&display=swap',
+        'clash display': 'https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap'
+      };
+
+      if (fontshareMap[lower]) {
+        const linkId = `fontshare-${lower.replace(/\s+/g, '-')}`;
+        if (!document.getElementById(linkId)) {
+          const link = document.createElement('link');
+          link.id = linkId;
+          link.rel = 'stylesheet';
+          link.href = fontshareMap[lower];
+          document.head.appendChild(link);
+        }
+        loadedFonts.add(fontName);
+        return;
+      }
+
       const fontSlug = encodeURIComponent(fontName).replace(/%20/g, '+');
-      const fontUrl = `https://fonts.googleapis.com/css2?family=${fontSlug}:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap`;
+      const fontUrl = `https://fonts.googleapis.com/css2?family=${fontSlug}:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap`;
       
       const linkId = `google-font-${fontSlug}`;
       if (!document.getElementById(linkId)) {
@@ -111,7 +140,7 @@
     }
   }
 
-  // 3. Logo & Typography (Branding) Sync
+  // 3. Logo & Granular Typography (Branding) Sync
   function applyBrandingSync() {
     try {
       const raw = localStorage.getItem(BRANDING_STORAGE_KEY);
@@ -119,16 +148,16 @@
       const branding = JSON.parse(raw);
       if (!branding || typeof branding !== 'object') return;
 
-      // A. Logo Text & Image (1st: Logo Icon, 2nd: Written Brand Name)
+      // A. Logo Text & Image across headers and footers
+      const brandText = branding.logo_text !== undefined && branding.logo_text !== null && branding.logo_text !== '' ? branding.logo_text : 'Nairee';
       const logoContainers = document.querySelectorAll('[data-cms-logo]');
       logoContainers.forEach(container => {
         const isFooter = container.classList.contains('footer-logo') || container.closest('.site-footer');
-        const brandText = branding.logo_text !== undefined && branding.logo_text !== null && branding.logo_text !== '' ? branding.logo_text : 'Nairee';
         let innerHtml = '';
 
         if (branding.logo_image) {
-          const logoSrc = (isFooter && (branding.logo_image === 'images/nairi-icon.svg' || branding.logo_image === 'images/nairi-logo.svg'))
-            ? 'images/nairi-icon-white.svg'
+          const logoSrc = (isFooter && (branding.logo_image.includes('navy') || branding.logo_image.includes('icon.svg')))
+            ? (branding.logo_image.replace('navy', 'white'))
             : branding.logo_image;
           innerHtml += `<img src="${logoSrc}" alt="${brandText}" class="custom-logo-icon" style="max-height: 38px; width: auto; vertical-align: middle; flex-shrink: 0;">`;
         }
@@ -137,20 +166,50 @@
         container.innerHTML = innerHtml;
       });
 
-      // B. Typography (Serif & Sans Fonts)
-      if (branding.font_serif) {
-        loadGoogleFont(branding.font_serif);
-        document.documentElement.style.setProperty('--font-serif', `'${branding.font_serif}', Georgia, serif`);
+      // Update landing page header logo if present
+      const navLogoBtn = document.querySelector('[data-testid="nav-logo"]');
+      if (navLogoBtn) {
+        const img = navLogoBtn.querySelector('img');
+        if (img && branding.logo_image) {
+          img.src = branding.logo_image;
+        }
       }
 
-      if (branding.font_sans) {
-        loadGoogleFont(branding.font_sans);
-        document.documentElement.style.setProperty('--font-sans', `'${branding.font_sans}', -apple-system, BlinkMacSystemFont, sans-serif`);
+      // B. Granular Typography Controls
+      // 1. Headings (--font-heading)
+      const headingFont = branding.font_heading || branding.font_serif;
+      if (headingFont) {
+        loadGoogleFont(headingFont);
+        document.documentElement.style.setProperty('--font-heading', `'${headingFont}', Georgia, serif`);
+        document.documentElement.style.setProperty('--font-serif', `'${headingFont}', Georgia, serif`);
+      }
+
+      // 2. Subheadings (--font-subheading)
+      const subheadingFont = branding.font_subheading || branding.font_sans || 'General Sans';
+      if (subheadingFont) {
+        loadGoogleFont(subheadingFont);
+        document.documentElement.style.setProperty('--font-subheading', `'${subheadingFont}', -apple-system, BlinkMacSystemFont, sans-serif`);
+      }
+
+      // 3. Body Copy (--font-body)
+      const bodyFont = branding.font_body || branding.font_sans || 'General Sans';
+      if (bodyFont) {
+        loadGoogleFont(bodyFont);
+        document.documentElement.style.setProperty('--font-body', `'${bodyFont}', -apple-system, BlinkMacSystemFont, sans-serif`);
+        document.documentElement.style.setProperty('--font-sans', `'${bodyFont}', -apple-system, BlinkMacSystemFont, sans-serif`);
+      }
+
+      // 4. Monospace & Numbers Accent (--font-mono)
+      const monoFont = branding.font_mono || 'JetBrains Mono';
+      if (monoFont) {
+        loadGoogleFont(monoFont);
+        document.documentElement.style.setProperty('--font-mono', `'${monoFont}', ui-monospace, monospace`);
       }
 
       // C. Accent Color
       if (branding.accent_color) {
         document.documentElement.style.setProperty('--color-amber', branding.accent_color);
+        document.documentElement.style.setProperty('--color-accent', branding.accent_color);
       }
     } catch (err) {
       console.warn('Branding sync error:', err);

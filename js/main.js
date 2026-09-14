@@ -1,5 +1,5 @@
 /**
- * NAIRI VENTURES — AGENCY CLIENT SYSTEM
+ * NAIRI VENTURES · AGENCY CLIENT SYSTEM
  * Pure Marketing, AI Video Ads, Conversion Web & Sales Funnels
  */
 

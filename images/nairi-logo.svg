@@ -27,10 +27,10 @@
     <text font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700" letter-spacing="0.04em" fill="currentColor">
       NAIRI
     </text>
-    <text x="70" y="0" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="0.14em" fill="#E4A63A">
+    <text x="70" y="0" font-family="'General Sans', system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="0.14em" fill="#E4A63A">
       VENTURES
     </text>
-    <text x="1" y="11" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="7.5" font-weight="600" letter-spacing="0.18em" fill="#8C867A">
+    <text x="1" y="11" font-family="'General Sans', system-ui, sans-serif" font-size="7.5" font-weight="600" letter-spacing="0.18em" fill="#8C867A">
       AI VIDEO &amp; PERFORMANCE
     </text>
   </g>
