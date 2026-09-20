@@ -332,8 +332,8 @@ const SEED_DATA = {
       "part_name": "Tier 1 Highlight Banner",
       "section_key": "tier.01.highlight",
       "section_group": "3 Tier Solutions",
-      "content": "Creative variants tested 6x faster with automated audience mapping.",
-      "is_deleted": false,
+      "content": "",
+      "is_deleted": true,
       "updated_at": "2026-09-13T04:07:15.913Z"
     },
     {
