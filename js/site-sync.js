@@ -140,7 +140,7 @@
       const branding = JSON.parse(raw);
       if (!branding || typeof branding !== 'object') return;
 
-      const brandText = branding.logo_text !== undefined && branding.logo_text !== null && branding.logo_text !== '' ? branding.logo_text : 'Nairee Ventures';
+      const brandText = branding.logo_text !== undefined && branding.logo_text !== null ? branding.logo_text : '';
 
       // A. Standard data-cms-logo containers
       const logoContainers = document.querySelectorAll('[data-cms-logo]');
@@ -181,8 +181,12 @@
           img.src = footerSrc;
         }
         const span = footerLogoBlock.querySelector('[data-cms-key="brand.footer_name"]') || footerLogoBlock.querySelector('span');
-        if (span && branding.logo_text) {
-          span.innerHTML = `<span class="text-sky-400">${branding.logo_text}</span>`;
+        if (span) {
+          if (branding.logo_text) {
+            span.innerHTML = `<span class="text-sky-400">${branding.logo_text}</span>`;
+          } else {
+            span.innerHTML = '';
+          }
         }
       }
 

@@ -189,7 +189,7 @@ function updateHtmlLogo(newLogoText, logoImage) {
         html = html.replace(logoContainers, (match, openTag, inner, closeTag) => {
           let content = '';
           const isFooter = openTag.includes('footer-logo');
-          const brandText = newLogoText !== undefined && newLogoText !== null && newLogoText !== '' ? newLogoText : 'Nairee';
+          const brandText = newLogoText !== undefined && newLogoText !== null ? newLogoText : 'Nairee';
 
           if (logoImage) {
             const finalSrc = (isFooter && (logoImage.includes('navy') || logoImage.includes('icon.svg')))

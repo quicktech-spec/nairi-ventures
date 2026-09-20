@@ -12,8 +12,8 @@ const SEED_DATA = {
       "part_name": "Footer Brand Wordmark / Subtext",
       "section_key": "brand.footer_name",
       "section_group": "Footer & Company Info",
-      "content": "<span class=\"text-sky-400\">Ventures</span>",
-      "is_deleted": false,
+      "content": ""text-sky-400\">Ventures</span>",
+      "is_deleted": true,
       "updated_at": "2026-09-14T06:07:45.742Z"
     },
     {
@@ -770,7 +770,7 @@ const SEED_DATA = {
     }
   ],
   "branding": {
-    "logo_text": "Nairee Ventures",
+    "logo_text": "",
     "logo_image": "images/nairee-logo-navy-sky.png",
     "font_heading": "Fraunces",
     "font_subheading": "General Sans",
