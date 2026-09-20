@@ -462,7 +462,7 @@ const SEED_DATA = {
       "part_name": "Team Section Heading",
       "section_key": "team.heading",
       "section_group": "Leadership Team",
-      "content": "Operators, strategists and builders, not consultants who vanish after a deck.",
+      "content": "Operators and builders",
       "is_deleted": false,
       "updated_at": "2026-09-13T04:07:15.913Z"
     },
