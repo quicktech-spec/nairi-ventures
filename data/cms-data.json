@@ -356,8 +356,8 @@
       "part_name": "Tier 2 Highlight Banner",
       "section_key": "tier.02.highlight",
       "section_group": "3 Tier Solutions",
-      "content": "Clean books and actionable metrics that institutional investors respect.",
-      "is_deleted": false,
+      "content": "",
+      "is_deleted": true,
       "updated_at": "2026-09-13T04:07:15.913Z"
     },
     {
