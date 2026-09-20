@@ -32,8 +32,8 @@ const SEED_DATA = {
       "part_name": "Header Brand Wordmark / Subtext",
       "section_key": "brand.name",
       "section_group": "Header & Branding",
-      "content": "Ventures",
-      "is_deleted": false,
+      "content": "",
+      "is_deleted": true,
       "updated_at": "2026-09-14T06:07:45.742Z"
     },
     {

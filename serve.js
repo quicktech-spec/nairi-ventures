@@ -211,9 +211,8 @@ function updateHtmlLogo(newLogoText, logoImage) {
           if (logoImage) {
             updatedInner = updatedInner.replace(/<img[^>]+src=["'][^"']*["']/i, `<img src="${logoImage}"`);
           }
-          if (newLogoText !== undefined && newLogoText !== null && newLogoText !== '') {
-            updatedInner = updatedInner.replace(/(<span[^>]*>)([\s\S]*?)(<\/span>)/i, `$1${newLogoText}$3`);
-          }
+          // Top logo only shows the logo icon, remove any text span
+          updatedInner = updatedInner.replace(/<span[^>]*>[\s\S]*?<\/span>/gi, '');
           return `${openTag}${updatedInner}${closeTag}`;
         });
       }

@@ -167,9 +167,7 @@
           img.src = branding.logo_image;
         }
         const span = navLogoBtn.querySelector('[data-cms-key="brand.name"]') || navLogoBtn.querySelector('span');
-        if (span && branding.logo_text) {
-          span.textContent = branding.logo_text;
-        }
+        if (span) span.remove();
       }
 
       // C. Update landing page footer brand logo block
