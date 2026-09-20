@@ -168,33 +168,14 @@
 
           <!-- Quick Landing Page Highlights Controller Bar -->
           <div class="panel" style="margin-bottom: 1.5rem; background: #FFFFFF; border-left: 4px solid #0284C7; padding: 1.15rem 1.5rem;">
-            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
-              <div style="flex: 1; min-width: 260px;">
-                <label for="quick-hero-roas-input" style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); display: block; margin-bottom: 0.35rem;">
-                  Hero Floating Pill 1 (ROAS Value):
-                </label>
-                <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
-                  <input type="text" id="quick-hero-roas-input" class="form-input" value="4.2x ROAS" style="width: 150px; font-weight: 700; font-size: 0.85rem; padding: 0.45rem 0.75rem;">
-                  <button type="button" id="btn-quick-save-roas" class="btn-primary-action" style="padding: 0.45rem 0.85rem; font-size: 0.8rem; background: #0284C7; color: #FFFFFF; font-weight: 700; white-space: nowrap;">
-                    💾 Save ROAS
-                  </button>
-                </div>
-              </div>
-
-              <div style="flex: 1; min-width: 260px;">
-                <label for="quick-hero-pod-input" style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); display: block; margin-bottom: 0.35rem;">
-                  Hero Floating Pill 2 (Pod Window):
-                </label>
-                <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
-                  <input type="text" id="quick-hero-pod-input" class="form-input" value="14 Day Pod" style="width: 150px; font-weight: 700; font-size: 0.85rem; padding: 0.45rem 0.75rem;">
-                  <button type="button" id="btn-quick-save-pod" class="btn-primary-action" style="padding: 0.45rem 0.85rem; font-size: 0.8rem; background: #EA580C; color: #FFFFFF; font-weight: 700; white-space: nowrap;">
-                    💾 Save Pod
-                  </button>
-                </div>
-              </div>
+            <div style="display: none;">
+              <input type="text" id="quick-hero-roas-input" value="">
+              <button type="button" id="btn-quick-save-roas"></button>
+              <input type="text" id="quick-hero-pod-input" value="">
+              <button type="button" id="btn-quick-save-pod"></button>
             </div>
 
-            <div style="border-top: 1px dashed var(--border-color); padding-top: 0.85rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
               <div style="flex: 1; min-width: 320px;">
                 <label for="quick-hero-rev-input" style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); display: block; margin-bottom: 0.35rem;">
                   Hero Metric (Partner Revenue Managed):

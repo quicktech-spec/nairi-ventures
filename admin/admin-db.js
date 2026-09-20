@@ -92,8 +92,8 @@ const SEED_DATA = {
       "part_name": "Hero Floating Pill 1 (Value)",
       "section_key": "hero.pill_roas_val",
       "section_group": "Hero Section",
-      "content": "4.2x ROAS",
-      "is_deleted": false,
+      "content": "",
+      "is_deleted": true,
       "updated_at": "2026-09-13T04:07:15.913Z"
     },
     {
@@ -102,8 +102,8 @@ const SEED_DATA = {
       "part_name": "Hero Floating Pill 1 (Label)",
       "section_key": "hero.pill_roas_label",
       "section_group": "Hero Section",
-      "content": "Segment mapped AI creatives",
-      "is_deleted": false,
+      "content": "",
+      "is_deleted": true,
       "updated_at": "2026-09-13T04:07:15.913Z"
     },
     {
@@ -112,8 +112,8 @@ const SEED_DATA = {
       "part_name": "Hero Floating Pill 2 (Value)",
       "section_key": "hero.pill_pod_val",
       "section_group": "Hero Section",
-      "content": "14 Day Pod",
-      "is_deleted": false,
+      "content": "",
+      "is_deleted": true,
       "updated_at": "2026-09-13T04:07:15.913Z"
     },
     {
@@ -122,8 +122,8 @@ const SEED_DATA = {
       "part_name": "Hero Floating Pill 2 (Label)",
       "section_key": "hero.pill_pod_label",
       "section_group": "Hero Section",
-      "content": "Full execution team deployed",
-      "is_deleted": false,
+      "content": "",
+      "is_deleted": true,
       "updated_at": "2026-09-13T04:07:15.913Z"
     },
     {
