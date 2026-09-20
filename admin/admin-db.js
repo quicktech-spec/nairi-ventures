@@ -302,7 +302,7 @@ const SEED_DATA = {
       "part_name": "Tiers Main Heading",
       "section_key": "tiers.heading",
       "section_group": "3 Tier Solutions",
-      "content": "Three tiers. One engine. Engage them together, or decouple what you need.",
+      "content": "Three Tiers",
       "is_deleted": false,
       "updated_at": "2026-09-13T04:07:15.913Z"
     },
