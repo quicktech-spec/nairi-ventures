@@ -111,6 +111,128 @@
     details[open] summary svg {
       transform: rotate(180deg);
     }
+  
+    /* Contact Deck Component */
+    .contact-deck-wrapper {
+      margin-top: 2.75rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      max-width: 48rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact-deck-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      text-align: left;
+    }
+    @media (min-width: 640px) {
+      .contact-deck-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .contact-card {
+      display: flex;
+      align-items: center;
+      gap: 1.15rem;
+      padding: 1.15rem 1.25rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 1rem;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: all 0.25s ease;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+    .contact-card:hover {
+      background: rgba(255, 255, 255, 0.09);
+      border-color: rgba(56, 189, 248, 0.5);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(2, 132, 199, 0.2);
+    }
+
+    .contact-card-icon {
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: 0.75rem;
+      background: rgba(2, 132, 199, 0.22);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #38BDF8;
+      flex-shrink: 0;
+    }
+
+    .contact-card-content {
+      min-width: 0;
+      flex: 1;
+    }
+
+    .contact-card-title {
+      font-size: 0.72rem;
+      font-family: var(--font-subheading, sans-serif);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #7DD3FC;
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-card-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      font-family: var(--font-body, sans-serif);
+    }
+
+    .contact-link-row {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      white-space: nowrap;
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+    .contact-link-row:hover {
+      color: #38BDF8;
+    }
+
+    .contact-country-badge {
+      font-size: 0.65rem;
+      font-family: var(--font-mono, monospace);
+      font-weight: 800;
+      background: rgba(56, 189, 248, 0.25);
+      color: #BAE6FD;
+      padding: 0.15rem 0.45rem;
+      border-radius: 0.25rem;
+      letter-spacing: 0.05em;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    .contact-email-link {
+      display: block;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: color 0.2s ease;
+    }
+    .contact-email-link:hover {
+      color: #38BDF8;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
   </style>
 </head>
 <body class="bg-[#F4F9FD] text-[#0B1E33] antialiased selection:bg-sky-200 selection:text-navy font-sans">
@@ -588,7 +710,7 @@
         </section>
 
         <!-- 8. [CTA BAND SECTION] -->
-        <section class="py-20 lg:py-24 bg-navy text-white relative overflow-hidden" style="background:#061424;">
+        <section id="cta-band" class="py-20 lg:py-24 bg-navy text-white relative overflow-hidden" style="background:#061424;">
           <div class="mx-auto max-w-4xl px-5 sm:px-8 text-center">
             <h2 class="font-heading text-2xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
               See Nairee School ERP in action
@@ -602,20 +724,50 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 h-4 w-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
               </a>
             </div>
-            <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 text-sm font-mono text-sky-200/90">
-              <span class="inline-flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-sky-400 shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                <a href="tel:+16172021026" class="hover:text-white transition-colors underline-offset-4 hover:underline">+1 6172021026</a>
-                <span class="text-sky-400/50">/</span>
-                <a href="tel:+917004899138" class="hover:text-white transition-colors underline-offset-4 hover:underline">+91 7004899138</a>
-              </span>
-              <span class="text-sky-400/50 hidden sm:inline">|</span>
-              <span class="inline-flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-sky-400 shrink-0"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                <a href="mailto:ankit.saraf2592@gmail.com" class="hover:text-white transition-colors underline-offset-4 hover:underline">ankit.saraf2592@gmail.com</a>
-                <span class="text-sky-400/50">/</span>
-                <a href="mailto:shubham12121agarwal@gmail.com" class="hover:text-white transition-colors underline-offset-4 hover:underline">shubham12121agarwal@gmail.com</a>
-              </span>
+            <div class="contact-deck-wrapper">
+              <div class="contact-deck-grid">
+                <!-- Phone Lines Card -->
+                <div class="contact-card">
+                  <div class="contact-card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/><path d="M14.05 2a9 9 0 0 1 8 7.94"/><path d="M14.05 6A5 5 0 0 1 18 10"/></svg>
+                  </div>
+                  <div class="contact-card-content">
+                    <div class="contact-card-title">Call / WhatsApp</div>
+                    <div class="contact-card-links">
+                      <a href="tel:+16172021026" class="contact-link-row">
+                        <span class="contact-country-badge">US</span>
+                        <span>+1 617 202 1026</span>
+                      </a>
+                      <a href="tel:+917004899138" class="contact-link-row">
+                        <span class="contact-country-badge">IN</span>
+                        <span>+91 70048 99138</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Direct Inboxes Card -->
+                <div class="contact-card">
+                  <div class="contact-card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  </div>
+                  <div class="contact-card-content">
+                    <div class="contact-card-title">Direct Inquiries</div>
+                    <div class="contact-card-links">
+                      <a href="mailto:ankit.saraf2592@gmail.com" class="contact-email-link" title="ankit.saraf2592@gmail.com">
+                        ankit.saraf2592@gmail.com
+                      </a>
+                      <a href="mailto:shubham12121agarwal@gmail.com" class="contact-email-link" title="shubham12121agarwal@gmail.com">
+                        shubham12121agarwal@gmail.com
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p style="margin-top: 1.25rem; font-size: 0.78rem; color: rgba(186, 230, 253, 0.65); text-align: center;">
+                A venture of <strong style="color: #FFFFFF; font-weight: 600;">Nairee Ventures Pvt. Ltd.</strong> · Instant response on WhatsApp &amp; Email
+              </p>
             </div>
           </div>
         </section>
@@ -667,11 +819,18 @@
             <!-- Col 4: Reach Us -->
             <div>
               <p class="font-mono text-xs font-semibold uppercase tracking-[0.22em] text-sky-400">Reach Us</p>
-              <div class="mt-4 space-y-1.5 text-sm text-sky-200/80">
-                <p><a href="mailto:ankit.saraf2592@gmail.com" class="hover:text-white transition-colors">ankit.saraf2592@gmail.com</a></p>
-                <p><a href="mailto:shubham12121agarwal@gmail.com" class="hover:text-white transition-colors">shubham12121agarwal@gmail.com</a></p>
-                <p class="pt-1"><a href="tel:+16172021026" class="hover:text-white transition-colors">+1 6172021026</a> / <a href="tel:+917004899138" class="hover:text-white transition-colors">+91 7004899138</a></p>
-                <p class="text-xs text-sky-300/60 pt-1">Bengaluru · Mumbai, India</p>
+              <div class="mt-4 space-y-2.5 text-xs sm:text-sm text-sky-200/90">
+                <div class="space-y-0.5">
+                  <p class="text-[10px] font-mono uppercase tracking-wider text-sky-400/80">Direct Inquiries</p>
+                  <p><a href="mailto:ankit.saraf2592@gmail.com" class="hover:text-white transition-colors truncate block">ankit.saraf2592@gmail.com</a></p>
+                  <p><a href="mailto:shubham12121agarwal@gmail.com" class="hover:text-white transition-colors truncate block">shubham12121agarwal@gmail.com</a></p>
+                </div>
+                <div class="pt-1.5 border-t border-white/10 space-y-0.5">
+                  <p class="text-[10px] font-mono uppercase tracking-wider text-sky-400/80">Direct Lines</p>
+                  <p><a href="tel:+16172021026" class="hover:text-white transition-colors whitespace-nowrap"><span class="text-sky-300 font-mono text-[10px] mr-1">US</span>+1 (617) 202-1026</a></p>
+                  <p><a href="tel:+917004899138" class="hover:text-white transition-colors whitespace-nowrap"><span class="text-sky-300 font-mono text-[10px] mr-1">IN</span>+91 70048 99138</a></p>
+                </div>
+                <p class="text-xs text-sky-300/50 pt-1">Bengaluru · Mumbai, India</p>
               </div>
             </div>
           </div>
