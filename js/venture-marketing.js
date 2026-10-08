@@ -269,7 +269,113 @@ ${message}`;
     });
   }
 
-  // 7. Smooth Scrolling for all internal anchor links
+  // 7. Check URL parameter ?interest=school-erp (TASK 5)
+  const urlParams = new URLSearchParams(window.location.search);
+  const interestParam = urlParams.get('interest');
+  if (interestParam && (interestParam.toLowerCase() === 'school-erp' || interestParam.toLowerCase() === 'school_erp' || interestParam.toLowerCase() === 'erp')) {
+    const tierSelect = document.getElementById('lead-select-tier');
+    if (tierSelect) {
+      tierSelect.value = 'Nairee School ERP — Request a demo';
+    }
+    const leadSection = document.getElementById('lead');
+    if (leadSection && (window.location.hash === '#lead' || window.location.search.includes('interest='))) {
+      setTimeout(() => {
+        leadSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const nameInput = document.getElementById('lead-name');
+        if (nameInput) nameInput.focus();
+      }, 350);
+    }
+  }
+
+  // 8. Desktop Ventures Dropdown accessibility & click toggle
+  const venturesBtn = document.getElementById('nav-ventures-btn');
+  const venturesMenu = document.getElementById('nav-ventures-menu');
+  const venturesChevron = document.getElementById('nav-ventures-chevron');
+  if (venturesBtn && venturesMenu) {
+    venturesBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isExpanded = venturesBtn.getAttribute('aria-expanded') === 'true';
+      venturesBtn.setAttribute('aria-expanded', !isExpanded);
+      if (isExpanded) {
+        venturesMenu.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+        venturesMenu.classList.add('opacity-0', 'pointer-events-none', 'translate-y-1');
+        if (venturesChevron) venturesChevron.classList.remove('rotate-180');
+      } else {
+        venturesMenu.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-1');
+        venturesMenu.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+        if (venturesChevron) venturesChevron.classList.add('rotate-180');
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!venturesBtn.contains(e.target) && !venturesMenu.contains(e.target)) {
+        venturesBtn.setAttribute('aria-expanded', 'false');
+        venturesMenu.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+        venturesMenu.classList.add('opacity-0', 'pointer-events-none', 'translate-y-1');
+        if (venturesChevron) venturesChevron.classList.remove('rotate-180');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        venturesBtn.setAttribute('aria-expanded', 'false');
+        venturesMenu.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+        venturesMenu.classList.add('opacity-0', 'pointer-events-none', 'translate-y-1');
+        if (venturesChevron) venturesChevron.classList.remove('rotate-180');
+      }
+    });
+  }
+
+  // 9. Mobile Navigation Drawer & Accordion
+  const mobileToggle = document.getElementById('mobile-nav-toggle');
+  const mobileMenu = document.getElementById('mobile-nav-menu');
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const closeIcon = document.getElementById('close-icon');
+  if (mobileToggle && mobileMenu) {
+    mobileToggle.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        if (hamburgerIcon) hamburgerIcon.classList.add('hidden');
+        if (closeIcon) closeIcon.classList.remove('hidden');
+        mobileToggle.setAttribute('aria-expanded', 'true');
+      } else {
+        mobileMenu.classList.add('hidden');
+        if (hamburgerIcon) hamburgerIcon.classList.remove('hidden');
+        if (closeIcon) closeIcon.classList.add('hidden');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    mobileMenu.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        if (hamburgerIcon) hamburgerIcon.classList.remove('hidden');
+        if (closeIcon) closeIcon.classList.add('hidden');
+        if (mobileToggle) mobileToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  const mobileAccordionBtn = document.getElementById('mobile-ventures-accordion-btn');
+  const mobilePanel = document.getElementById('mobile-ventures-panel');
+  const mobileChevron = document.getElementById('mobile-ventures-chevron');
+  if (mobileAccordionBtn && mobilePanel) {
+    mobileAccordionBtn.addEventListener('click', () => {
+      const isPanelHidden = mobilePanel.classList.contains('hidden');
+      if (isPanelHidden) {
+        mobilePanel.classList.remove('hidden');
+        mobileAccordionBtn.setAttribute('aria-expanded', 'true');
+        if (mobileChevron) mobileChevron.classList.add('rotate-180');
+      } else {
+        mobilePanel.classList.add('hidden');
+        mobileAccordionBtn.setAttribute('aria-expanded', 'false');
+        if (mobileChevron) mobileChevron.classList.remove('rotate-180');
+      }
+    });
+  }
+
+  // 10. Smooth Scrolling for all internal anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       const href = this.getAttribute('href');
