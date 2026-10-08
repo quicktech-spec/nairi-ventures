@@ -248,6 +248,32 @@ ${message}`;
 
         const result = await resp.json().catch(() => ({ ok: true }));
 
+        // Send direct automated notification to ankit.saraf2592@gmail.com & shubham12121agarwal@gmail.com
+        try {
+          fetch('https://formsubmit.co/ajax/ankit.saraf2592@gmail.com', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+              _subject: `⚡ New Lead Inflow: ${name} [${tier}] - Nairee Ventures`,
+              _cc: 'shubham12121agarwal@gmail.com',
+              _template: 'table',
+              _captcha: 'false',
+              'Client Name': name,
+              'Work Email': email,
+              'Phone / WhatsApp': phone,
+              'Company / Venture': company,
+              'Tier of Interest': tier,
+              'Revenue Stage': stage,
+              'Challenge / Bottleneck': message,
+              'Source URL': window.location.href,
+              'Timestamp': new Date().toLocaleString()
+            })
+          }).catch(err => console.warn('[CLIENT FORMSUBMIT]:', err));
+        } catch (e) {}
+
         showToast('✓ Diagnostic Request Received! Our strategy desk will review and respond within 24 hours.', 6000);
         leadForm.reset();
 

@@ -975,12 +975,12 @@
   ],
   "lead_email_settings": {
     "enabled": true,
-    "gmail_1": "ventures.nairi@gmail.com",
-    "gmail_2": "leads.nairee@gmail.com",
-    "sender_name": "Nairi Ventures Leads",
+    "gmail_1": "ankit.saraf2592@gmail.com",
+    "gmail_2": "shubham12121agarwal@gmail.com",
+    "sender_name": "Nairee Ventures Leads",
     "smtp_user": "",
     "smtp_pass": "",
-    "last_updated": "2026-09-11T03:21:03.685Z"
+    "last_updated": "2026-10-08T04:15:25.139Z"
   },
   "email_alert_logs": [
     {

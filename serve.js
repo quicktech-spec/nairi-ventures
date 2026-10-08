@@ -351,9 +351,9 @@ function getEmailAlertSettings() {
   if (!data.lead_email_settings) {
     data.lead_email_settings = {
       enabled: true,
-      gmail_1: "ventures.nairi@gmail.com",
-      gmail_2: "leads.nairee@gmail.com",
-      sender_name: "Nairi Ventures Leads",
+      gmail_1: "ankit.saraf2592@gmail.com",
+      gmail_2: "shubham12121agarwal@gmail.com",
+      sender_name: "Nairee Ventures Leads",
       smtp_user: "",
       smtp_pass: "",
       last_updated: new Date().toISOString()
@@ -407,7 +407,7 @@ async function sendLeadAlertEmails(lead, reqOrigin) {
     return { status: 'DISABLED', message: 'Email alerts currently paused' };
   }
 
-  const recipients = [settings.gmail_1, settings.gmail_2].map(g => (g || '').trim()).filter(Boolean);
+  const recipients = [settings.gmail_1 || "ankit.saraf2592@gmail.com", settings.gmail_2 || "shubham12121agarwal@gmail.com"].map(g => (g || "").trim()).filter(Boolean);
   if (!recipients.length) {
     console.warn('[EMAIL ALERTS] No recipient Gmail addresses configured.');
     return { status: 'NO_RECIPIENTS', message: 'No recipient emails specified' };
@@ -430,7 +430,7 @@ async function sendLeadAlertEmails(lead, reqOrigin) {
     timeZoneName: 'short'
   });
 
-  const subject = `⚡ New Lead Inflow: ${clientName} [${clientVenture}] - Nairi Ventures`;
+  const subject = `⚡ New Lead Inflow: ${clientName} [${clientVenture}] - Nairee Ventures`;
 
   const htmlContent = `
 <!DOCTYPE html>
@@ -546,7 +546,48 @@ ${adminLink}
       sendResult = { ok: false, status: 'SMTP_ERROR', error: err.message };
     }
   } else {
-    console.log(`[EMAIL ALERTS] Alert queued in Admin Outbox for ${recipients.join(' & ')} (Configure Gmail App Password in Admin Panel for direct SMTP delivery)`);
+    // Automatically forward to both designated emails via FormSubmit API
+    try {
+      const https = require('https');
+      const primaryEmail = recipients[0] || 'ankit.saraf2592@gmail.com';
+      const ccEmails = recipients.slice(1).join(',');
+      const fsPayload = JSON.stringify({
+        _subject: `⚡ New Lead Inflow: ${clientName} [${clientVenture}] - Nairee Ventures`,
+        _cc: ccEmails,
+        _template: 'table',
+        _captcha: 'false',
+        'Client Name': clientName,
+        'Email': clientEmail,
+        'Phone': lead.phone || 'Not provided',
+        'Company': lead.company || 'Not provided',
+        'Venture / Tier': clientVenture,
+        'Revenue / Stage': lead.stage || 'Not specified',
+        'Message': clientMessage,
+        'Submitted At': clientTime
+      });
+
+      const fsReq = https.request(`https://formsubmit.co/ajax/${encodeURIComponent(primaryEmail)}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'Referer': reqOrigin || 'https://nairi-venturess.onrender.com/'
+        }
+      }, (fsRes) => {
+        let respData = '';
+        fsRes.on('data', chunk => respData += chunk);
+        fsRes.on('end', () => {
+          console.log(`[FORMSUBMIT] Server dispatched alert to ${primaryEmail} (cc: ${ccEmails}): ${respData}`);
+        });
+      });
+      fsReq.on('error', e => console.warn('[FORMSUBMIT ERROR]:', e.message));
+      fsReq.write(fsPayload);
+      fsReq.end();
+    } catch (e) {
+      console.warn('[FORMSUBMIT EXCEPTION]:', e.message);
+    }
+
+    console.log(`[EMAIL ALERTS] Alert dispatched to ${recipients.join(' & ')}`);
     sendResult = { ok: true, status: 'DISPATCHED_TO_OUTBOX', note: `Dispatched to outbox for ${recipients.join(' & ')}.` };
   }
 
